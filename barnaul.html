@@ -1,0 +1,2584 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <title>Обучение барберов в Барнауле — курсы мужских стрижек и бритья с нуля, практика и диплом</title>
+  <meta name="description" content="Курсы для барберов в Барнауле: базовое обучение с нуля и повышение квалификации. Машинка и ножницы, тушёвка, контур, борода и усы, безопасность и сервис. Форматы — очно и онлайн, с документом об окончании.">
+
+  <meta property="og:title" content="Обучение барберов в Барнауле — курсы мужских стрижек и бритья с нуля, практика и диплом">
+  <meta property="og:description" content="Курсы для барберов в Барнауле: базовое обучение с нуля и повышение квалификации. Машинка и ножницы, тушёвка, контур, борода и усы, безопасность и сервис. Форматы — очно и онлайн, с документом об окончании.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://massazh-kursy.ru/barnaul.php">
+
+  <style>
+:root{
+  --bg:#faf7f3;
+  --card:#ffffff;
+  --ink:#1f2937;
+  --muted:#6b7280;
+  --brand:#c98e5b;   /* тёплый карамельный */
+  --brand-2:#2f3e46; /* холодный серо-синий */
+  --accent:#f5e6d3;  /* светлая кожа/лён */
+  --line:#d6c7b6;    /* «нитка» */
+  --ring: 0 10px 30px rgba(0,0,0,.06);
+  --radius:18px;
+}
+
+/* Base */
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Helvetica Neue", sans-serif;
+  color:var(--ink);
+  background:
+    radial-gradient(1200px 600px at 110% -10%, rgba(201,142,91,.06), transparent 60%),
+    radial-gradient(900px 500px at -10% 10%, rgba(47,62,70,.06), transparent 55%),
+    var(--bg);
+  line-height:1.65;
+  letter-spacing:.2px;
+}
+.container{max-width:1100px;margin:0 auto;padding:0 20px}
+
+/* Header */
+header{
+  position:sticky; top:0; z-index:50;
+  backdrop-filter:saturate(180%) blur(10px);
+  background:rgba(250,247,243,.7);
+  border-bottom:1px dashed var(--line);
+}
+.nav{
+  display:flex; align-items:center; justify-content:space-between; gap:16px;
+  padding:14px 0;
+  position: relative; /* важен для позиционирования выпадающего меню */
+}
+.brand{
+  display:flex; align-items:center; gap:10px; text-decoration:none; color:var(--ink);
+  font-weight:700; letter-spacing:.3px;
+}
+.brand svg{width:30px;height:30px}
+nav a{
+  text-decoration:none; color:var(--ink);
+  padding:8px 12px; border-radius:10px;
+  transition:all .2s ease;
+}
+nav a:hover{background:var(--accent)}
+.nav-links{display:flex; gap:8px}
+.nav-toggle{display:none}
+
+/* Hero */
+.hero{ padding:64px 0 40px; }
+.hero-inner{ display:grid; grid-template-columns:1.2fr .8fr; gap:28px; align-items:center; }
+.tag{display:inline-flex; gap:8px; align-items:center; padding:6px 10px; border:1px dashed var(--line); border-radius:999px; background:#fff;}
+.title{font-size:clamp(28px,4vw,44px); line-height:1.15; margin:14px 0 10px;}
+.subtitle{color:var(--muted); max-width:60ch}
+.cta{display:flex; gap:12px; margin-top:22px; flex-wrap:wrap}
+.btn{
+  display:inline-flex; align-items:center; gap:10px;
+  padding:12px 18px; border-radius:12px; text-decoration:none; font-weight:600;
+  border:1px solid transparent; transition:all .2s;
+}
+.btn-primary{background:var(--brand); color:white; box-shadow:var(--ring)}
+.btn-primary:hover{transform:translateY(-1px)}
+.btn-ghost{background:white; border-color:var(--line); color:var(--ink)}
+.btn-ghost:hover{background:var(--accent)}
+
+.hero-card{
+  background:linear-gradient(180deg, #fff, #fffaf4);
+  border:1px solid var(--line); border-radius:var(--radius); box-shadow:var(--ring);
+  padding:20px; position:relative; overflow:hidden;
+}
+.stitches{
+  position:absolute; inset:14px; border:2px dashed var(--line); border-radius:calc(var(--radius) - 8px);
+  pointer-events:none;
+}
+
+/* Figure with real <img> */
+.figure{
+  position: relative;
+  aspect-ratio: 4/5;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: linear-gradient(135deg, rgba(201,142,91,.08), rgba(47,62,70,.08));
+}
+.figure img{
+  width:100%; height:100%; object-fit:cover; display:block;
+}
+.figure-caption{
+  position:absolute; bottom:0; left:0; width:100%;
+  padding:10px 12px; font-size:14px; color:#333; text-align:center;
+  background: rgba(255,255,255,0.7); backdrop-filter: blur(6px);
+  border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+/* Sections */
+section{padding:38px 0}
+.section-title{font-size:clamp(22px,2.6vw,32px); margin:0 0 16px}
+.lede{color:var(--muted); max-width:70ch}
+
+.cards{ display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-top:18px; }
+.card{
+  background:var(--card); border:1px solid var(--line); border-radius:16px; padding:18px;
+  box-shadow:var(--ring); transition:transform .2s ease;
+}
+.card:hover{transform:translateY(-3px)}
+.card h3{margin:.4rem 0 .2rem; font-size:1.1rem}
+.eyebrow{font-size:.8rem; letter-spacing:.12em; text-transform:uppercase; color:var(--brand-2)}
+
+.list{
+  display:grid; grid-template-columns:1fr 1fr; gap:12px;
+  margin:16px 0; padding:0; list-style:none;
+}
+.list li{background:#fff; border:1px dashed var(--line); border-radius:10px; padding:10px 12px}
+
+.note{
+  background:linear-gradient(180deg,#fff, #fff7ee);
+  border:1px solid var(--line); border-radius:14px; padding:16px 18px; box-shadow:var(--ring);
+}
+
+/* Courses */
+.course-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-top:16px}
+.course{
+  background:#fff; border:1px solid var(--line); border-radius:16px; padding:16px;
+  display:flex; flex-direction:column; gap:8px; box-shadow:var(--ring)
+}
+.course-badge{font-size:.77rem; color:#fff; background:var(--brand-2); padding:4px 8px; border-radius:999px; width:max-content}
+.course a{
+  margin-top:auto; align-self:flex-start;
+  text-decoration:none; font-weight:700; color:#fff;
+  background:var(--brand); padding:10px 14px; border-radius:10px; transition:opacity .2s
+}
+.course a:hover{opacity:.9}
+
+/* Footer */
+footer{
+  margin-top:20px; padding:36px 0; background:#fff; border-top:1px dashed var(--line);
+}
+.foot-grid{display:grid; grid-template-columns:2fr 1fr 1fr; gap:16px}
+.foot-grid a{color:var(--ink); text-decoration:none}
+.foot-grid a:hover{text-decoration:underline}
+.small{color:var(--muted); font-size:.9rem}
+
+/* Cities grid */
+.city-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:12px;
+  margin:16px 0 0;
+  padding:0;
+  list-style:none;
+}
+.city-grid li a{
+  display:block;
+  background:#fff;
+  border:1px dashed var(--line);
+  border-radius:10px;
+  padding:10px 12px;
+  text-decoration:none;
+  color:var(--ink);
+  transition:background .2s ease, transform .15s ease;
+}
+.city-grid li a:hover{
+  background:var(--accent);
+  transform:translateY(-1px);
+}
+
+/* ===== FAQ Accordion ===== */
+.faq-accordion{ display:grid; gap:12px; margin-top:16px; }
+.faq-item{
+  background:#fff; border:1px solid var(--line); border-radius:16px; box-shadow: var(--ring);
+  overflow:hidden;
+}
+.faq-q{
+  list-style:none; display:flex; align-items:center; justify-content:space-between; gap:12px;
+  padding:14px 16px; cursor:pointer; font-weight:600;
+}
+.faq-q::-webkit-details-marker{ display:none; }
+.faq-q svg{ transition: transform .2s ease; }
+.faq-item[open] .faq-q svg{ transform: rotate(180deg); }
+.faq-a{
+  padding:0 16px 14px 16px; color: var(--ink);
+  background: linear-gradient(180deg,#fff, #fffaf4);
+  border-top: 1px dashed var(--line);
+}
+.faq-a p{ margin:12px 0 0; }
+
+/* ===== Hamburger icon ===== */
+.nav-toggle{
+  display:none; /* показываем на мобилке */
+  position:relative;
+  width:44px; height:40px;
+  border:1px dashed var(--line);
+  border-radius:10px;
+  background:#fff;
+}
+.nav-toggle .burger,
+.nav-toggle .burger::before,
+.nav-toggle .burger::after{
+  content:"";
+  position:absolute; left:10px; right:10px;
+  height:2px; background:var(--ink);
+  transition:transform .2s ease, opacity .2s ease, top .2s ease, bottom .2s ease;
+}
+.nav-toggle .burger{ top:19px; }
+.nav-toggle .burger::before{ top:11px; }
+.nav-toggle .burger::after{ bottom:11px; }
+
+/* open -> X */
+.nav.open .nav-toggle .burger{ transform:rotate(45deg); }
+.nav.open .nav-toggle .burger::before{ opacity:0; }
+.nav.open .nav-toggle .burger::after{ transform:rotate(-90deg); bottom:auto; top:19px; }
+
+/* ===== Mobile ===== */
+@media (max-width: 980px){
+  .hero-inner{grid-template-columns:1fr}
+  .cards{grid-template-columns:1fr;gap:12px}
+  .list{grid-template-columns:1fr}
+  .course-grid{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr}
+  .city-grid{grid-template-columns:1fr}
+
+  /* скрываем меню по умолчанию */
+  .nav .nav-links{ display:none; }
+
+  /* кнопка-гамбургер */
+  .nav-toggle{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+    padding:8px 12px;
+    border:1px dashed var(--line);
+    border-radius:10px;
+    background:#fff;
+    cursor:pointer;
+  }
+
+  /* раскрытое меню */
+  .nav.open .nav-links{
+    display:flex !important;
+    position:absolute;
+    top:56px; right:20px;
+    flex-direction:column; gap:8px;
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:12px;
+    box-shadow:var(--ring);
+    padding:8px;
+    transform-origin: top right;
+    animation: menuIn .15s ease-out;
+    z-index:100;
+  }
+
+  @keyframes menuIn{
+    from{ opacity:0; transform:translateY(-6px) scale(.98); }
+    to{ opacity:1; transform:translateY(0) scale(1); }
+  }
+
+  /* FAQ spacing tweaks */
+  .faq-accordion{ gap:10px; }
+  .faq-q{ padding:12px 14px; }
+  .faq-a{ padding:0 14px 12px 14px; }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce){
+  *{animation:none!important; transition:none!important}
+}
+
+
+/* ===== Courses compact ===== */
+.courses .course-list{
+  display:grid; grid-template-columns:1fr; gap:16px;
+  counter-reset: course;
+}
+.course-card{
+  background:#fff; border:1px solid var(--line); border-radius:16px;
+  padding:14px; box-shadow:var(--ring);
+  counter-increment: course;
+}
+.course-topline{
+  display:flex; align-items:center; gap:10px; margin-bottom:6px;
+}
+.course-num::before{
+  content:"Курс " counter(course);
+  display:inline-block; font-weight:700; color:var(--muted);
+  background:#fff; border:1px dashed var(--line); border-radius:999px;
+  padding:3px 8px; font-size:.8rem;
+}
+.course-title{ margin:0; font-size:1.25rem; line-height:1.2; }
+.course-org{ margin:.25rem 0 .5rem; color:var(--muted); font-size:.95rem; }
+
+/* двухколоночная компакт-сетка на десктопе */
+.course-compact .course-compact-grid{
+  display:grid; grid-template-columns:1.15fr .85fr; gap:16px;
+}
+.meta-grid{
+  display:grid; grid-template-columns:repeat(2,minmax(220px,1fr));
+  gap:6px 12px; margin:.6rem 0 .8rem; font-size:.95rem;
+}
+.meta-grid.meta-tight{ grid-template-columns:repeat(2,minmax(240px,1fr)); }
+.meta-grid .price{ color:var(--brand); font-weight:700; }
+.meta-grid .old{ text-decoration:line-through; opacity:.6; }
+
+.course-section{ margin-top:.8rem; }
+.course-section h4{ margin:0 0 .4rem; font-size:1.06rem; }
+
+/* компактные цифры программы */
+.program-stats{ display:flex; flex-wrap:wrap; gap:6px 10px; margin:0 0 .5rem; padding:0; list-style:none; }
+.program-stats.compact li{
+  border:1px dashed var(--line); border-radius:999px; padding:4px 8px; background:#fff; font-size:.85rem;
+}
+
+/* таблица — компакт */
+.program-table table{ width:100%; border-collapse:collapse; font-size:.95rem; }
+.program-table td{
+  border-bottom:1px solid var(--line);
+  padding:.5rem .6rem; vertical-align:top;
+}
+.program-table.compact td:first-child{ width:34%; }
+.program-table.compact td:nth-child(2){ width:20%; }
+
+/* плюсы/минусы */
+.pros-cons{
+  display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:.8rem;
+}
+.pros-cons h4{ margin-bottom:.3rem; }
+.pros ul, .cons ul{ margin:0; padding-left:1.1rem; }
+.pros li::marker{ content:"✓ "; color:green; }
+.cons li::marker{ content:"– "; color:#b84; }
+
+/* footer карточки */
+.course-footer{
+  margin-top:1rem; display:flex; align-items:center; gap:12px; flex-wrap:wrap;
+}
+.course-footer .btn{
+  background:var(--brand); color:#fff; padding:.55rem .9rem; border-radius:10px; text-decoration:none; font-weight:600;
+}
+.course-footer .btn:hover{ opacity:.9; }
+
+/* адаптив */
+@media (max-width: 980px){
+  .course-compact .course-compact-grid{ grid-template-columns:1fr; }
+  .meta-grid, .meta-grid.meta-tight{ grid-template-columns:1fr; }
+  .course-title{ font-size:1.2rem; }
+  .program-table.compact td:first-child,
+  .program-table.compact td:nth-child(2){ width:auto; }
+}
+
+
+/* === Внутренние под-карточки и ритм === */
+.course-card{ padding:18px 20px; }
+.course-topline{ margin-bottom:10px; }
+.course-title{ font-size:1.28rem; letter-spacing:.2px; }
+
+.subcard{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:12px;
+  padding:14px;
+  box-shadow: var(--ring);
+}
+.course-compact .course-compact-grid{
+  display:grid;
+  grid-template-columns: 1.05fr 0.95fr; /* компактнее */
+  gap:14px;
+}
+
+/* текстовая иерархия */
+.course-org{ margin:.1rem 0 .7rem; color:var(--muted); font-size:.95rem; }
+.course-section{ margin-top:.7rem; }
+.course-section h4{ font-size:1.05rem; margin:0 0 .45rem; }
+.section-right{ margin-bottom:.6rem; }
+
+/* компактная мета: ровные строки, тонкий разделитель */
+.meta-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(240px,1fr));
+  gap:8px 14px;
+  margin:.5rem 0 .9rem;
+  font-size:.95rem;
+}
+.meta-grid > div{
+  padding:6px 0;
+  border-bottom:1px dashed var(--line);
+}
+.meta-grid > div:nth-last-child(-n+2){ border-bottom:none; } /* последняя строка в сетке без линии */
+.meta-grid .price{ color:var(--brand); font-weight:700; }
+.meta-grid .old{ text-decoration:line-through; opacity:.55; }
+
+/* программа: визуальное сжатие и «воздух» справа */
+.program-stats.compact li{
+  padding:5px 10px; font-size:.85rem;
+}
+.program-table table{ width:100%; border-collapse:separate; border-spacing:0; font-size:.95rem; }
+.program-table td{
+  padding:.55rem .6rem;
+  border-bottom:1px solid var(--line);
+}
+.program-table tr:last-child td{ border-bottom:none; }
+.program-table.compact td:first-child{ width:36%; white-space:nowrap; }
+.program-table.compact td:nth-child(2){ width:22%; white-space:nowrap; }
+
+/* плюсы/минусы в единой под-карточке, колонками */
+.pros-cons{
+  display:grid; grid-template-columns:1fr 1fr; gap:18px;
+  margin-top:14px;
+}
+.pros-cons h4{ margin:.2rem 0 .4rem; }
+.pros ul, .cons ul{ margin:0; padding-left:1.1rem; }
+.pros li{ margin:.28rem 0; }
+.cons li{ margin:.28rem 0; }
+.pros li::marker{ content:"✓ "; color:#0a8a2a; }
+.cons li::marker{ content:"– "; color:#b87426; }
+
+/* низ карточки */
+.course-footer{
+  margin-top:14px;
+  display:flex; gap:10px; flex-wrap:wrap; align-items:center;
+}
+.course-footer .btn{ padding:.5rem .9rem; border-radius:10px; }
+
+/* разделители и общий ритм секции курсов */
+.courses .course-list{ gap:20px; }
+.courses .course-card + .course-card{ position:relative; }
+.courses .course-card + .course-card::before{
+  content:"";
+  position:absolute; top:-10px; left:0; right:0;
+  height:1px; background:var(--line);
+  opacity:.8;
+}
+
+/* адаптив: собираем в одну колонку, чуть больше «воздуха» */
+@media (max-width: 980px){
+  .course-compact .course-compact-grid{ grid-template-columns:1fr; gap:12px; }
+  .subcard{ padding:12px; }
+  .meta-grid{ grid-template-columns:1fr; }
+  .meta-grid > div{ border-bottom:1px dashed var(--line); }
+  .meta-grid > div:last-child{ border-bottom:none; }
+  .program-table.compact td:first-child,
+  .program-table.compact td:nth-child(2){ width:auto; white-space:normal; }
+}
+
+/* ===== Ribbon Course Card ===== */
+.course-card.ribbon{
+  counter-increment: course;
+  background:#fff; border:1px solid var(--line); border-radius:16px;
+  box-shadow:var(--ring); padding:16px 18px; display:block;
+}
+.course-card.ribbon + .course-card.ribbon{ margin-top:16px; }
+
+.course-head{ display:grid; grid-template-columns:auto 1fr; align-items:center; gap:10px 12px; margin-bottom:10px; }
+.course-head .course-num::before{
+  content:"Курс " counter(course);
+  display:inline-block; font-weight:700; color:var(--muted);
+  border:1px dashed var(--line); border-radius:999px; padding:3px 8px; font-size:.8rem;
+}
+.course-head .course-title{ margin:0; font-size:1.26rem; line-height:1.2; }
+.course-head .course-org{ grid-column:1 / -1; color:var(--muted); font-size:.95rem; margin-top:-2px; }
+
+/* тело: лента + программа */
+.course-body{ display:grid; grid-template-columns: minmax(420px,1.2fr) minmax(340px,0.8fr); gap:14px; }
+@media (max-width: 980px){
+  .course-body{ grid-template-columns:1fr; }
+}
+
+/* лента с чипами */
+.chiprail{
+  display:flex; flex-wrap:wrap; gap:8px; margin:0; padding:0; list-style:none;
+  align-content:flex-start;
+}
+.chip{
+  display:inline-flex; gap:6px; align-items:center;
+  background:#fff; border:1px dashed var(--line); border-radius:999px;
+  padding:6px 10px; font-size:.92rem; white-space:nowrap;
+}
+.chip b{ font-weight:700; }
+.chip s{ opacity:.55; }
+.chip .price{ color:var(--brand); }
+.chip.hot{ background:linear-gradient(180deg,#fff, #fff7ee); border-color:var(--line); }
+.chip a{ color:var(--ink); text-decoration:none; }
+.chip a:hover{ text-decoration:underline; }
+
+/* программа: аккордеон на <details> */
+.program h4{ margin:0 0 .5rem; font-size:1.06rem; }
+.program-stats.mini{
+  display:flex; gap:8px; margin:0 0 .4rem; padding:0; list-style:none;
+}
+.program-stats.mini li{
+  border:1px dashed var(--line); border-radius:999px; padding:4px 8px; font-size:.84rem;
+}
+.prog-item{
+  border:1px solid var(--line); border-radius:10px; background:#fff; margin-bottom:8px; overflow:hidden;
+}
+.prog-item[open]{ box-shadow:var(--ring); }
+.prog-item summary{
+  list-style:none; cursor:pointer; user-select:none;
+  padding:10px 12px; display:flex; align-items:center; justify-content:space-between; gap:10px;
+  font-weight:600;
+}
+.prog-item summary::-webkit-details-marker{ display:none; }
+.prog-item summary em{ font-style:normal; color:var(--muted); font-weight:500; font-size:.92rem; }
+.prog-item p{ padding:0 12px 12px; margin:0; color:var(--ink); }
+
+/* «О курсе» */
+.course-intro{ margin-top:12px; }
+.course-intro h4{ margin:0 0 .4rem; font-size:1.06rem; }
+.course-intro p{ margin:0; color:var(--ink); }
+
+/* Плюсы/минусы блок */
+.pm{
+  margin-top:12px; display:grid; grid-template-columns:1fr 1fr; gap:14px;
+  background:#fff; border:1px solid var(--line); border-radius:12px; padding:12px;
+}
+.pm h4{ margin:.1rem 0 .3rem; font-size:1.02rem; }
+.pm ul{ margin:0; padding-left:1.1rem; }
+.pm li{ margin:.28rem 0; }
+.pm .pros li::marker{ content:"✓ "; color:#0a8a2a; }
+.pm .cons li::marker{ content:"– "; color:#b87426; }
+@media (max-width: 980px){
+  .pm{ grid-template-columns:1fr; }
+}
+
+/* CTA */
+.course-cta{
+  margin-top:12px; display:flex; gap:10px; flex-wrap:wrap; align-items:center;
+}
+.course-cta .btn{
+  background:var(--brand); color:#fff; padding:.55rem .95rem; border-radius:10px; text-decoration:none; font-weight:600;
+}
+.course-cta .btn:hover{ opacity:.9; }
+
+
+
+
+/* ====== Neo card (как на скрине) ====== */
+.courses .course-list{ counter-reset:course; }
+.course-card.neo{ counter-increment:course; background:#fff; border:1px solid #f3d89a; border-radius:16px; padding:16px; box-shadow: 0 6px 18px rgba(255,179,0,.12), inset 0 0 0 2px #fff; }
+.course-card.neo + .course-card.neo{ margin-top:18px; }
+
+/* шапка */
+.neo-head{ position:relative; padding:10px 12px 12px; border:2px solid #ffe6ab; border-radius:12px; background:#fff; box-shadow: 0 6px 18px rgba(255,179,0,.12); }
+.neo-head .badge-num::before{
+  content:"Курс " counter(course);
+  display:inline-block; background:#fff8e1; border:1px solid #ffd56c; color:#8a6b00;
+  border-radius:999px; padding:4px 10px; font-size:.82rem; font-weight:700;
+}
+.neo-title{ margin:6px 0 2px; text-align:center; color:#e14a2a; font-weight:800; letter-spacing:.8px; }
+.neo-sub{ text-align:center; color:#666; font-size:.95rem; }
+.linkish{ color:#0a66c2; text-decoration:underline; text-decoration-thickness:.5px; text-underline-offset:2px; }
+
+/* мета */
+.neo-body{ padding:14px 10px 0; }
+.neo-meta{ list-style:none; margin:0; padding:0; display:grid; grid-template-columns:1fr 1fr; gap:8px 16px; }
+@media (max-width:980px){ .neo-meta{ grid-template-columns:1fr; } }
+.neo-meta li{ background:#fff; border:1px solid #f1efe9; border-radius:10px; padding:8px 10px; box-shadow: var(--ring); }
+.m-key{ color:#444; font-weight:600; }
+.m-accent{ color:#e14a2a; font-weight:700; }
+.m-old{ text-decoration:line-through; color:#8c8c8c; margin-left:6px; }
+.m-hot{ color:#d35400; font-weight:700; }
+.tel{ color:#e14a2a; text-decoration:none; }
+.tel:hover{ text-decoration:underline; }
+
+/* разделы */
+.neo-section{ margin-top:18px; }
+.neo-h4{ margin:0 0 .6rem; text-align:center; font-size:1.06rem; }
+.neo-section p{ margin:0; }
+
+/* pills */
+.neo-pills{ display:flex; flex-wrap:wrap; gap:8px; margin:0 0 .8rem; padding:0; list-style:none; justify-content:center; }
+.neo-pills li{
+  background:#fff8e8; border:1px solid #ffd9a6; color:#8a6b00;
+  border-radius:999px; padding:6px 10px; font-size:.9rem;
+}
+
+/* таблица */
+.neo-table table{ width:100%; border-collapse:separate; border-spacing:0; background:#fff; overflow:hidden; border-radius:12px; box-shadow: var(--ring); }
+.neo-table thead th{
+  background:#fff4d6; border-bottom:1px solid #ffe0a8; padding:10px 12px; text-align:left; font-weight:700;
+}
+.neo-table td{ border-bottom:1px solid #f0f0f0; padding:10px 12px; vertical-align:top; }
+.neo-table tr:last-child td{ border-bottom:none; }
+
+/* плюсы/минусы */
+.neo-card{ display:grid; grid-template-columns:1fr 1fr; gap:16px; background:#fff; border:1px solid #ffe0a8; border-radius:12px; padding:12px; box-shadow: var(--ring); }
+@media (max-width:980px){ .neo-card{ grid-template-columns:1fr; } }
+.pm-list{ margin:0; padding-left:1.1rem; }
+.pm-list.pros li::marker{ content:"✓ "; color:#0a8a2a; }
+.pm-list.cons li::marker{ content:"– "; color:#b87426; }
+
+/* CTA */
+.neo-cta{ margin-top:16px; display:flex; justify-content:center; }
+.neo-cta .btn{ background:#ff6a2d; }
+
+
+
+
+.btn {
+  display: inline-block;
+  background: #c9864b;         /* карамельный, как на скрине */
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 10px 22px;
+  border-radius: 10px;         /* мягкие скругления */
+  text-decoration: none;
+  border: none;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.05);
+}
+
+.btn:hover {
+  background: #a56d3e;         /* немного темнее при наведении */
+  box-shadow: 0 5px 10px rgba(0,0,0,0.08);
+  transform: translateY(-1px);
+}
+
+.btn:active {
+  background: #8d5e35;         /* эффект нажатия */
+  transform: translateY(0);
+}
+
+
+/* === LSI BENEFITS GRID === */
+.benefits.lsi {
+  padding: 60px 0;
+  background: #fafafa;
+}
+
+.benefits.lsi .section-title {
+  text-align: center;
+  font-size: 1.9rem;
+  margin-bottom: 2.5rem;
+  font-weight: 700;
+}
+
+.lsi-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.lsi-card {
+  background: #fff;
+  border: 1px solid #e6e6e6;
+  border-radius: 16px;
+  padding: 1.6rem 1.4rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.lsi-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+}
+
+.lsi-badge {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.6rem;
+}
+
+.lsi-badge .dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ff80ab, #ff4081);
+  margin-right: 8px;
+}
+
+.lsi-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #222;
+  margin: 0 0 0.4rem 0;
+}
+
+.lsi-text {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .benefits.lsi {
+    padding: 40px 0;
+  }
+  .lsi-card {
+    padding: 1.2rem;
+  }
+  .lsi-title {
+    font-size: 1rem;
+  }
+}
+
+
+
+
+/* рекламная врезка */
+.promo-disclaimer {
+  border-top: 1px dashed rgba(0,0,0,0.1);
+  background: #fafafa;
+  margin-top: 32px;
+  padding: 18px 0;
+}
+.note-ads {
+  margin: 0;
+  text-align: center;
+  font-size: 0.95rem;
+  color: #666;
+}
+.note-ads strong {
+  color: #222;
+  font-weight: 600;
+}
+
+
+
+
+
+/* ============================
+   Мобильная адаптация блока "Программа обучения"
+   (исправляет вылезание за границы экрана ТОЛЬКО средствами CSS)
+   ============================ */
+
+/* 1) Плашки: разрешаем перенос и многострочность */
+.neo-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.neo-pills li {
+  max-width: 100%;
+  white-space: nowrap;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: #f5f5f7;
+  font-size: 14px;
+  line-height: 1.2;
+}
+@media (max-width: 480px) {
+  .neo-pills li {
+    white-space: normal;          /* разрешаем перенос на очень узких экранах */
+    word-break: break-word;
+    hyphens: auto;
+  }
+}
+
+/* 2) Таблица: горизонтальная прокрутка без поломки вёрстки */
+.neo-table {
+  width: 100%;
+  overflow-x: auto;               /* включаем прокрутку при узком экране */
+  -webkit-overflow-scrolling: touch;
+}
+.neo-table table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;            /* фиксированная вёрстка => перенос содержимого */
+  min-width: 640px;               /* не даём таблице сжиматься меньше минимума */
+}
+
+/* 3) Ячейки: перенос длинных слов/фраз */
+.neo-table th,
+.neo-table td {
+  padding: 10px 12px;
+  vertical-align: top;
+  text-align: left;
+  word-break: break-word;         /* переносим длинные слова */
+  overflow-wrap: anywhere;        /* переносим любые длинные токены */
+  hyphens: auto;
+  border-bottom: 1px solid #eee;
+  background-clip: padding-box;   /* чтобы фон не "лез" за границы при скролле */
+}
+
+/* 4) Узкие экраны: уменьшаем плотность и типографику */
+@media (max-width: 768px) {
+  .neo-section {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .neo-h4 {
+    font-size: 18px;
+    line-height: 1.3;
+    margin-bottom: 12px;
+  }
+  .neo-table th,
+  .neo-table td {
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+}
+
+/* 5) Колонки: даём первой колонке (название блока) больше места на перенос */
+@media (max-width: 768px) {
+  .neo-table table th:nth-child(1),
+  .neo-table table td:nth-child(1) { width: 42%; }
+  .neo-table table th:nth-child(2),
+  .neo-table table td:nth-child(2) { width: 22%; white-space: nowrap; }
+  .neo-table table th:nth-child(3),
+  .neo-table table td:nth-child(3) { width: 36%; }
+}
+
+/* 6) Мелкие правки для лучшего UX при скролле */
+.neo-table::-webkit-scrollbar {
+  height: 8px;
+}
+.neo-table::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0,.15);
+  border-radius: 4px;
+}
+.neo-table::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+
+/* ======== ДОРАБОТКА ПРОГРАММЫ ОБУЧЕНИЯ ======== */
+
+/* Отступ между бейджами и таблицей */
+.neo-table {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-top: 16px; /* 🔸 расстояние между бейджами и таблицей */
+  position: relative;
+  padding-top: 22px; /* 🔸 добавляем место под верхнюю подсказку */
+}
+
+/* Намёки на горизонтальный скролл (две подсказки — сверху и снизу) */
+.neo-table::before,
+.neo-table::after {
+  content: "← сдвиньте чтобы посмотреть →";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  color: rgba(0,0,0,0.55); /* чуть заметнее, чем раньше */
+  background: rgba(255,255,255,0.9);
+  padding: 3px 8px;
+  border-radius: 6px;
+  pointer-events: none;
+  opacity: 0;
+  white-space: nowrap;
+  transition: opacity .3s ease;
+}
+
+/* Верхняя подсказка */
+.neo-table::before {
+  top: -8px; /* 🔸 над таблицей, не перекрывает */
+}
+
+/* Нижняя подсказка */
+.neo-table::after {
+  bottom: 4px;
+}
+
+/* Показываем подсказки на узких экранах */
+@media (max-width: 768px) {
+  .neo-table::before,
+  .neo-table::after {
+    opacity: 1;
+    animation: hintScroll 3s ease-in-out 1;
+  }
+}
+
+/* Эффект появления/затухания подсказки */
+@keyframes hintScroll {
+  0% { opacity: 0; transform: translateX(-45%) translateY(6px); }
+  10% { opacity: 1; transform: translateX(-50%) translateY(0); }
+  80% { opacity: 1; }
+  100% { opacity: 0; transform: translateX(-55%) translateY(-6px); }
+}
+
+/* Остальные стили таблицы */
+.neo-table table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  min-width: 640px;
+}
+.neo-table th,
+.neo-table td {
+  padding: 10px 12px;
+  vertical-align: top;
+  text-align: left;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+  hyphens: auto;
+  border-bottom: 1px solid #eee;
+}
+
+
+
+
+
+
+
+</style>
+
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+      (function(m,e,t,r,i,k,a){
+          m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+          m[i].l=1*new Date();
+          for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+          k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+      })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=104699306', 'ym');
+
+      ym(104699306, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", accurateTrackBounce:true, trackLinks:true});
+  </script>
+  <noscript><div><img src="watch/104699306" style="position:absolute; left:-9999px;" alt=""></div></noscript>
+  <!-- /Yandex.Metrika counter -->
+
+  <script src="js/aff-wrap.ecolespb.js" defer=""></script>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="nav" id="nav">
+        <a href="/" class="brand" aria-label="На главную">
+          <svg viewbox="0 0 64 64" fill="none" aria-hidden="true">
+            <path d="M32 6c6 0 10 5 10 11 0 5-3 9-7 10v6h9a3 3 0 0 1 0 6h-9v15a3 3 0 1 1-6 0V39h-9a3 3 0 0 1 0-6h9v-6c-4-1-7-5-7-10 0-6 4-11 10-11Z" fill="currentColor"></path>
+          </svg>
+          <span>Курсы барбера и мужских стрижек</span>
+        </a>
+
+        <!-- Гамбургер -->
+        <button class="nav-toggle" id="menuToggle" aria-label="Открыть меню" aria-expanded="false" aria-controls="primary-menu">
+          <span class="burger" aria-hidden="true"></span>
+        </button>
+
+        <nav class="nav-links" id="primary-menu" aria-label="Главная навигация">
+          <a href="/">На главную</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-inner">
+      <div>
+        <span class="tag">Барнаул</span>
+        <h1 class="title">Курсы барбера и мужских стрижек в Барнауле</h1>
+        <p class="subtitle">Освойте профессию барбера в Барнауле: мужские стрижки, фейды, классическое бритьё и моделирование бороды. Обучение с нуля для начинающих, практика на моделях и документ об окончании.</p>
+        <div class="cta">
+          <a class="btn btn-primary" href="#courses">Смотреть курсы</a>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="stitches" aria-hidden="true"></div>
+        <figure class="figure">
+          <img src="default.jpg" alt="Курсы барбера и мужских стрижек в Барнаул" loading="lazy" decoding="async" width="800" height="1000">
+          <figcaption class="figure-caption">
+            В Барнауле растёт спрос на барберов и мастеров мужских стрижек.
+          </figcaption>
+        </figure>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="section_block" id="barber-quiz" data-theme="light" data-log-endpoint="/inc/quiz-log.php">
+  <div class="qb-box" role="application" aria-label="Квиз — подбор курса барбера">
+    <header class="qb-head">
+      <div class="qb-head-left">
+        <div class="qb-badge" aria-hidden="true">💈</div>
+        <div class="qb-head-titles">
+          <h2 class="qb-title">Подбор курса барбера</h2>
+          <p class="qb-subtitle">Ответьте на 5 вопросов и мы подберем курсы, подходящие именно для вас</p>
+        </div>
+      </div>
+      <div class="qb-steps"><span class="qb-step">0</span>/<span class="qb-total">0</span></div>
+    </header>
+
+    <div class="qb-progress" aria-hidden="true"><div class="qb-progress__bar"></div></div>
+
+    <div class="qb-card">
+      <div class="qb-question">Нажмите «Начать», чтобы подобрать программу обучения.</div>
+      <form class="qb-form" novalidate=""></form>
+      <div class="qb-actions">
+        <button class="qb-btn qb-btn--accent qb-start">Начать</button>
+        <button class="qb-btn qb-btn--ghost qb-prev" disabled="">Назад</button>
+        <button class="qb-btn qb-btn--next qb-next" disabled="">Далее</button>
+      </div>
+    </div>
+
+    <!-- Финальный экран — только заголовки и три ссылки + «Пройти ещё раз» -->
+    <div class="qb-result" hidden="">
+      <h3 class="qb-result-title">Подборка подходящих курсов</h3>
+      <p class="qb-result-sub">На основе ваших ответов рекомендуем:</p>
+
+      <div class="qb-links3">
+        <a class="qb-link-card qb-link-pro" href="#" target="_blank" rel="noopener">
+          <span class="qb-link-icon" aria-hidden="true">🎯</span>
+          <span class="qb-link-text">Повышение квалификации барбера</span>
+          <span class="qb-link-arrow" aria-hidden="true">↗</span>
+        </a>
+
+        <a class="qb-link-card qb-link-cuts" href="#" target="_blank" rel="noopener">
+          <span class="qb-link-icon" aria-hidden="true">✂️</span>
+          <span class="qb-link-text">Курс мужских стрижек</span>
+          <span class="qb-link-arrow" aria-hidden="true">↗</span>
+        </a>
+
+        <a class="qb-link-card qb-link-master" href="#" target="_blank" rel="noopener">
+          <span class="qb-link-icon" aria-hidden="true">💼</span>
+          <span class="qb-link-text">Профессия: мастер барбершопа</span>
+          <span class="qb-link-arrow" aria-hidden="true">↗</span>
+        </a>
+      </div>
+
+      <div class="qb-result-actions">
+        <button class="qb-btn qb-btn--ghost qb-restart">Пройти ещё раз</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+/* ===== Тема и отступы блока сверху/снизу ===== */
+#barber-quiz{
+  --bg:#fbf7f2; --card:#fff; --text:#2b2b2b; --muted:#6f6f6f;
+  --accent:#c97e45; --accent-press:#b56e3b; --shadow:0 10px 30px rgba(32,22,7,.08);
+  margin-block: clamp(28px, 5vw, 48px);
+}
+
+/* ===== Коробка квиза ===== */
+#barber-quiz .qb-box{
+  max-width:980px; margin:0 auto; color:var(--text);
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+  background:var(--card); border-radius:18px; box-shadow:var(--shadow);
+  padding:clamp(16px,2.2vw,22px);
+}
+
+/* ===== Хедер ===== */
+#barber-quiz .qb-head{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-bottom:12px}
+#barber-quiz .qb-head-left{display:flex;align-items:center;gap:14px}
+#barber-quiz .qb-badge{width:46px;height:46px;border:2px dashed #efdcc9;border-radius:14px;display:grid;place-items:center;font-size:22px;background:#fff}
+#barber-quiz .qb-title{margin:0;font-size:clamp(20px,2.4vw,28px);font-weight:800}
+#barber-quiz .qb-subtitle{margin:4px 0 0;color:var(--muted)}
+#barber-quiz .qb-steps{color:var(--muted);white-space:nowrap}
+
+/* ===== Прогресс ===== */
+#barber-quiz .qb-progress{height:8px;background:#f0e6db;border-radius:999px;overflow:hidden;margin:6px 0 16px}
+#barber-quiz .qb-progress__bar{height:100%;width:0;background:linear-gradient(90deg,var(--accent),#e2aa78);transition:width .35s ease;border-radius:999px}
+
+/* ===== Карточка с вопросами ===== */
+#barber-quiz .qb-card{background:transparent;border-radius:14px;padding:0}
+#barber-quiz .qb-question{font-size:clamp(18px,2.1vw,22px);line-height:1.45;margin:0 0 12px}
+#barber-quiz .qb-actions{display:flex;gap:12px;justify-content:center;margin-top:14px;flex-wrap:wrap}
+#barber-quiz .qb-btn{border:0;border-radius:14px;padding:12px 18px;font-weight:700;cursor:pointer;transition:.2s}
+#barber-quiz .qb-btn[disabled]{opacity:.5;cursor:not-allowed}
+#barber-quiz .qb-btn--accent{background:var(--accent);color:#fff}
+#barber-quiz .qb-btn--accent:hover{background:var(--accent-press)}
+#barber-quiz .qb-btn--ghost{background:transparent;border:1px dashed #e0cdb9;color:#6a594a}
+#barber-quiz .qb-btn--next{background:#d9cbbc;color:#4d3b2c}
+
+/* ===== Финальный экран (упрощённый) ===== */
+#barber-quiz .qb-result{
+  margin-top:12px;background:#fff;border-radius:14px;padding:18px;border:1px dashed #efdcc9
+}
+#barber-quiz .qb-result-title{margin:.2rem 0 .4rem;font-size:clamp(18px,2.2vw,24px)}
+#barber-quiz .qb-result-sub{margin:0 0 .8rem;color:var(--muted)}
+
+/* Список из 3 ссылок — карточки */
+#barber-quiz .qb-links3{display:grid;gap:10px}
+#barber-quiz .qb-link-card{
+  display:flex; align-items:center; gap:12px;
+  padding:14px 16px; border:1px solid #efe3d6; border-radius:14px;
+  background:#fbf7f2; text-decoration:none; color:#4d3b2c;
+  transition:transform .18s ease, box-shadow .18s ease, background .18s ease;
+}
+#barber-quiz .qb-link-card:hover{
+  transform:translateY(-1px); box-shadow:var(--shadow); background:#fff;
+}
+#barber-quiz .qb-link-icon{font-size:18px; line-height:1}
+#barber-quiz .qb-link-text{flex:1; font-weight:700}
+#barber-quiz .qb-link-arrow{opacity:.7}
+
+/* Кнопка «Пройти ещё раз» */
+#barber-quiz .qb-result-actions{display:flex;justify-content:center;margin-top:12px}
+@media (max-width:600px){
+  #barber-quiz .qb-head{align-items:flex-start;gap:10px}
+  #barber-quiz .qb-steps{margin-left:auto}
+}
+</style>
+
+<script>
+(() => {
+  const root = document.getElementById('barber-quiz');
+  if (!root) return;
+
+  // ===== Метрика (глобальный ym уже подключён в <head>) =====
+  const METRIKA_ID = 104699306;
+  const goal = (name, params) => {
+    if (typeof ym === 'function') {
+      try { ym(METRIKA_ID, 'reachGoal', name, params || {}); } catch (e) {}
+    }
+  };
+
+  // ===== Логирование на сервер (если доступно PHP) =====
+  const LOG_ENDPOINT = root.dataset.logEndpoint || '/inc/quiz-log.php';
+  const sendLog = (payload) => {
+    try {
+      fetch(LOG_ENDPOINT, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
+        credentials: 'same-origin',
+        keepalive: true
+      }).catch(()=>{});
+    } catch(e){}
+  };
+
+  // Конфиг из PHP
+  const STEPS = [{"key":"experience","title":"Ваш опыт в мужских стрижках","type":"radio","opts":[{"v":"zero","label":"Совсем с нуля"},{"v":"junior","label":"До 6 месяцев"},{"v":"pro","label":"1 год и больше"}]},{"key":"goal","title":"Цель обучения","type":"radio","opts":[{"v":"profession","label":"Освоить профессию барбера"},{"v":"skills","label":"Прокачать технику стрижек"},{"v":"shave","label":"Бритьё/борода и камуфляж"}]},{"key":"format","title":"Предпочтительный формат","type":"radio","opts":[{"v":"offline","label":"Очно"},{"v":"online","label":"Онлайн"},{"v":"hybrid","label":"Гибрид (очно + онлайн)"}]},{"key":"schedule","title":"Удобное время занятий","type":"radio","opts":[{"v":"weekday_day","label":"Будни (днём)"},{"v":"weekday_even","label":"Будни (вечером)"},{"v":"weekend","label":"Выходные"}]},{"key":"budget","title":"Ориентир по бюджету","type":"radio","opts":[{"v":"low","label":"Эконом"},{"v":"mid","label":"Стандарт"},{"v":"premium","label":"Премиум"}]}];
+  const TOTAL = STEPS.length;
+
+  // DOM
+  const stepCur = root.querySelector('.qb-step');
+  const stepTot = root.querySelector('.qb-total');
+  const progress= root.querySelector('.qb-progress__bar');
+  const qEl     = root.querySelector('.qb-question');
+  const form    = root.querySelector('.qb-form');
+  const start   = root.querySelector('.qb-start');
+  const prev    = root.querySelector('.qb-prev');
+  const next    = root.querySelector('.qb-next');
+
+  const result  = root.querySelector('.qb-result');
+  const restart = root.querySelector('.qb-restart');
+
+  // 3 финальные ссылки
+  const linkPro    = root.querySelector('.qb-link-pro');
+  const linkCuts   = root.querySelector('.qb-link-cuts');
+  const linkMaster = root.querySelector('.qb-link-master');
+
+  stepTot.textContent = TOTAL;
+
+  // Служебные переменные для логов
+  const sessionId = Math.random().toString(36).slice(2) + Date.now();
+  const startedAt = { ts: 0 };
+  let i = -1;                 // текущий шаг (-1 = экран «начать»)
+  const answers = {};         // ответы пользователя
+  const stepsTime = [];       // тайминги на шаг
+
+  function selected(type){
+    if (type === 'checkbox') return form.querySelectorAll('input[type="checkbox"]:checked').length > 0;
+    return !!form.querySelector('input[type="radio"]:checked');
+  }
+  function read(type){
+    if (type === 'checkbox') return Array.from(form.querySelectorAll('input[type="checkbox"]:checked')).map(i=>i.value);
+    const r = form.querySelector('input[type="radio"]:checked');
+    return r ? r.value : null;
+  }
+  function save(){
+    const s = STEPS[i]; if (!s) return false;
+    const v = read(s.type);
+    if (v === null || (Array.isArray(v) && !v.length)) return false;
+    answers[s.key] = v;
+
+    // Метрика: шаг
+    goal('qb_step', { step_key: s.key, step_index: i+1 });
+
+    // Локальный лог тайминга шага
+    stepsTime.push({ key: s.key, index: i+1, ts: Date.now() });
+    return true;
+  }
+
+  function render(idx){
+    const s = STEPS[idx]; if (!s) return;
+    stepCur.textContent = idx + 1;
+    progress.style.width = (idx / TOTAL * 100) + '%';
+    qEl.textContent = s.title;
+
+    form.innerHTML = '';
+    const wrap = document.createElement('div');
+    wrap.className = 'qb-fields section_block';
+
+    (s.opts || []).forEach((opt, k) => {
+      const id = `qb_barber-quiz_${s.key}_${k}`;
+      const label = document.createElement('label');
+      label.className = 'section_p';
+      label.style.display = 'flex';
+      label.style.alignItems = 'center';
+      label.style.gap = '10px';
+
+      const input = document.createElement('input');
+      input.type  = (s.type === 'checkbox') ? 'checkbox' : 'radio';
+      input.name  = s.key + (s.type === 'checkbox' ? '[]' : '');
+      input.value = opt.v;
+      input.id    = id;
+      input.required = (s.type !== 'checkbox');
+
+      const span = document.createElement('span');
+      span.textContent = opt.label;
+
+      label.appendChild(input);
+      label.appendChild(span);
+      wrap.appendChild(label);
+    });
+
+    form.appendChild(wrap);
+
+    // восстановление выбора
+    if (answers[s.key] !== undefined){
+      const vals = Array.isArray(answers[s.key]) ? answers[s.key] : [answers[s.key]];
+      form.querySelectorAll('input').forEach(inp => { if (vals.includes(inp.value)) inp.checked = true; });
+    }
+
+    start.style.display = 'none';
+    prev.disabled = (idx === 0);
+    next.disabled = !selected(s.type);
+  }
+
+  function finish(){
+    progress.style.width = '100%';
+
+    // Определяем город/поддомен по названию страницы (og:url → последний сегмент)
+    const extractKey = (urlStr) => {
+      try {
+        const u = new URL(urlStr, location.origin);
+        let last = (u.pathname || '').split('/').filter(Boolean).pop() || '';
+        last = last.replace(/\.(?:html?|php)$/i, '').toLowerCase();
+        return last || 'index';
+      } catch(e){ return 'index'; }
+    };
+    const metaOg = document.querySelector('meta[property="og:url"]');
+    let pageKey = metaOg && metaOg.content ? extractKey(metaOg.content) : extractKey(location.href);
+
+    // Словарь: ключ_страницы → slug рекламодателя
+    const pageToAdvSlug = {
+      'index':'spb',
+      'moscow':'moscow','spb':'spb','arhangelsk':'arhangelsk','astrahan':'astrahan','balashikha':'balashikha',
+      'barnaul':'barnaul','vladivostok':'vladivostok','vladimir':'vladimir','volgograd':'volgograd','voronezh':'voronezh',
+      'ekb':'ekb','ivanovo':'ivanovo','izhevsk':'izhevsk','irkutsk':'irkutsk','ioshkar-ola':'ioshkar-ola',
+      'kazan':'kazan','kaliningrad':'kaliningrad','kemerovo':'kemerovo','kirov':'kirov','kovrov':'kovrov',
+      'krasnodar':'krasnodar','krasnoyarsk':'krasnoyarsk','kurgan':'kurgan','lipetsk':'lipetsk','lyubercy':'lyubercy',
+      'mytishchi':'mytishchi','naberezhnye-chelny':'naberezhnye-chelny','nizniy-novgorod':'nizniy-novgorod',
+      'novokuznetsk':'novokuznetsk','novosibirsk':'novosibirsk','noviy-urengoy':'noviy-urengoy','noginsk':'noginsk',
+      'omsk':'omsk','orenburg':'orenburg','orsk':'orsk','penza':'penza','perm':'perm','rostov-na-donu':'rostov-na-donu',
+      'ryazan':'ryazan','samara':'samara','saratov':'saratov','sevastopol':'sevastopol','stavropol':'stavropol',
+      'surgut':'surgut','tver':'tver','tolyatti':'tolyatti','tomsk':'tomsk','tula':'tula','tumen':'tumen',
+      'ulyanovsk':'ulyanovsk','ufa':'ufa','khimki':'khimki','cheboksary':'cheboksary','chelyabinsk':'chelyabinsk',
+      'yaroslavl':'yaroslavl',
+      // Алиасы
+      'balashiha':'balashikha','ekaterinburg':'ekb','yoshkar-ola':'ioshkar-ola','nizhny-novgorod':'nizniy-novgorod',
+      'tyumen':'tumen','moskva':'moscow','sankt-peterburg':'spb'
+    };
+
+    const advSlug = pageToAdvSlug[pageKey] || 'spb';
+    const hostBySlug = (slug) => (slug === 'spb' ? 'ecolespb.ru' : `${slug}.ecolespb.ru`);
+    const host = hostBySlug(advSlug);
+
+    const makeGo = (path) =>
+      `https://go.2038.pro/3b6bc242f51d5261?erid=LdtCKaoMZ&m=2&dl=https://${host}/barber-school/${path}&sub1=quiz-barber&sub2=kursy-barbera.vercel.app`;
+
+    const urlPro    = makeGo('barber_course');
+    const urlCuts   = makeGo('kursy-muzhskix-strizhek');   // ← оставлено как в твоём коде
+    const urlMaster = makeGo('programm-barber');           // ← оставлено как в твоём коде
+
+    if (linkPro)    linkPro.href = urlPro;
+    if (linkCuts)   linkCuts.href = urlCuts;
+    if (linkMaster) linkMaster.href = urlMaster;
+
+    // Метрика: финиш
+    const finishedAt = Date.now();
+    const totalMs = startedAt.ts ? (finishedAt - startedAt.ts) : null;
+    goal('qb_finish', { duration_ms: totalMs });
+
+    // Лог на сервер
+    sendLog({
+      type: 'finish',
+      session_id: sessionId,
+      page: location.href,
+      page_key: pageKey,
+      adv_slug: advSlug,
+      started_at: startedAt.ts || null,
+      finished_at: finishedAt,
+      duration_ms: totalMs,
+      steps_time: stepsTime,
+      answers
+    });
+
+    // Вешаем клики по ссылкам в Метрику
+    if (linkPro)    linkPro.addEventListener('click',  () => goal('qb_click_pro'),   { once:true });
+    if (linkCuts)   linkCuts.addEventListener('click', () => goal('qb_click_cuts'),  { once:true });
+    if (linkMaster) linkMaster.addEventListener('click',() => goal('qb_click_master'),{ once:true });
+
+    // Переход к финальному экрану
+    result.hidden = false;
+    root.querySelector('.qb-card').style.display = 'none';
+
+    // Перезапуск
+    restart.addEventListener('click', (e) => {
+      e.preventDefault();
+      goal('qb_restart');
+
+      sendLog({ type:'restart', session_id: sessionId, page: location.href, ts: Date.now() });
+
+      Object.keys(answers).forEach(k => delete answers[k]);
+      stepsTime.length = 0;
+      i = -1;
+      result.hidden = true;
+      root.querySelector('.qb-card').style.display = '';
+      start.style.display = '';
+      prev.disabled = true;
+      next.disabled = true;
+      progress.style.width = '0%';
+      stepCur.textContent = '0';
+      form.innerHTML = '';
+      qEl.textContent = 'Нажмите «Начать», чтобы подобрать программу обучения.';
+    }, { once: true });
+  }
+
+  function nextStep(){
+    if (i >= 0) { if (!save()) return; }
+    i++;
+    if (i >= TOTAL) { finish(); return; }
+    render(i);
+  }
+  function prevStep(){ if (i <= 0) { i = 0; render(i); return; } i--; render(i); }
+
+  // Лисенеры
+  form.addEventListener('change', () => {
+    const s = STEPS[i]; if (!s) return;
+    next.disabled = !selected(s.type);
+  });
+
+  start.addEventListener('click', e => {
+    e.preventDefault();
+    // Метрика: старт
+    goal('qb_start');
+
+    // Стартовые отметки
+    startedAt.ts = Date.now();
+    stepsTime.length = 0;
+
+    // Лог на сервер
+    sendLog({
+      type: 'start',
+      session_id: sessionId,
+      page: location.href,
+      ts: startedAt.ts,
+      ua: navigator.userAgent || '',
+      ref: document.referrer || ''
+    });
+
+    nextStep();
+  });
+
+  next .addEventListener('click', e => { e.preventDefault(); nextStep(); });
+  prev .addEventListener('click', e => { e.preventDefault(); prevStep(); });
+})();
+</script>
+
+
+<!-- LSI BENEFITS -->
+<section class="benefits lsi">
+  <div class="container">
+    <h2 class="section-title">Обучение барбера: с нуля, практика на моделях и сертификат в Барнауле</h2>
+
+    <div class="lsi-grid">
+              <div class="lsi-card">
+          <div class="lsi-badge"><span class="dot" aria-hidden="true"></span></div>
+          <h3 class="lsi-title">С нуля</h3>
+          <p class="lsi-text">Базовое обучение барбера для старта карьеры: основы мужских стрижек, работа машинкой и ножницами, гигиена и санитарные нормы.</p>
+        </div>
+              <div class="lsi-card">
+          <div class="lsi-badge"><span class="dot" aria-hidden="true"></span></div>
+          <h3 class="lsi-title">Диплом и сертификат</h3>
+          <p class="lsi-text">По окончании — диплом/сертификат: подтверждение квалификации для трудоустройства и портфолио мастера.</p>
+        </div>
+              <div class="lsi-card">
+          <div class="lsi-badge"><span class="dot" aria-hidden="true"></span></div>
+          <h3 class="lsi-title">Практика на моделях</h3>
+          <p class="lsi-text">До 80% программы — практика: фейды, градации, работа с окантовкой, тушёвкой и коррекцией форм.</p>
+        </div>
+              <div class="lsi-card">
+          <div class="lsi-badge"><span class="dot" aria-hidden="true"></span></div>
+          <h3 class="lsi-title">Бритьё и борода</h3>
+          <p class="lsi-text">Отработка классического бритья, работа с опасной бритвой, уход и моделирование бороды и усов.</p>
+        </div>
+              <div class="lsi-card">
+          <div class="lsi-badge"><span class="dot" aria-hidden="true"></span></div>
+          <h3 class="lsi-title">Очно и онлайн</h3>
+          <p class="lsi-text">Два формата: очные группы и онлайн-модули с демонстрациями и обратной связью — выбирайте удобный график.</p>
+        </div>
+              <div class="lsi-card">
+          <div class="lsi-badge"><span class="dot" aria-hidden="true"></span></div>
+          <h3 class="lsi-title">Лучшие школы</h3>
+          <p class="lsi-text">Подборка проверенных школ и барбершоп-академий с отзывами выпускников и действующих мастеров.</p>
+        </div>
+          </div>
+  </div>
+</section>
+
+<!-- COURSES -->
+<section id="courses" class="courses">
+  <div class="container">
+    <h2 class="section-title">Подборка курсов барберов и мужских стрижек</h2>
+
+    <!--startblok-->
+<article class="course-card neo" itemscope="" itemtype="https://schema.org/Course">
+<div class="neo-head">
+<span class="badge-num"></span>
+<h3 class="neo-title" itemprop="name">Курс мужских стрижек</h3>
+<div class="neo-sub">🎓 Академия Эколь — <span class="linkish">Государственная лицензия от министерства образования</span></div>
+</div>
+<div class="neo-body">
+<ul class="neo-meta">
+<li>⏱ <span class="m-key">Продолжительность:</span> <span class="m-accent">84 ак. часа</span> (1-2 месяца)</li>
+<li>📜 <span class="m-key">Документ после обучения:</span> <span class="linkish">Сертификат об окончании курса *</span></li>
+<li>📅 <span class="m-key">Рассрочка:</span> <span class="m-accent">4 000 ₽/мес.</span> (6 месяцев)</li>
+<li>💵 <span class="m-key">Полная стоимость:</span> <span class="m-accent">23 700 ₽</span> <span class="m-old">39 500 ₽</span></li>
+<li>🔥 <span class="m-key">Скидка:</span> <span class="m-hot">40%</span> в рамках сезонной акции</li>
+<li>📍 <span class="m-key">Адрес:</span> г. Барнаул, ул. Цеховая, д. 29А</li>
+<li>📞 <span class="m-key">Телефон:</span> <a href="tel:+73825235300" class="tel">+7 (382) 523-53-00</a></li>
+<li>🌐 <span class="m-key">Сайт:</span> <a href="https://barnaul.ecolespb.ru/barber-school/kursy-muzhskix-strizhek" target="_blank" rel="nofollow" class="linkish">barnaul.ecolespb.ru</a></li>
+</ul>
+</div>
+<section class="neo-section">
+<h4 class="neo-h4">О курсе</h4>
+<p><strong>Курс «Мужские стрижки» в Барнауле</strong> — идеальный выбор как для начинающих, так и для желающих повысить свою квалификацию. Практический курс, на котором вы научитесь делать мужские стрижки любой сложности с помощью машинки и ножниц.</p>
+<p>Вы изучите базовые и трендовые техники стрижек, отработаете навыки на реальных клиентах и создадите собственное портфолио.</p>
+<p>За <strong class="m-accent">84 академических часа</strong> — практика на моделях и <strong class="linkish">сертификат об окончании курса</strong>.</p>
+</section>
+<section class="neo-section">
+<h4 class="neo-h4">Программа обучения</h4>
+<ul class="neo-pills">
+<li>⏱ 84 ч</li>
+<li>📚 16 уроков</li>
+<li>✂️ 7 процедур</li>
+<li>🗓 1–2 месяца</li>
+</ul>
+<div class="neo-table">
+<table>
+<thead>
+<tr>
+<th>📦 Блок</th>
+<th>⏱ Часы / Уроки</th>
+<th>📚 Темы</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>🔰 Основы стрижки</td>
+<td><span class="m-accent">24 ч</span> / 6 уроков</td>
+<td>Инструменты мастера, базовые техники стрижки</td>
+</tr>
+<tr>
+<td>✂️ Работа с машинкой</td>
+<td><span class="m-accent">32 ч</span> / 8 уроков</td>
+<td>Техники стрижки, применение насадок</td>
+</tr>
+<tr>
+<td>🌟 Стайлинг и укладки</td>
+<td><span class="m-accent">28 ч</span> / 2 урока</td>
+<td>Создание образа, подбор стайлинговых средств</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section class="neo-section pm neo-card">
+<div>
+<h4 class="neo-h4">Плюсы</h4>
+<ul class="pm-list pros">
+<li>Максимальное количество практики на моделях</li>
+<li>Обучение у опытных специалистов</li>
+<li>Гибкий график обучения</li>
+</ul>
+</div>
+<div>
+<h4 class="neo-h4">Минусы</h4>
+<ul class="pm-list cons">
+<li>Требуется наличие предварительных знаний по базовым техникам</li>
+<li>Интенсивный темп обучения</li>
+</ul>
+</div>
+</section>
+<footer class="neo-cta">
+<a href="https://barnaul.ecolespb.ru/barber-school/kursy-muzhskix-strizhek" target="_blank" rel="nofollow" class="btn">📘 На страницу курса</a>
+</footer>
+</article>
+<!--endblok-->
+<!--startblok-->
+<article class="course-card neo" itemscope="" itemtype="https://schema.org/Course">
+<div class="neo-head">
+<span class="badge-num"></span>
+<h3 class="neo-title" itemprop="name">Курс барбера. Повышение квалификации</h3>
+<div class="neo-sub">🎓 Академия Эколь — <span class="linkish">Государственная лицензия от министерства образования</span></div>
+</div>
+<div class="neo-body">
+<ul class="neo-meta">
+<li>⏱ <span class="m-key">Продолжительность:</span> <span class="m-accent">32 ак. часа</span> (3 недели)</li>
+<li>📜 <span class="m-key">Документ после обучения:</span> <span class="linkish">Сертификат о прохождении курса *</span></li>
+<li>📅 <span class="m-key">Рассрочка:</span> <span class="m-accent">2 900 ₽/мес.</span> (6 месяцев)</li>
+<li>💵 <span class="m-key">Полная стоимость:</span> <span class="m-accent">17 300 ₽</span> <span class="m-old">28 900 ₽</span></li>
+<li>🔥 <span class="m-key">Скидка:</span> <span class="m-hot">40%</span> в рамках текущей акции</li>
+<li>📍 <span class="m-key">Адрес:</span> г. Барнаул, ул. Цеховая, д. 29А</li>
+<li>📞 <span class="m-key">Телефон:</span> <a href="tel:+73822345678" class="tel">+7 (3822) 34-56-78</a></li>
+<li>🌐 <span class="m-key">Сайт:</span> <a href="https://barnaul.ecolespb.ru/barber-school/barber_course" target="_blank" rel="nofollow" class="linkish">barnaul.ecolespb.ru</a></li>
+</ul>
+</div>
+<section class="neo-section">
+<h4 class="neo-h4">О курсе</h4>
+<p><strong>Курс «Курс барбера. Повышение квалификации» в Барнауле</strong> — идеален для парикмахеров, желающих расширить свои навыки в мужских стрижках и моделировании образа.</p>
+<p>Вы изучите техники стрижки undercut, fade, британка, side part, а также получите навыки тонирования для маскировки седины.</p>
+<p>За <strong class="m-accent">32 академических часа</strong> — практика на реальных клиентах и получение сертификата.</p>
+</section>
+<section class="neo-section">
+<h4 class="neo-h4">Программа обучения</h4>
+<ul class="neo-pills">
+<li>⏱ 32 ч</li>
+<li>📚 6 уроков</li>
+<li>✂️ 4 отработки на практике</li>
+<li>🗓 3 недели</li>
+</ul>
+<div class="neo-table">
+<table>
+<thead>
+<tr>
+<th>📦 Блок</th>
+<th>⏱ Часы / Уроки</th>
+<th>📚 Темы</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>🔰 Техники стрижки</td>
+<td><span class="m-accent">8 ч</span> / 2 урока</td>
+<td>Undercut, fade, британка, side part</td>
+</tr>
+<tr>
+<td>🧔 Моделирование бороды и усов</td>
+<td><span class="m-accent">8 ч</span> / 2 урока</td>
+<td>Стрижка бороды, подбор формы</td>
+</tr>
+<tr>
+<td>🎨 Тонирование</td>
+<td><span class="m-accent">8 ч</span> / 2 урока</td>
+<td>Камуфляж седины, работа с красителями</td>
+</tr>
+<tr>
+<td>🌟 Создание образа</td>
+<td><span class="m-accent">8 ч</span> / 0 уроков</td>
+<td>Создание стильного образа клиента</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section class="neo-section pm neo-card">
+<div>
+<h4 class="neo-h4">Плюсы</h4>
+<ul class="pm-list pros">
+<li>Максимальное количество практики на реальных клиентах</li>
+<li>Обучение у опытных специалистов</li>
+<li>Закрытая библиотека знаний в сфере красоты</li>
+</ul>
+</div>
+<div>
+<h4 class="neo-h4">Минусы</h4>
+<ul class="pm-list cons">
+<li>Возможность отработки на моделях ограничена</li>
+</ul>
+</div>
+</section>
+<footer class="neo-cta">
+<a href="https://barnaul.ecolespb.ru/barber-school/barber_course" target="_blank" rel="nofollow" class="btn">📘 На страницу курса</a>
+</footer>
+</article>
+<!--endblok-->
+<!--startblok-->
+<article class="course-card neo" itemscope="" itemtype="https://schema.org/Course">
+<div class="neo-head">
+<span class="badge-num"></span>
+<h3 class="neo-title" itemprop="name">Мастер барбершопа</h3>
+<div class="neo-sub">🎓 Академия Эколь — <span class="linkish">Государственная лицензия от министерства образования</span></div>
+</div>
+<div class="neo-body">
+<ul class="neo-meta">
+<li>⏱ <span class="m-key">Продолжительность:</span> <span class="m-accent">116 ак. часов</span> (2–3 месяца)</li>
+<li>📜 <span class="m-key">Документ после обучения:</span> <span class="linkish">Диплом специалиста *</span></li>
+<li>📅 <span class="m-key">Рассрочка:</span> <span class="m-accent">3 900 ₽/мес.</span> (9 месяцев)</li>
+<li>💵 <span class="m-key">Полная стоимость:</span> <span class="m-accent">34 900 ₽</span> <span class="m-old">58 200 ₽</span></li>
+<li>🔥 <span class="m-key">Скидка:</span> <span class="m-hot">40%</span> в рамках сезонной акции</li>
+<li>📍 <span class="m-key">Адрес:</span> г. Барнаул, ул. Цеховая, 29А</li>
+<li>📞 <span class="m-key">Телефон:</span> <a href="tel:+78005553535" class="tel">+7 (800) 555-35-35</a></li>
+<li>🌐 <span class="m-key">Сайт:</span> <a href="https://barnaul.ecolespb.ru/barber-school/programm-barber" target="_blank" rel="nofollow" class="linkish">barnaul.ecolespb.ru</a></li>
+</ul>
+</div>
+<section class="neo-section">
+<h4 class="neo-h4">О курсе</h4>
+<p><strong>Курс «Мастер барбершопа» в Барнауле</strong> — отличный выбор для начинающих и практикующих мастеров: обучение мужским стрижкам, укладкам, а также моделированию бороды и усов.</p>
+<p>Вы освоите техники «Фэйд», «Андеркат», «Side part» и научитесь работать с профессиональными инструментами.</p>
+<p>За <strong class="m-accent">116 академических часов</strong> — практика на живых моделях и <strong class="linkish">диплом специалиста</strong>.</p>
+</section>
+<section class="neo-section">
+<h4 class="neo-h4">Программа обучения</h4>
+<ul class="neo-pills">
+<li>⏱ 116 ч</li>
+<li>📚 22 урока</li>
+<li>✂️ 11 процедур</li>
+<li>🗓 2–3 месяца</li>
+</ul>
+<div class="neo-table">
+<table>
+<thead>
+<tr>
+<th>📦 Блок</th>
+<th>⏱ Часы / Уроки</th>
+<th>📚 Темы</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>🔰 Блок мужских стрижек</td>
+<td><span class="m-accent">64 ч</span> / 16 уроков</td>
+<td>Основные техники стрижек, работа с инструментами, массаж головы</td>
+</tr>
+<tr>
+<td>📈 Блок барбера. Повышение квалификации</td>
+<td><span class="m-accent">24 ч</span> / 6 уроков</td>
+<td>Техники «Undercut», аналогичные стрижки</td>
+</tr>
+<tr>
+<td>🌟 Свободная практика</td>
+<td><span class="m-accent">28 ч</span> / 0 уроков</td>
+<td>Работа на моделях, составление портфолио</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section class="neo-section pm neo-card">
+<div>
+<h4 class="neo-h4">Плюсы</h4>
+<ul class="pm-list pros">
+<li>Много практики на моделях</li>
+<li>Гарантированное трудоустройство</li>
+<li>Профессиональные наставники</li>
+</ul>
+</div>
+<div>
+<h4 class="neo-h4">Минусы</h4>
+<ul class="pm-list cons">
+<li>Необходимо иметь базовые навыки стрижки</li>
+<li>Интенсивный график обучения</li>
+</ul>
+</div>
+</section>
+<footer class="neo-cta">
+<a href="https://barnaul.ecolespb.ru/barber-school/programm-barber" target="_blank" rel="nofollow" class="btn">📘 На страницу курса</a>
+</footer>
+</article>
+<!--endblok-->
+<div class="section_block" id="barber-quiz" data-theme="light" data-log-endpoint="/inc/quiz-log.php">
+  <div class="qb-box" role="application" aria-label="Квиз — подбор курса барбера">
+    <header class="qb-head">
+      <div class="qb-head-left">
+        <div class="qb-badge" aria-hidden="true">💈</div>
+        <div class="qb-head-titles">
+          <h2 class="qb-title">Подбор курса барбера</h2>
+          <p class="qb-subtitle">Ответьте на 5 вопросов и мы подберем курсы, подходящие именно для вас</p>
+        </div>
+      </div>
+      <div class="qb-steps"><span class="qb-step">0</span>/<span class="qb-total">0</span></div>
+    </header>
+
+    <div class="qb-progress" aria-hidden="true"><div class="qb-progress__bar"></div></div>
+
+    <div class="qb-card">
+      <div class="qb-question">Нажмите «Начать», чтобы подобрать программу обучения.</div>
+      <form class="qb-form" novalidate=""></form>
+      <div class="qb-actions">
+        <button class="qb-btn qb-btn--accent qb-start">Начать</button>
+        <button class="qb-btn qb-btn--ghost qb-prev" disabled="">Назад</button>
+        <button class="qb-btn qb-btn--next qb-next" disabled="">Далее</button>
+      </div>
+    </div>
+
+    <!-- Финальный экран — только заголовки и три ссылки + «Пройти ещё раз» -->
+    <div class="qb-result" hidden="">
+      <h3 class="qb-result-title">Подборка подходящих курсов</h3>
+      <p class="qb-result-sub">На основе ваших ответов рекомендуем:</p>
+
+      <div class="qb-links3">
+        <a class="qb-link-card qb-link-pro" href="#" target="_blank" rel="noopener">
+          <span class="qb-link-icon" aria-hidden="true">🎯</span>
+          <span class="qb-link-text">Повышение квалификации барбера</span>
+          <span class="qb-link-arrow" aria-hidden="true">↗</span>
+        </a>
+
+        <a class="qb-link-card qb-link-cuts" href="#" target="_blank" rel="noopener">
+          <span class="qb-link-icon" aria-hidden="true">✂️</span>
+          <span class="qb-link-text">Курс мужских стрижек</span>
+          <span class="qb-link-arrow" aria-hidden="true">↗</span>
+        </a>
+
+        <a class="qb-link-card qb-link-master" href="#" target="_blank" rel="noopener">
+          <span class="qb-link-icon" aria-hidden="true">💼</span>
+          <span class="qb-link-text">Профессия: мастер барбершопа</span>
+          <span class="qb-link-arrow" aria-hidden="true">↗</span>
+        </a>
+      </div>
+
+      <div class="qb-result-actions">
+        <button class="qb-btn qb-btn--ghost qb-restart">Пройти ещё раз</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+/* ===== Тема и отступы блока сверху/снизу ===== */
+#barber-quiz{
+  --bg:#fbf7f2; --card:#fff; --text:#2b2b2b; --muted:#6f6f6f;
+  --accent:#c97e45; --accent-press:#b56e3b; --shadow:0 10px 30px rgba(32,22,7,.08);
+  margin-block: clamp(28px, 5vw, 48px);
+}
+
+/* ===== Коробка квиза ===== */
+#barber-quiz .qb-box{
+  max-width:980px; margin:0 auto; color:var(--text);
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+  background:var(--card); border-radius:18px; box-shadow:var(--shadow);
+  padding:clamp(16px,2.2vw,22px);
+}
+
+/* ===== Хедер ===== */
+#barber-quiz .qb-head{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-bottom:12px}
+#barber-quiz .qb-head-left{display:flex;align-items:center;gap:14px}
+#barber-quiz .qb-badge{width:46px;height:46px;border:2px dashed #efdcc9;border-radius:14px;display:grid;place-items:center;font-size:22px;background:#fff}
+#barber-quiz .qb-title{margin:0;font-size:clamp(20px,2.4vw,28px);font-weight:800}
+#barber-quiz .qb-subtitle{margin:4px 0 0;color:var(--muted)}
+#barber-quiz .qb-steps{color:var(--muted);white-space:nowrap}
+
+/* ===== Прогресс ===== */
+#barber-quiz .qb-progress{height:8px;background:#f0e6db;border-radius:999px;overflow:hidden;margin:6px 0 16px}
+#barber-quiz .qb-progress__bar{height:100%;width:0;background:linear-gradient(90deg,var(--accent),#e2aa78);transition:width .35s ease;border-radius:999px}
+
+/* ===== Карточка с вопросами ===== */
+#barber-quiz .qb-card{background:transparent;border-radius:14px;padding:0}
+#barber-quiz .qb-question{font-size:clamp(18px,2.1vw,22px);line-height:1.45;margin:0 0 12px}
+#barber-quiz .qb-actions{display:flex;gap:12px;justify-content:center;margin-top:14px;flex-wrap:wrap}
+#barber-quiz .qb-btn{border:0;border-radius:14px;padding:12px 18px;font-weight:700;cursor:pointer;transition:.2s}
+#barber-quiz .qb-btn[disabled]{opacity:.5;cursor:not-allowed}
+#barber-quiz .qb-btn--accent{background:var(--accent);color:#fff}
+#barber-quiz .qb-btn--accent:hover{background:var(--accent-press)}
+#barber-quiz .qb-btn--ghost{background:transparent;border:1px dashed #e0cdb9;color:#6a594a}
+#barber-quiz .qb-btn--next{background:#d9cbbc;color:#4d3b2c}
+
+/* ===== Финальный экран (упрощённый) ===== */
+#barber-quiz .qb-result{
+  margin-top:12px;background:#fff;border-radius:14px;padding:18px;border:1px dashed #efdcc9
+}
+#barber-quiz .qb-result-title{margin:.2rem 0 .4rem;font-size:clamp(18px,2.2vw,24px)}
+#barber-quiz .qb-result-sub{margin:0 0 .8rem;color:var(--muted)}
+
+/* Список из 3 ссылок — карточки */
+#barber-quiz .qb-links3{display:grid;gap:10px}
+#barber-quiz .qb-link-card{
+  display:flex; align-items:center; gap:12px;
+  padding:14px 16px; border:1px solid #efe3d6; border-radius:14px;
+  background:#fbf7f2; text-decoration:none; color:#4d3b2c;
+  transition:transform .18s ease, box-shadow .18s ease, background .18s ease;
+}
+#barber-quiz .qb-link-card:hover{
+  transform:translateY(-1px); box-shadow:var(--shadow); background:#fff;
+}
+#barber-quiz .qb-link-icon{font-size:18px; line-height:1}
+#barber-quiz .qb-link-text{flex:1; font-weight:700}
+#barber-quiz .qb-link-arrow{opacity:.7}
+
+/* Кнопка «Пройти ещё раз» */
+#barber-quiz .qb-result-actions{display:flex;justify-content:center;margin-top:12px}
+@media (max-width:600px){
+  #barber-quiz .qb-head{align-items:flex-start;gap:10px}
+  #barber-quiz .qb-steps{margin-left:auto}
+}
+</style>
+
+<script>
+(() => {
+  const root = document.getElementById('barber-quiz');
+  if (!root) return;
+
+  // ===== Метрика (глобальный ym уже подключён в <head>) =====
+  const METRIKA_ID = 104699306;
+  const goal = (name, params) => {
+    if (typeof ym === 'function') {
+      try { ym(METRIKA_ID, 'reachGoal', name, params || {}); } catch (e) {}
+    }
+  };
+
+  // ===== Логирование на сервер (если доступно PHP) =====
+  const LOG_ENDPOINT = root.dataset.logEndpoint || '/inc/quiz-log.php';
+  const sendLog = (payload) => {
+    try {
+      fetch(LOG_ENDPOINT, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
+        credentials: 'same-origin',
+        keepalive: true
+      }).catch(()=>{});
+    } catch(e){}
+  };
+
+  // Конфиг из PHP
+  const STEPS = [{"key":"experience","title":"Ваш опыт в мужских стрижках","type":"radio","opts":[{"v":"zero","label":"Совсем с нуля"},{"v":"junior","label":"До 6 месяцев"},{"v":"pro","label":"1 год и больше"}]},{"key":"goal","title":"Цель обучения","type":"radio","opts":[{"v":"profession","label":"Освоить профессию барбера"},{"v":"skills","label":"Прокачать технику стрижек"},{"v":"shave","label":"Бритьё/борода и камуфляж"}]},{"key":"format","title":"Предпочтительный формат","type":"radio","opts":[{"v":"offline","label":"Очно"},{"v":"online","label":"Онлайн"},{"v":"hybrid","label":"Гибрид (очно + онлайн)"}]},{"key":"schedule","title":"Удобное время занятий","type":"radio","opts":[{"v":"weekday_day","label":"Будни (днём)"},{"v":"weekday_even","label":"Будни (вечером)"},{"v":"weekend","label":"Выходные"}]},{"key":"budget","title":"Ориентир по бюджету","type":"radio","opts":[{"v":"low","label":"Эконом"},{"v":"mid","label":"Стандарт"},{"v":"premium","label":"Премиум"}]}];
+  const TOTAL = STEPS.length;
+
+  // DOM
+  const stepCur = root.querySelector('.qb-step');
+  const stepTot = root.querySelector('.qb-total');
+  const progress= root.querySelector('.qb-progress__bar');
+  const qEl     = root.querySelector('.qb-question');
+  const form    = root.querySelector('.qb-form');
+  const start   = root.querySelector('.qb-start');
+  const prev    = root.querySelector('.qb-prev');
+  const next    = root.querySelector('.qb-next');
+
+  const result  = root.querySelector('.qb-result');
+  const restart = root.querySelector('.qb-restart');
+
+  // 3 финальные ссылки
+  const linkPro    = root.querySelector('.qb-link-pro');
+  const linkCuts   = root.querySelector('.qb-link-cuts');
+  const linkMaster = root.querySelector('.qb-link-master');
+
+  stepTot.textContent = TOTAL;
+
+  // Служебные переменные для логов
+  const sessionId = Math.random().toString(36).slice(2) + Date.now();
+  const startedAt = { ts: 0 };
+  let i = -1;                 // текущий шаг (-1 = экран «начать»)
+  const answers = {};         // ответы пользователя
+  const stepsTime = [];       // тайминги на шаг
+
+  function selected(type){
+    if (type === 'checkbox') return form.querySelectorAll('input[type="checkbox"]:checked').length > 0;
+    return !!form.querySelector('input[type="radio"]:checked');
+  }
+  function read(type){
+    if (type === 'checkbox') return Array.from(form.querySelectorAll('input[type="checkbox"]:checked')).map(i=>i.value);
+    const r = form.querySelector('input[type="radio"]:checked');
+    return r ? r.value : null;
+  }
+  function save(){
+    const s = STEPS[i]; if (!s) return false;
+    const v = read(s.type);
+    if (v === null || (Array.isArray(v) && !v.length)) return false;
+    answers[s.key] = v;
+
+    // Метрика: шаг
+    goal('qb_step', { step_key: s.key, step_index: i+1 });
+
+    // Локальный лог тайминга шага
+    stepsTime.push({ key: s.key, index: i+1, ts: Date.now() });
+    return true;
+  }
+
+  function render(idx){
+    const s = STEPS[idx]; if (!s) return;
+    stepCur.textContent = idx + 1;
+    progress.style.width = (idx / TOTAL * 100) + '%';
+    qEl.textContent = s.title;
+
+    form.innerHTML = '';
+    const wrap = document.createElement('div');
+    wrap.className = 'qb-fields section_block';
+
+    (s.opts || []).forEach((opt, k) => {
+      const id = `qb_barber-quiz_${s.key}_${k}`;
+      const label = document.createElement('label');
+      label.className = 'section_p';
+      label.style.display = 'flex';
+      label.style.alignItems = 'center';
+      label.style.gap = '10px';
+
+      const input = document.createElement('input');
+      input.type  = (s.type === 'checkbox') ? 'checkbox' : 'radio';
+      input.name  = s.key + (s.type === 'checkbox' ? '[]' : '');
+      input.value = opt.v;
+      input.id    = id;
+      input.required = (s.type !== 'checkbox');
+
+      const span = document.createElement('span');
+      span.textContent = opt.label;
+
+      label.appendChild(input);
+      label.appendChild(span);
+      wrap.appendChild(label);
+    });
+
+    form.appendChild(wrap);
+
+    // восстановление выбора
+    if (answers[s.key] !== undefined){
+      const vals = Array.isArray(answers[s.key]) ? answers[s.key] : [answers[s.key]];
+      form.querySelectorAll('input').forEach(inp => { if (vals.includes(inp.value)) inp.checked = true; });
+    }
+
+    start.style.display = 'none';
+    prev.disabled = (idx === 0);
+    next.disabled = !selected(s.type);
+  }
+
+  function finish(){
+    progress.style.width = '100%';
+
+    // Определяем город/поддомен по названию страницы (og:url → последний сегмент)
+    const extractKey = (urlStr) => {
+      try {
+        const u = new URL(urlStr, location.origin);
+        let last = (u.pathname || '').split('/').filter(Boolean).pop() || '';
+        last = last.replace(/\.(?:html?|php)$/i, '').toLowerCase();
+        return last || 'index';
+      } catch(e){ return 'index'; }
+    };
+    const metaOg = document.querySelector('meta[property="og:url"]');
+    let pageKey = metaOg && metaOg.content ? extractKey(metaOg.content) : extractKey(location.href);
+
+    // Словарь: ключ_страницы → slug рекламодателя
+    const pageToAdvSlug = {
+      'index':'spb',
+      'moscow':'moscow','spb':'spb','arhangelsk':'arhangelsk','astrahan':'astrahan','balashikha':'balashikha',
+      'barnaul':'barnaul','vladivostok':'vladivostok','vladimir':'vladimir','volgograd':'volgograd','voronezh':'voronezh',
+      'ekb':'ekb','ivanovo':'ivanovo','izhevsk':'izhevsk','irkutsk':'irkutsk','ioshkar-ola':'ioshkar-ola',
+      'kazan':'kazan','kaliningrad':'kaliningrad','kemerovo':'kemerovo','kirov':'kirov','kovrov':'kovrov',
+      'krasnodar':'krasnodar','krasnoyarsk':'krasnoyarsk','kurgan':'kurgan','lipetsk':'lipetsk','lyubercy':'lyubercy',
+      'mytishchi':'mytishchi','naberezhnye-chelny':'naberezhnye-chelny','nizniy-novgorod':'nizniy-novgorod',
+      'novokuznetsk':'novokuznetsk','novosibirsk':'novosibirsk','noviy-urengoy':'noviy-urengoy','noginsk':'noginsk',
+      'omsk':'omsk','orenburg':'orenburg','orsk':'orsk','penza':'penza','perm':'perm','rostov-na-donu':'rostov-na-donu',
+      'ryazan':'ryazan','samara':'samara','saratov':'saratov','sevastopol':'sevastopol','stavropol':'stavropol',
+      'surgut':'surgut','tver':'tver','tolyatti':'tolyatti','tomsk':'tomsk','tula':'tula','tumen':'tumen',
+      'ulyanovsk':'ulyanovsk','ufa':'ufa','khimki':'khimki','cheboksary':'cheboksary','chelyabinsk':'chelyabinsk',
+      'yaroslavl':'yaroslavl',
+      // Алиасы
+      'balashiha':'balashikha','ekaterinburg':'ekb','yoshkar-ola':'ioshkar-ola','nizhny-novgorod':'nizniy-novgorod',
+      'tyumen':'tumen','moskva':'moscow','sankt-peterburg':'spb'
+    };
+
+    const advSlug = pageToAdvSlug[pageKey] || 'spb';
+    const hostBySlug = (slug) => (slug === 'spb' ? 'ecolespb.ru' : `${slug}.ecolespb.ru`);
+    const host = hostBySlug(advSlug);
+
+    const makeGo = (path) =>
+      `https://go.2038.pro/3b6bc242f51d5261?erid=LdtCKaoMZ&m=2&dl=https://${host}/barber-school/${path}&sub1=quiz-barber&sub2=kursy-barbera.vercel.app`;
+
+    const urlPro    = makeGo('barber_course');
+    const urlCuts   = makeGo('kursy-muzhskix-strizhek');   // ← оставлено как в твоём коде
+    const urlMaster = makeGo('programm-barber');           // ← оставлено как в твоём коде
+
+    if (linkPro)    linkPro.href = urlPro;
+    if (linkCuts)   linkCuts.href = urlCuts;
+    if (linkMaster) linkMaster.href = urlMaster;
+
+    // Метрика: финиш
+    const finishedAt = Date.now();
+    const totalMs = startedAt.ts ? (finishedAt - startedAt.ts) : null;
+    goal('qb_finish', { duration_ms: totalMs });
+
+    // Лог на сервер
+    sendLog({
+      type: 'finish',
+      session_id: sessionId,
+      page: location.href,
+      page_key: pageKey,
+      adv_slug: advSlug,
+      started_at: startedAt.ts || null,
+      finished_at: finishedAt,
+      duration_ms: totalMs,
+      steps_time: stepsTime,
+      answers
+    });
+
+    // Вешаем клики по ссылкам в Метрику
+    if (linkPro)    linkPro.addEventListener('click',  () => goal('qb_click_pro'),   { once:true });
+    if (linkCuts)   linkCuts.addEventListener('click', () => goal('qb_click_cuts'),  { once:true });
+    if (linkMaster) linkMaster.addEventListener('click',() => goal('qb_click_master'),{ once:true });
+
+    // Переход к финальному экрану
+    result.hidden = false;
+    root.querySelector('.qb-card').style.display = 'none';
+
+    // Перезапуск
+    restart.addEventListener('click', (e) => {
+      e.preventDefault();
+      goal('qb_restart');
+
+      sendLog({ type:'restart', session_id: sessionId, page: location.href, ts: Date.now() });
+
+      Object.keys(answers).forEach(k => delete answers[k]);
+      stepsTime.length = 0;
+      i = -1;
+      result.hidden = true;
+      root.querySelector('.qb-card').style.display = '';
+      start.style.display = '';
+      prev.disabled = true;
+      next.disabled = true;
+      progress.style.width = '0%';
+      stepCur.textContent = '0';
+      form.innerHTML = '';
+      qEl.textContent = 'Нажмите «Начать», чтобы подобрать программу обучения.';
+    }, { once: true });
+  }
+
+  function nextStep(){
+    if (i >= 0) { if (!save()) return; }
+    i++;
+    if (i >= TOTAL) { finish(); return; }
+    render(i);
+  }
+  function prevStep(){ if (i <= 0) { i = 0; render(i); return; } i--; render(i); }
+
+  // Лисенеры
+  form.addEventListener('change', () => {
+    const s = STEPS[i]; if (!s) return;
+    next.disabled = !selected(s.type);
+  });
+
+  start.addEventListener('click', e => {
+    e.preventDefault();
+    // Метрика: старт
+    goal('qb_start');
+
+    // Стартовые отметки
+    startedAt.ts = Date.now();
+    stepsTime.length = 0;
+
+    // Лог на сервер
+    sendLog({
+      type: 'start',
+      session_id: sessionId,
+      page: location.href,
+      ts: startedAt.ts,
+      ua: navigator.userAgent || '',
+      ref: document.referrer || ''
+    });
+
+    nextStep();
+  });
+
+  next .addEventListener('click', e => { e.preventDefault(); nextStep(); });
+  prev .addEventListener('click', e => { e.preventDefault(); prevStep(); });
+})();
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+<!--startblok-->
+<article class="course-card neo" itemscope="" itemtype="https://schema.org/Course">
+  <div class="neo-head">
+    <span class="badge-num"></span>
+    <h3 class="neo-title" itemprop="name">Стилист по волосам</h3>
+    <div class="neo-sub">🎓 Skillbox — <span class="linkish">Образовательная платформа с лицензией на обучение</span></div>
+  </div>
+
+  <div class="neo-body">
+    <ul class="neo-meta">
+      <li>⏱ <span class="m-key">Продолжительность:</span> <span class="m-accent">96 ак. часов</span> (3 месяца)</li>
+      <li>📜 <span class="m-key">Документ после обучения:</span> <span class="linkish">Сертификат о прохождении Skillbox *</span></li>
+      <li>📅 <span class="m-key">Рассрочка:</span> <span class="m-accent">2 968 ₽/мес.</span> (12 месяцев)</li>
+      <li>💵 <span class="m-key">Полная стоимость:</span> <span class="m-accent">35 617 ₽</span> <span class="m-old">59 362 ₽</span></li>
+      <li>🔥 <span class="m-key">Скидка:</span> <span class="m-hot">40%</span> в рамках сезонной акции</li>
+      <li>📍 <span class="m-key">Адрес:</span> г. Москва, б-р Смоленский, д. 24, стр. 2, помещ. 1/3</li>
+      <li>📞 <span class="m-key">Телефон:</span> <a href="tel:+78006007847" class="tel">8 800 600-78-47</a></li>
+      <li>🌐 <span class="m-key">Сайт:</span> <a href="https://go.avck.ws/e8492c3f5f084560?erid=2VfnxvfxmGL&m=1" target="_blank" rel="nofollow" class="linkish">skillbox.ru</a></li>
+    </ul>
+  </div>
+
+  <section class="neo-section">
+    <h4 class="neo-h4">О курсе</h4>
+    <p><strong>Курс «Стилист по волосам» в Москве</strong> — для новичков и практикующих мастеров: гибкий онлайн-формат с куратором, акцент на укладки под съёмки, свадьбы и вечерние образы.</p>
+    <p>Изучите подбор инструментов и стайлинга, работу с разными типами волос, выпрямление брашингом и утюжком, объём, локоны, голливудскую волну, хвосты и пучки, а также тренды и постановку портфолио.</p>
+    <p>За <strong class="m-accent">96 академических часов</strong> — практика на разных типах внешности, разбор домашних заданий куратором, 10 укладок в портфолио и <span class="linkish">сертификат</span>.</p>
+  </section>
+
+  <section class="neo-section">
+    <h4 class="neo-h4">Программа обучения</h4>
+
+    <ul class="neo-pills">
+      <li>⏱ 96 ч</li>
+      <li>📚 24 урока</li>
+      <li>✂️ 10 укладок</li>
+      <li>🗓 3 месяца</li>
+    </ul>
+
+    <div class="neo-table">
+      <table>
+        <thead>
+          <tr>
+            <th>📦 Блок</th>
+            <th>⏱ Часы / Уроки</th>
+            <th>📚 Темы</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Знакомство с профессией</td>
+            <td><span class="m-accent">8 ч</span> / 2 урока</td>
+            <td>Инструменты и стайлинг, подготовка волос, безопасность и санитарные нормы</td>
+          </tr>
+          <tr>
+            <td>Проборы и прикорневой объём</td>
+            <td><span class="m-accent">10 ч</span> / 3 урока</td>
+            <td>Схемы проборов, техника брашинга, объём для тонких волос</td>
+          </tr>
+          <tr>
+            <td>Выпрямление и гладкость</td>
+            <td><span class="m-accent">10 ч</span> / 3 урока</td>
+            <td>Выпрямление брашингом, утюжок, термозащита, финишная полировка</td>
+          </tr>
+          <tr>
+            <td>Классические локоны</td>
+            <td><span class="m-accent">12 ч</span> / 3 урока</td>
+            <td>Плойка, фиксация, вариации диаметра и направления накрутки</td>
+          </tr>
+          <tr>
+            <td>Surf-локоны на утюжок</td>
+            <td><span class="m-accent">8 ч</span> / 2 урока</td>
+            <td>Эффект небрежности, beach-texture, средства текстурирования</td>
+          </tr>
+          <tr>
+            <td>Голливудская волна</td>
+            <td><span class="m-accent">8 ч</span> / 2 урока</td>
+            <td>Разметка, гребень-хвостик, фиксация клипсами, полировка волны</td>
+          </tr>
+          <tr>
+            <td>Хвосты</td>
+            <td><span class="m-accent">8 ч</span> / 2 урока</td>
+            <td>Низкий/высокий хвост, гладкие и объёмные варианты, маскировка резинки</td>
+          </tr>
+          <tr>
+            <td>Пучки</td>
+            <td><span class="m-accent">8 ч</span> / 2 урока</td>
+            <td>Невесомый, балетный, текстурный пучок, шпильки и невидимки</td>
+          </tr>
+          <tr>
+            <td>Укладки на короткие волосы</td>
+            <td><span class="m-accent">8 ч</span> / 2 урока</td>
+            <td>Текстура, объём у лица, работа с чёлкой и вихрами</td>
+          </tr>
+          <tr>
+            <td>Тонкие и редкие волосы</td>
+            <td><span class="m-accent">6 ч</span> / 1 урок</td>
+            <td>Деликатный объём, выбор стайлинга, визуальные лайфхаки</td>
+          </tr>
+          <tr>
+            <td>Свадебные и вечерние укладки</td>
+            <td><span class="m-accent">6 ч</span> / 1 урок</td>
+            <td>ТЗ клиента, подбор образа, стойкость на мероприятии</td>
+          </tr>
+          <tr>
+            <td>Тренды и съёмка</td>
+            <td><span class="m-accent">4 ч</span> / 1 урок</td>
+            <td>Работа в кадре, бриф стилиста, сборка портфолио и контента</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="neo-section pm neo-card">
+    <div>
+      <h4 class="neo-h4">Плюсы</h4>
+      <ul class="pm-list pros">
+        <li>Лайфхаки от звёздного стилиста и живая обратная связь</li>
+        <li>Практика на разных типах волос и внешности</li>
+        <li>Доступ к материалам навсегда + год английского языка</li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="neo-h4">Минусы</h4>
+      <ul class="pm-list cons">
+        <li>Онлайн-формат требует высокой самоорганизации</li>
+        <li>Интенсивные практические задания</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer class="neo-cta">
+    <a href="https://go.avck.ws/e8492c3f5f084560?erid=2VfnxvfxmGL&m=1" target="_blank" rel="nofollow" class="btn">📘 На страницу курса</a>
+  </footer>
+</article>
+<!--endblok-->
+
+  </div>
+</section>
+
+<section id="faq" class="faq">
+  <div class="container">
+    <h2 class="section-title">FAQ об обучении барберов и мужских стрижках</h2>
+
+    <div class="faq-accordion" role="list">
+            <details class="faq-item" open="" role="listitem">
+        <summary class="faq-q" id="faq-q-1" aria-controls="faq-a-1">
+          <span>Сколько стоит обучение на барбера в Барнауле и от чего зависит цена?</span>
+          <svg aria-hidden="true" width="18" height="18" viewbox="0 0 24 24" fill="none">
+            <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </summary>
+        <div class="faq-a" id="faq-a-1" aria-labelledby="faq-q-1">
+          <p>Базовые курсы мужских стрижек в Барнауле стартуют от 15 000–30 000 ₽. Профпрограмма «барбер с нуля» с практикой на моделях и модулем по бритью/бороде обычно стоит 45 000–90 000 ₽. На стоимость влияют формат (очно/онлайн/гибрид), длительность, количество отработок на моделях, наличие диплома/сертификата и состав преподавателей.</p>
+        </div>
+      </details>
+            <details class="faq-item" role="listitem">
+        <summary class="faq-q" id="faq-q-2" aria-controls="faq-a-2">
+          <span>Какой курс выбрать: «Мастер барбершопа», «Курсы мужских стрижек» или «Повышение квалификации»?</span>
+          <svg aria-hidden="true" width="18" height="18" viewbox="0 0 24 24" fill="none">
+            <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </summary>
+        <div class="faq-a" id="faq-a-2" aria-labelledby="faq-q-2">
+          <p>Если вы начинаете с нуля и хотите профессию — выбирайте длинную программу уровня «Мастер барбершопа» (мужские стрижки, фейды, бритьё опасной бритвой, борода, санитария, сервис, портфолио). Если задача — быстро научиться стричь базу — подойдут «Курсы мужских стрижек». Уже практикующим мастерам — «Повышение квалификации»: фейды High/Mid/Low, контуры, undercut/side part/британка, камуфляж бороды.</p>
+        </div>
+      </details>
+            <details class="faq-item" role="listitem">
+        <summary class="faq-q" id="faq-q-3" aria-controls="faq-a-3">
+          <span>Можно ли обучаться на барбера без опыта парикмахера?</span>
+          <svg aria-hidden="true" width="18" height="18" viewbox="0 0 24 24" fill="none">
+            <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </summary>
+        <div class="faq-a" id="faq-a-3" aria-labelledby="faq-q-3">
+          <p>Да. Программы «с нуля» рассчитаны на новичков: вы освоите работу машинкой и ножницами, тушёвку и окантовку, правила санитарии, основы бритья и моделирования бороды. Практика идёт на реальных моделях под контролем наставника.</p>
+        </div>
+      </details>
+            <details class="faq-item" role="listitem">
+        <summary class="faq-q" id="faq-q-4" aria-controls="faq-a-4">
+          <span>Сколько длится обучение и сколько практики по мужским стрижкам и бритью предусмотрено?</span>
+          <svg aria-hidden="true" width="18" height="18" viewbox="0 0 24 24" fill="none">
+            <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </summary>
+        <div class="faq-a" id="faq-a-4" aria-labelledby="faq-q-4">
+          <p>Длительность зависит от формата: интенсивы идут 2–4 дня/1–2 недели, базовые курсы — 1–2 месяца, профессия барбера — 2–3 месяца. На хороших программах не менее 60–80% времени — практика на моделях: фейды, окантовка, работа опасной бритвой, борода и укладки.</p>
+        </div>
+      </details>
+            <details class="faq-item" role="listitem">
+        <summary class="faq-q" id="faq-q-5" aria-controls="faq-a-5">
+          <span>Что входит в программу обучения барбера?</span>
+          <svg aria-hidden="true" width="18" height="18" viewbox="0 0 24 24" fill="none">
+            <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </summary>
+        <div class="faq-a" id="faq-a-5" aria-labelledby="faq-q-5">
+          <p>Типовой модульный план: техники мужских стрижек (линия/градуировка/слои), фейды High/Mid/Low, машинка и ножницы на расчёске, окантовка и контуры, классическое бритьё и работа опасной бритвой, моделирование бороды/усов, укладки и стайлинг, санитария и стерилизация, сервис и коммуникация с клиентом, сбор портфолио.</p>
+        </div>
+      </details>
+            <details class="faq-item" role="listitem">
+        <summary class="faq-q" id="faq-q-6" aria-controls="faq-a-6">
+          <span>Какой документ я получу по итогам: сертификат или диплом?</span>
+          <svg aria-hidden="true" width="18" height="18" viewbox="0 0 24 24" fill="none">
+            <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </summary>
+        <div class="faq-a" id="faq-a-6" aria-labelledby="faq-q-6">
+          <p>После завершения курса выдаётся сертификат/диплом учебного центра, подтверждающий квалификацию по направлению «барбер» или «мужские стрижки». Документ помогает при трудоустройстве и повышает доверие клиентов при частной практике.</p>
+        </div>
+      </details>
+            <details class="faq-item" role="listitem">
+        <summary class="faq-q" id="faq-q-7" aria-controls="faq-a-7">
+          <span>Есть ли помощь с трудоустройством после обучения в Барнауле?</span>
+          <svg aria-hidden="true" width="18" height="18" viewbox="0 0 24 24" fill="none">
+            <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </summary>
+        <div class="faq-a" id="faq-a-7" aria-labelledby="faq-q-7">
+          <p>Во многих школах предусмотрены стажировки, рекомендации выпускников в барбершопы-партнёры и помощь с составлением портфолио. На профкурсах «барбер с нуля» часто есть карьерное сопровождение до первого места работы.</p>
+        </div>
+      </details>
+            <details class="faq-item" role="listitem">
+        <summary class="faq-q" id="faq-q-8" aria-controls="faq-a-8">
+          <span>В каком формате проходит обучение: очно, онлайн или гибрид?</span>
+          <svg aria-hidden="true" width="18" height="18" viewbox="0 0 24 24" fill="none">
+            <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </summary>
+        <div class="faq-a" id="faq-a-8" aria-labelledby="faq-q-8">
+          <p>Доступны все три формата. Онлайн подойдёт для теории (видео, разборы, домашние задания), а ключевые навыки — фейды, окантовка, бритьё, борода — лучше отрабатывать очно на моделях. Популярный вариант — гибрид: теория онлайн + практика в студии в Барнауле.</p>
+        </div>
+      </details>
+            <details class="faq-item" role="listitem">
+        <summary class="faq-q" id="faq-q-9" aria-controls="faq-a-9">
+          <span>Какие инструменты нужны новичку-барберу и выдают ли их на курсе?</span>
+          <svg aria-hidden="true" width="18" height="18" viewbox="0 0 24 24" fill="none">
+            <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </summary>
+        <div class="faq-a" id="faq-a-9" aria-labelledby="faq-q-9">
+          <p>Базовый сет: машинка с насадками, триммер, ножницы (прямые/филировочные), расчёски, бритва (shavette/опасная), накидка, зажимы, пульверизатор, средства до/после бритья. На занятиях инструменты часто предоставляются; для практики и работы после курса рекомендуют собрать личный набор.</p>
+        </div>
+      </details>
+            <details class="faq-item" role="listitem">
+        <summary class="faq-q" id="faq-q-10" aria-controls="faq-a-10">
+          <span>Какие требования по безопасности и санитарии при мужских стрижках и бритье?</span>
+          <svg aria-hidden="true" width="18" height="18" viewbox="0 0 24 24" fill="none">
+            <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </summary>
+        <div class="faq-a" id="faq-a-10" aria-labelledby="faq-q-10">
+          <p>Обязательны дезинфекция и стерилизация инструментов, одноразовые лезвия и расходники, перчатки при бритье, соблюдение протоколов обработки и правил гигиены клиента. На курсе дают полноценный блок по санитарии и работе с чувствительной кожей/противопоказаниями.</p>
+        </div>
+      </details>
+            <details class="faq-item" role="listitem">
+        <summary class="faq-q" id="faq-q-11" aria-controls="faq-a-11">
+          <span>Есть ли рассрочка оплаты и какие условия переноса занятий?</span>
+          <svg aria-hidden="true" width="18" height="18" viewbox="0 0 24 24" fill="none">
+            <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </summary>
+        <div class="faq-a" id="faq-a-11" aria-labelledby="faq-q-11">
+          <p>Часто доступна рассрочка без переплат и сезонные скидки. Условия переноса/возврата прописаны в договоре: убедитесь, что понимаете сроки уведомления, заморозку обучения и правила перевода на другую группу.</p>
+        </div>
+      </details>
+            <details class="faq-item" role="listitem">
+        <summary class="faq-q" id="faq-q-12" aria-controls="faq-a-12">
+          <span>Когда после обучения можно начинать брать клиентов и какой средний чек по мужским стрижкам в Барнауле?</span>
+          <svg aria-hidden="true" width="18" height="18" viewbox="0 0 24 24" fill="none">
+            <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </summary>
+        <div class="faq-a" id="faq-a-12" aria-labelledby="faq-q-12">
+          <p>После 5–7 отработок на моделях большинство выпускников уверенно берут первых клиентов (часто уже во время обучения). Средний чек за мужскую стрижку в Барнауле зависит от района и уровня барбершопа; ориентируйтесь на локальные цены и свой уровень — на старте ниже среднего, затем рост с накоплением портфолио.</p>
+        </div>
+      </details>
+          </div>
+  </div>
+
+  <!-- JSON-LD для FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+            {
+        "@type": "Question",
+        "name": "Сколько стоит обучение на барбера в Барнауле и от чего зависит цена?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Базовые курсы мужских стрижек в Барнауле стартуют от 15 000–30 000 ₽. Профпрограмма «барбер с нуля» с практикой на моделях и модулем по бритью/бороде обычно стоит 45 000–90 000 ₽. На стоимость влияют формат (очно/онлайн/гибрид), длительность, количество отработок на моделях, наличие диплома/сертификата и состав преподавателей."
+        }
+      },            {
+        "@type": "Question",
+        "name": "Какой курс выбрать: «Мастер барбершопа», «Курсы мужских стрижек» или «Повышение квалификации»?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Если вы начинаете с нуля и хотите профессию — выбирайте длинную программу уровня «Мастер барбершопа» (мужские стрижки, фейды, бритьё опасной бритвой, борода, санитария, сервис, портфолио). Если задача — быстро научиться стричь базу — подойдут «Курсы мужских стрижек». Уже практикующим мастерам — «Повышение квалификации»: фейды High/Mid/Low, контуры, undercut/side part/британка, камуфляж бороды."
+        }
+      },            {
+        "@type": "Question",
+        "name": "Можно ли обучаться на барбера без опыта парикмахера?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Да. Программы «с нуля» рассчитаны на новичков: вы освоите работу машинкой и ножницами, тушёвку и окантовку, правила санитарии, основы бритья и моделирования бороды. Практика идёт на реальных моделях под контролем наставника."
+        }
+      },            {
+        "@type": "Question",
+        "name": "Сколько длится обучение и сколько практики по мужским стрижкам и бритью предусмотрено?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Длительность зависит от формата: интенсивы идут 2–4 дня/1–2 недели, базовые курсы — 1–2 месяца, профессия барбера — 2–3 месяца. На хороших программах не менее 60–80% времени — практика на моделях: фейды, окантовка, работа опасной бритвой, борода и укладки."
+        }
+      },            {
+        "@type": "Question",
+        "name": "Что входит в программу обучения барбера?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Типовой модульный план: техники мужских стрижек (линия/градуировка/слои), фейды High/Mid/Low, машинка и ножницы на расчёске, окантовка и контуры, классическое бритьё и работа опасной бритвой, моделирование бороды/усов, укладки и стайлинг, санитария и стерилизация, сервис и коммуникация с клиентом, сбор портфолио."
+        }
+      },            {
+        "@type": "Question",
+        "name": "Какой документ я получу по итогам: сертификат или диплом?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "После завершения курса выдаётся сертификат/диплом учебного центра, подтверждающий квалификацию по направлению «барбер» или «мужские стрижки». Документ помогает при трудоустройстве и повышает доверие клиентов при частной практике."
+        }
+      },            {
+        "@type": "Question",
+        "name": "Есть ли помощь с трудоустройством после обучения в Барнауле?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Во многих школах предусмотрены стажировки, рекомендации выпускников в барбершопы-партнёры и помощь с составлением портфолио. На профкурсах «барбер с нуля» часто есть карьерное сопровождение до первого места работы."
+        }
+      },            {
+        "@type": "Question",
+        "name": "В каком формате проходит обучение: очно, онлайн или гибрид?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Доступны все три формата. Онлайн подойдёт для теории (видео, разборы, домашние задания), а ключевые навыки — фейды, окантовка, бритьё, борода — лучше отрабатывать очно на моделях. Популярный вариант — гибрид: теория онлайн + практика в студии в Барнауле."
+        }
+      },            {
+        "@type": "Question",
+        "name": "Какие инструменты нужны новичку-барберу и выдают ли их на курсе?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Базовый сет: машинка с насадками, триммер, ножницы (прямые/филировочные), расчёски, бритва (shavette/опасная), накидка, зажимы, пульверизатор, средства до/после бритья. На занятиях инструменты часто предоставляются; для практики и работы после курса рекомендуют собрать личный набор."
+        }
+      },            {
+        "@type": "Question",
+        "name": "Какие требования по безопасности и санитарии при мужских стрижках и бритье?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Обязательны дезинфекция и стерилизация инструментов, одноразовые лезвия и расходники, перчатки при бритье, соблюдение протоколов обработки и правил гигиены клиента. На курсе дают полноценный блок по санитарии и работе с чувствительной кожей/противопоказаниями."
+        }
+      },            {
+        "@type": "Question",
+        "name": "Есть ли рассрочка оплаты и какие условия переноса занятий?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Часто доступна рассрочка без переплат и сезонные скидки. Условия переноса/возврата прописаны в договоре: убедитесь, что понимаете сроки уведомления, заморозку обучения и правила перевода на другую группу."
+        }
+      },            {
+        "@type": "Question",
+        "name": "Когда после обучения можно начинать брать клиентов и какой средний чек по мужским стрижкам в Барнауле?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "После 5–7 отработок на моделях большинство выпускников уверенно берут первых клиентов (часто уже во время обучения). Средний чек за мужскую стрижку в Барнауле зависит от района и уровня барбершопа; ориентируйтесь на локальные цены и свой уровень — на старте ниже среднего, затем рост с накоплением портфолио."
+        }
+      }          ]
+  }
+  </script>
+
+  <!-- Скрипт: оставляем открытым только один <details> -->
+  <script>
+    document.addEventListener('click', function(e){
+      if(e.target.closest('.faq-item > summary')){
+        const current = e.target.closest('.faq-item');
+        document.querySelectorAll('.faq-item[open]').forEach(d=>{
+          if(d !== current) d.removeAttribute('open');
+        });
+      }
+    });
+  </script>
+</section>
+
+<!-- 🔸 Врезка "Реклама" -->
+<section class="section_block promo-disclaimer" aria-label="Рекламная информация">
+  <div class="container">
+    <p class="section_p note-ads">
+      <strong>Реклама.</strong> Информация о рекламодателе — по ссылкам в статье.
+    </p>
+  </div>
+</section>
+<footer>
+  <div class="container" style="text-align:center; padding:36px 0;">
+    <p class="small" style="margin:0 0 8px;">
+      Лучшие курсы барбера, обучение мужским стрижкам и бритью в городах России. Практика на моделях, диплом, стажировка.
+    </p>
+    <a href="/privacy.html" class="small" style="color:var(--muted); text-decoration:none;">
+      Политика конфиденциальности
+    </a>
+  </div>
+</footer>
+
+<!-- Cookie Notice -->
+<div id="cookieNotice" style="
+  position:fixed;
+  bottom:16px; left:50%;
+  transform:translateX(-50%);
+  background:rgba(255,255,255,0.95);
+  color:var(--ink);
+  border:1px solid var(--line);
+  border-radius:12px;
+  box-shadow:var(--ring);
+  padding:10px 16px;
+  font-size:.85rem;
+  display:flex;
+  align-items:center;
+  gap:8px;
+  z-index:200;
+  max-width:90%;
+">
+  <span>
+    Мы используем cookie для улучшения работы сайта.
+    Подробнее — <a href="privacy.html" style="color:var(--brand); text-decoration:none;">в политике конфиденциальности</a>.
+  </span>
+  <button id="cookieBtn" style="
+    background:var(--brand);
+    color:#fff;
+    border:none;
+    border-radius:8px;
+    padding:6px 10px;
+    font-size:.8rem;
+    cursor:pointer;
+  ">OK</button>
+</div>
+
+<script>
+  // скрыть/показать cookie notice
+  (function(){
+    const box = document.getElementById('cookieNotice');
+    const btn = document.getElementById('cookieBtn');
+    if(localStorage.getItem('cookieAccepted')) box.remove();
+    else btn.addEventListener('click', ()=>{
+      localStorage.setItem('cookieAccepted','1');
+      box.style.opacity='0';
+      setTimeout(()=>box.remove(),300);
+    });
+  })();
+
+  // плавный скролл
+  document.querySelectorAll('a[href^="#"]').forEach(a=>{
+    a.addEventListener('click', e=>{
+      const id=a.getAttribute('href').slice(1);
+      const el=document.getElementById(id);
+      if(el){ e.preventDefault(); el.scrollIntoView({behavior:'smooth', block:'start'}); }
+    });
+  });
+
+  // гамбургер
+  (function(){
+    const nav = document.getElementById('nav');
+    const btn = document.getElementById('menuToggle');
+    const menu = document.getElementById('primary-menu');
+    if(!nav || !btn || !menu) return;
+
+    function toggle(){
+      nav.classList.toggle('open');
+      btn.setAttribute('aria-expanded', nav.classList.contains('open'));
+    }
+    btn.addEventListener('click', toggle);
+    menu.addEventListener('click', e=>{
+      if(e.target.closest('a')){ nav.classList.remove('open'); btn.setAttribute('aria-expanded','false'); }
+    });
+    document.addEventListener('click', e=>{
+      if(nav.classList.contains('open') && !nav.contains(e.target)){
+        nav.classList.remove('open'); btn.setAttribute('aria-expanded','false');
+      }
+    });
+    document.addEventListener('keydown', e=>{
+      if(e.key==='Escape'){ nav.classList.remove('open'); btn.setAttribute('aria-expanded','false'); }
+    });
+  })();
+</script>
+
+</body>
+</html>
