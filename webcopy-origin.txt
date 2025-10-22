@@ -18,12 +18,52 @@ Uri: https://massazh-kursy.ru/barnaul.php
 File Name: C:\Downloaded Web Sites\massazh-kursy.ru\barnaul.php.html
 Content Type: text/html
 
+Uri: https://massazh-kursy.ru/blog-category.php
+File Name: C:\Downloaded Web Sites\massazh-kursy.ru\blog-category.php.html
+Content Type: text/html
+
+Uri: https://massazh-kursy.ru/blog/kak-stat-barberom-s-nulya.php
+File Name: C:\Downloaded Web Sites\massazh-kursy.ru\blog\kak-stat-barberom-s-nulya.php.html
+Content Type: text/html
+
+Uri: https://massazh-kursy.ru/blog/kak-vybrat-kursy-barbera.php
+File Name: C:\Downloaded Web Sites\massazh-kursy.ru\blog\kak-vybrat-kursy-barbera.php.html
+Content Type: text/html
+
+Uri: https://massazh-kursy.ru/blog/komu-podoydet-professiya-barbera.php
+File Name: C:\Downloaded Web Sites\massazh-kursy.ru\blog\komu-podoydet-professiya-barbera.php.html
+Content Type: text/html
+
+Uri: https://massazh-kursy.ru/blog/kursy-muzhskih-strizhek-vs-barbering.php
+File Name: C:\Downloaded Web Sites\massazh-kursy.ru\blog\kursy-muzhskih-strizhek-vs-barbering.php.html
+Content Type: text/html
+
+Uri: https://massazh-kursy.ru/blog/professiya-barbera-start.php
+File Name: C:\Downloaded Web Sites\massazh-kursy.ru\blog\professiya-barbera-start.php.html
+Content Type: text/html
+
+Uri: https://massazh-kursy.ru/blog/skolko-zarabatyvaet-barber-v-rossii.php
+File Name: C:\Downloaded Web Sites\massazh-kursy.ru\blog\skolko-zarabatyvaet-barber-v-rossii.php.html
+Content Type: text/html
+
+Uri: https://massazh-kursy.ru/blog/sovety-nachinayushchemu-barberu.php
+File Name: C:\Downloaded Web Sites\massazh-kursy.ru\blog\sovety-nachinayushchemu-barberu.php.html
+Content Type: text/html
+
 Uri: https://massazh-kursy.ru/cheboksary.php
 File Name: C:\Downloaded Web Sites\massazh-kursy.ru\cheboksary.php.html
 Content Type: text/html
 
 Uri: https://massazh-kursy.ru/chelyabinsk.php
 File Name: C:\Downloaded Web Sites\massazh-kursy.ru\chelyabinsk.php.html
+Content Type: text/html
+
+Uri: https://massazh-kursy.ru/cities/moskva.php
+File Name: C:\Downloaded Web Sites\massazh-kursy.ru\cities\moskva.php.html
+Content Type: text/html
+
+Uri: https://massazh-kursy.ru/cities/sankt-peterburg.php
+File Name: C:\Downloaded Web Sites\massazh-kursy.ru\cities\sankt-peterburg.php.html
 Content Type: text/html
 
 Uri: https://massazh-kursy.ru/default.jpg
@@ -37,6 +77,118 @@ Content Type: text/html
 Uri: https://massazh-kursy.ru/himki.php
 File Name: C:\Downloaded Web Sites\massazh-kursy.ru\himki.php.html
 Content Type: text/html
+
+Uri: https://massazh-kursy.ru/IMUGA/barber-class.jpg
+File Name: C:\Downloaded Web Sites\massazh-kursy.ru\IMUGA\barber-class.jpg
+Content Type: image/jpeg
+
+Uri: https://massazh-kursy.ru/IMUGA/barber-portfolio.jpg
+File Name: C:\Downloaded Web Sites\massazh-kursy.ru\IMUGA\barber-portfolio.jpg
+Content Type: image/jpeg
+
+Uri: https://massazh-kursy.ru/IMUGA/barber-tools.jpg
+File Name: C:\Downloaded Web Sites\massazh-kursy.ru\IMUGA\barber-tools.jpg
+Content Type: image/jpeg
+
+Uri: https://massazh-kursy.ru/IMUGA/barbershop-growth.jpg
+File Name: C:\Downloaded Web Sites\massazh-kursy.ru\IMUGA\barbershop-growth.jpg
+Content Type: image/jpeg
+
+Uri: https://massazh-kursy.ru/IMUGA/kak-stat-barberom-s-nulya.jpg
+File Name: C:\Downloaded Web Sites\massazh-kursy.ru\IMUGA\kak-stat-barberom-s-nulya.jpg
+Content Type: image/jpeg
+
+Uri: https://massazh-kursy.ru/IMUGA/kak-vybrat-kursy-barbera.jpg
+File Name: C:\Downloaded Web Sites\massazh-kursy.ru\IMUGA\kak-vybrat-kursy-barbera.jpg
+Content Type: image/jpeg
+
+Uri: https://massazh-kursy.ru/IMUGA/komu-podoydet-professiya-barbera.jpg
+File Name: C:\Downloaded Web Sites\massazh-kursy.ru\IMUGA\komu-podoydet-professiya-barbera.jpg
+Content Type: image/jpeg
+
+Uri: https://massazh-kursy.ru/IMUGA/komu-podoydet-professiya-barbera1.jpg
+File Name: C:\Downloaded Web Sites\massazh-kursy.ru\IMUGA\komu-podoydet-professiya-barbera1.jpg
+Content Type: image/jpeg
+
+Uri: https://massazh-kursy.ru/IMUGA/komu-podoydet-professiya-barbera3.jpg
+File Name: C:\Downloaded Web Sites\massazh-kursy.ru\IMUGA\komu-podoydet-professiya-barbera3.jpg
+Content Type: image/jpeg
+
+Uri: https://massazh-kursy.ru/IMUGA/komu-podoydet-professiya-barbera7.jpg
+File Name: C:\Downloaded Web Sites\massazh-kursy.ru\IMUGA\komu-podoydet-professiya-barbera7.jpg
+Content Type: image/jpeg
+
+Uri: https://massazh-kursy.ru/IMUGA/kursy-muzhskih-strizhek-vs-barbering.jpg
+File Name: C:\Downloaded Web Sites\massazh-kursy.ru\IMUGA\kursy-muzhskih-strizhek-vs-barbering.jpg
+Content Type: image/jpeg
+
+Uri: https://massazh-kursy.ru/IMUGA/kursy-muzhskih-strizhek-vs-barbering1.jpg
+File Name: C:\Downloaded Web Sites\massazh-kursy.ru\IMUGA\kursy-muzhskih-strizhek-vs-barbering1.jpg
+Content Type: image/jpeg
+
+Uri: https://massazh-kursy.ru/IMUGA/kursy-muzhskih-strizhek-vs-barbering2.jpg
+File Name: C:\Downloaded Web Sites\massazh-kursy.ru\IMUGA\kursy-muzhskih-strizhek-vs-barbering2.jpg
+Content Type: image/jpeg
+
+Uri: https://massazh-kursy.ru/IMUGA/kursy-muzhskih-strizhek-vs-barbering3.jpg
+File Name: C:\Downloaded Web Sites\massazh-kursy.ru\IMUGA\kursy-muzhskih-strizhek-vs-barbering3.jpg
+Content Type: image/jpeg
+
+Uri: https://massazh-kursy.ru/IMUGA/kursy-muzhskih-strizhek-vs-barbering5.jpg
+File Name: C:\Downloaded Web Sites\massazh-kursy.ru\IMUGA\kursy-muzhskih-strizhek-vs-barbering5.jpg
+Content Type: image/jpeg
+
+Uri: https://massazh-kursy.ru/IMUGA/professiya-barbera-start.jpg
+File Name: C:\Downloaded Web Sites\massazh-kursy.ru\IMUGA\professiya-barbera-start.jpg
+Content Type: image/jpeg
+
+Uri: https://massazh-kursy.ru/IMUGA/skolko-zarabatyvaet-barber-v-rossii.jpg
+File Name: C:\Downloaded Web Sites\massazh-kursy.ru\IMUGA\skolko-zarabatyvaet-barber-v-rossii.jpg
+Content Type: image/jpeg
+
+Uri: https://massazh-kursy.ru/IMUGA/sovety-nachinayushchemu-barberu.jpg
+File Name: C:\Downloaded Web Sites\massazh-kursy.ru\IMUGA\sovety-nachinayushchemu-barberu.jpg
+Content Type: image/jpeg
+
+Uri: https://massazh-kursy.ru/IMUGA/sovety-nachinayushchemu-barberu1.jpg
+File Name: C:\Downloaded Web Sites\massazh-kursy.ru\IMUGA\sovety-nachinayushchemu-barberu1.jpg
+Content Type: image/jpeg
+
+Uri: https://massazh-kursy.ru/IMUGA/sovety-nachinayushchemu-barberu2.jpg
+File Name: C:\Downloaded Web Sites\massazh-kursy.ru\IMUGA\sovety-nachinayushchemu-barberu2.jpg
+Content Type: image/jpeg
+
+Uri: https://massazh-kursy.ru/IMUGA/sovety-nachinayushchemu-barberu3.jpg
+File Name: C:\Downloaded Web Sites\massazh-kursy.ru\IMUGA\sovety-nachinayushchemu-barberu3.jpg
+Content Type: image/jpeg
+
+Uri: https://massazh-kursy.ru/IMUGA/sovety-nachinayushchemu-barberu4.jpg
+File Name: C:\Downloaded Web Sites\massazh-kursy.ru\IMUGA\sovety-nachinayushchemu-barberu4.jpg
+Content Type: image/jpeg
+
+Uri: https://massazh-kursy.ru/IMUGA/sovety-nachinayushchemu-barberu5.jpg
+File Name: C:\Downloaded Web Sites\massazh-kursy.ru\IMUGA\sovety-nachinayushchemu-barberu5.jpg
+Content Type: image/jpeg
+
+Uri: https://massazh-kursy.ru/IMUGA/sovety-nachinayushchemu-barberu6.jpg
+File Name: C:\Downloaded Web Sites\massazh-kursy.ru\IMUGA\sovety-nachinayushchemu-barberu6.jpg
+Content Type: image/jpeg
+
+Uri: https://massazh-kursy.ru/IMUGA/sovety-nachinayushchemu-barberu7.jpg
+File Name: C:\Downloaded Web Sites\massazh-kursy.ru\IMUGA\sovety-nachinayushchemu-barberu7.jpg
+Content Type: image/jpeg
+
+Uri: https://massazh-kursy.ru/IMUGA/sovety-nachinayushchemu-barberu8.jpg
+File Name: C:\Downloaded Web Sites\massazh-kursy.ru\IMUGA\sovety-nachinayushchemu-barberu8.jpg
+Content Type: image/jpeg
+
+Uri: https://massazh-kursy.ru/IMUGA/sovety-nachinayushchemu-barberu9.jpg
+File Name: C:\Downloaded Web Sites\massazh-kursy.ru\IMUGA\sovety-nachinayushchemu-barberu9.jpg
+Content Type: image/jpeg
+
+Uri: https://massazh-kursy.ru/IMUGA/top-barber-work.jpg
+File Name: C:\Downloaded Web Sites\massazh-kursy.ru\IMUGA\top-barber-work.jpg
+Content Type: image/jpeg
 
 Uri: https://massazh-kursy.ru/ioshkar-ola.php
 File Name: C:\Downloaded Web Sites\massazh-kursy.ru\ioshkar-ola.php.html
