@@ -10,7 +10,7 @@
   const WRAP_BASE   = 'https://go.2038.pro/3b6bc242f51d5261';
   const ERID        = 'LdtCKaoMZ';
   const M_PARAM     = '2';
-  const SUB2_STATIC = 'massazh-kursy.ru'; // можно заменить на location.hostname, если нужно подставлять домен автоматически
+  const SUB2_STATIC = 'kursy-barbera.vercel.app'; // можно заменить на location.hostname, если нужно подставлять домен автоматически
 
   // домены для обёртки (кастомизируй при необходимости)
   const MATCH_HOST_PART = '.ecolespb.ru';
@@ -43,7 +43,7 @@
 
   function buildWrappedHref(originalHref){
     // Пример:
-    // https://go.2038.pro/3b6bc242f51d5261?erid=LdtCKaoMZ&m=2&dl=ORIG&sub1=ORIG&sub2=massazh-kursy.ru
+    // https://go.2038.pro/3b6bc242f51d5261?erid=LdtCKaoMZ&m=2&dl=ORIG&sub1=ORIG&sub2=kursy-barbera.vercel.app
     const params = [
       'erid=' + enc(ERID),
       'm='    + enc(M_PARAM),

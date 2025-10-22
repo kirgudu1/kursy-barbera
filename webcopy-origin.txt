@@ -1,392 +1,392 @@
-Uri: https://massazh-kursy.ru/
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\index.htm
+Uri: https://kursy-barbera.vercel.app/
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\index.htm
 Content Type: text/html
 
-Uri: https://massazh-kursy.ru/arhangelsk.php
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\arhangelsk.php.html
+Uri: https://kursy-barbera.vercel.app/arhangelsk.php
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\arhangelsk.php.html
 Content Type: text/html
 
-Uri: https://massazh-kursy.ru/astrahan.php
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\astrahan.php.html
+Uri: https://kursy-barbera.vercel.app/astrahan.php
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\astrahan.php.html
 Content Type: text/html
 
-Uri: https://massazh-kursy.ru/balashiha.php
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\balashiha.php.html
+Uri: https://kursy-barbera.vercel.app/balashiha.php
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\balashiha.php.html
 Content Type: text/html
 
-Uri: https://massazh-kursy.ru/barnaul.php
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\barnaul.php.html
+Uri: https://kursy-barbera.vercel.app/barnaul.php
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\barnaul.php.html
 Content Type: text/html
 
-Uri: https://massazh-kursy.ru/blog-category.php
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\blog-category.php.html
+Uri: https://kursy-barbera.vercel.app/blog-category.php
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\blog-category.php.html
 Content Type: text/html
 
-Uri: https://massazh-kursy.ru/blog/kak-stat-barberom-s-nulya.php
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\blog\kak-stat-barberom-s-nulya.php.html
+Uri: https://kursy-barbera.vercel.app/blog/kak-stat-barberom-s-nulya.php
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\blog\kak-stat-barberom-s-nulya.php.html
 Content Type: text/html
 
-Uri: https://massazh-kursy.ru/blog/kak-vybrat-kursy-barbera.php
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\blog\kak-vybrat-kursy-barbera.php.html
+Uri: https://kursy-barbera.vercel.app/blog/kak-vybrat-kursy-barbera.php
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\blog\kak-vybrat-kursy-barbera.php.html
 Content Type: text/html
 
-Uri: https://massazh-kursy.ru/blog/komu-podoydet-professiya-barbera.php
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\blog\komu-podoydet-professiya-barbera.php.html
+Uri: https://kursy-barbera.vercel.app/blog/komu-podoydet-professiya-barbera.php
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\blog\komu-podoydet-professiya-barbera.php.html
 Content Type: text/html
 
-Uri: https://massazh-kursy.ru/blog/kursy-muzhskih-strizhek-vs-barbering.php
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\blog\kursy-muzhskih-strizhek-vs-barbering.php.html
+Uri: https://kursy-barbera.vercel.app/blog/kursy-muzhskih-strizhek-vs-barbering.php
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\blog\kursy-muzhskih-strizhek-vs-barbering.php.html
 Content Type: text/html
 
-Uri: https://massazh-kursy.ru/blog/professiya-barbera-start.php
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\blog\professiya-barbera-start.php.html
+Uri: https://kursy-barbera.vercel.app/blog/professiya-barbera-start.php
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\blog\professiya-barbera-start.php.html
 Content Type: text/html
 
-Uri: https://massazh-kursy.ru/blog/skolko-zarabatyvaet-barber-v-rossii.php
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\blog\skolko-zarabatyvaet-barber-v-rossii.php.html
+Uri: https://kursy-barbera.vercel.app/blog/skolko-zarabatyvaet-barber-v-rossii.php
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\blog\skolko-zarabatyvaet-barber-v-rossii.php.html
 Content Type: text/html
 
-Uri: https://massazh-kursy.ru/blog/sovety-nachinayushchemu-barberu.php
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\blog\sovety-nachinayushchemu-barberu.php.html
+Uri: https://kursy-barbera.vercel.app/blog/sovety-nachinayushchemu-barberu.php
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\blog\sovety-nachinayushchemu-barberu.php.html
 Content Type: text/html
 
-Uri: https://massazh-kursy.ru/cheboksary.php
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\cheboksary.php.html
+Uri: https://kursy-barbera.vercel.app/cheboksary.php
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\cheboksary.php.html
 Content Type: text/html
 
-Uri: https://massazh-kursy.ru/chelyabinsk.php
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\chelyabinsk.php.html
+Uri: https://kursy-barbera.vercel.app/chelyabinsk.php
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\chelyabinsk.php.html
 Content Type: text/html
 
-Uri: https://massazh-kursy.ru/cities/moskva.php
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\cities\moskva.php.html
+Uri: https://kursy-barbera.vercel.app/cities/moskva.php
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\cities\moskva.php.html
 Content Type: text/html
 
-Uri: https://massazh-kursy.ru/cities/sankt-peterburg.php
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\cities\sankt-peterburg.php.html
+Uri: https://kursy-barbera.vercel.app/cities/sankt-peterburg.php
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\cities\sankt-peterburg.php.html
 Content Type: text/html
 
-Uri: https://massazh-kursy.ru/default.jpg
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\default.jpg
+Uri: https://kursy-barbera.vercel.app/default.jpg
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\default.jpg
 Content Type: image/jpeg
 
-Uri: https://massazh-kursy.ru/ekaterinburg.php
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\ekaterinburg.php.html
+Uri: https://kursy-barbera.vercel.app/ekaterinburg.php
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\ekaterinburg.php.html
 Content Type: text/html
 
-Uri: https://massazh-kursy.ru/himki.php
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\himki.php.html
+Uri: https://kursy-barbera.vercel.app/himki.php
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\himki.php.html
 Content Type: text/html
 
-Uri: https://massazh-kursy.ru/IMUGA/barber-class.jpg
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\IMUGA\barber-class.jpg
+Uri: https://kursy-barbera.vercel.app/IMUGA/barber-class.jpg
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\IMUGA\barber-class.jpg
 Content Type: image/jpeg
 
-Uri: https://massazh-kursy.ru/IMUGA/barber-portfolio.jpg
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\IMUGA\barber-portfolio.jpg
+Uri: https://kursy-barbera.vercel.app/IMUGA/barber-portfolio.jpg
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\IMUGA\barber-portfolio.jpg
 Content Type: image/jpeg
 
-Uri: https://massazh-kursy.ru/IMUGA/barber-tools.jpg
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\IMUGA\barber-tools.jpg
+Uri: https://kursy-barbera.vercel.app/IMUGA/barber-tools.jpg
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\IMUGA\barber-tools.jpg
 Content Type: image/jpeg
 
-Uri: https://massazh-kursy.ru/IMUGA/barbershop-growth.jpg
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\IMUGA\barbershop-growth.jpg
+Uri: https://kursy-barbera.vercel.app/IMUGA/barbershop-growth.jpg
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\IMUGA\barbershop-growth.jpg
 Content Type: image/jpeg
 
-Uri: https://massazh-kursy.ru/IMUGA/kak-stat-barberom-s-nulya.jpg
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\IMUGA\kak-stat-barberom-s-nulya.jpg
+Uri: https://kursy-barbera.vercel.app/IMUGA/kak-stat-barberom-s-nulya.jpg
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\IMUGA\kak-stat-barberom-s-nulya.jpg
 Content Type: image/jpeg
 
-Uri: https://massazh-kursy.ru/IMUGA/kak-vybrat-kursy-barbera.jpg
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\IMUGA\kak-vybrat-kursy-barbera.jpg
+Uri: https://kursy-barbera.vercel.app/IMUGA/kak-vybrat-kursy-barbera.jpg
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\IMUGA\kak-vybrat-kursy-barbera.jpg
 Content Type: image/jpeg
 
-Uri: https://massazh-kursy.ru/IMUGA/komu-podoydet-professiya-barbera.jpg
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\IMUGA\komu-podoydet-professiya-barbera.jpg
+Uri: https://kursy-barbera.vercel.app/IMUGA/komu-podoydet-professiya-barbera.jpg
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\IMUGA\komu-podoydet-professiya-barbera.jpg
 Content Type: image/jpeg
 
-Uri: https://massazh-kursy.ru/IMUGA/komu-podoydet-professiya-barbera1.jpg
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\IMUGA\komu-podoydet-professiya-barbera1.jpg
+Uri: https://kursy-barbera.vercel.app/IMUGA/komu-podoydet-professiya-barbera1.jpg
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\IMUGA\komu-podoydet-professiya-barbera1.jpg
 Content Type: image/jpeg
 
-Uri: https://massazh-kursy.ru/IMUGA/komu-podoydet-professiya-barbera3.jpg
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\IMUGA\komu-podoydet-professiya-barbera3.jpg
+Uri: https://kursy-barbera.vercel.app/IMUGA/komu-podoydet-professiya-barbera3.jpg
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\IMUGA\komu-podoydet-professiya-barbera3.jpg
 Content Type: image/jpeg
 
-Uri: https://massazh-kursy.ru/IMUGA/komu-podoydet-professiya-barbera7.jpg
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\IMUGA\komu-podoydet-professiya-barbera7.jpg
+Uri: https://kursy-barbera.vercel.app/IMUGA/komu-podoydet-professiya-barbera7.jpg
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\IMUGA\komu-podoydet-professiya-barbera7.jpg
 Content Type: image/jpeg
 
-Uri: https://massazh-kursy.ru/IMUGA/kursy-muzhskih-strizhek-vs-barbering.jpg
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\IMUGA\kursy-muzhskih-strizhek-vs-barbering.jpg
+Uri: https://kursy-barbera.vercel.app/IMUGA/kursy-muzhskih-strizhek-vs-barbering.jpg
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\IMUGA\kursy-muzhskih-strizhek-vs-barbering.jpg
 Content Type: image/jpeg
 
-Uri: https://massazh-kursy.ru/IMUGA/kursy-muzhskih-strizhek-vs-barbering1.jpg
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\IMUGA\kursy-muzhskih-strizhek-vs-barbering1.jpg
+Uri: https://kursy-barbera.vercel.app/IMUGA/kursy-muzhskih-strizhek-vs-barbering1.jpg
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\IMUGA\kursy-muzhskih-strizhek-vs-barbering1.jpg
 Content Type: image/jpeg
 
-Uri: https://massazh-kursy.ru/IMUGA/kursy-muzhskih-strizhek-vs-barbering2.jpg
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\IMUGA\kursy-muzhskih-strizhek-vs-barbering2.jpg
+Uri: https://kursy-barbera.vercel.app/IMUGA/kursy-muzhskih-strizhek-vs-barbering2.jpg
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\IMUGA\kursy-muzhskih-strizhek-vs-barbering2.jpg
 Content Type: image/jpeg
 
-Uri: https://massazh-kursy.ru/IMUGA/kursy-muzhskih-strizhek-vs-barbering3.jpg
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\IMUGA\kursy-muzhskih-strizhek-vs-barbering3.jpg
+Uri: https://kursy-barbera.vercel.app/IMUGA/kursy-muzhskih-strizhek-vs-barbering3.jpg
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\IMUGA\kursy-muzhskih-strizhek-vs-barbering3.jpg
 Content Type: image/jpeg
 
-Uri: https://massazh-kursy.ru/IMUGA/kursy-muzhskih-strizhek-vs-barbering5.jpg
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\IMUGA\kursy-muzhskih-strizhek-vs-barbering5.jpg
+Uri: https://kursy-barbera.vercel.app/IMUGA/kursy-muzhskih-strizhek-vs-barbering5.jpg
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\IMUGA\kursy-muzhskih-strizhek-vs-barbering5.jpg
 Content Type: image/jpeg
 
-Uri: https://massazh-kursy.ru/IMUGA/professiya-barbera-start.jpg
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\IMUGA\professiya-barbera-start.jpg
+Uri: https://kursy-barbera.vercel.app/IMUGA/professiya-barbera-start.jpg
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\IMUGA\professiya-barbera-start.jpg
 Content Type: image/jpeg
 
-Uri: https://massazh-kursy.ru/IMUGA/skolko-zarabatyvaet-barber-v-rossii.jpg
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\IMUGA\skolko-zarabatyvaet-barber-v-rossii.jpg
+Uri: https://kursy-barbera.vercel.app/IMUGA/skolko-zarabatyvaet-barber-v-rossii.jpg
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\IMUGA\skolko-zarabatyvaet-barber-v-rossii.jpg
 Content Type: image/jpeg
 
-Uri: https://massazh-kursy.ru/IMUGA/sovety-nachinayushchemu-barberu.jpg
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\IMUGA\sovety-nachinayushchemu-barberu.jpg
+Uri: https://kursy-barbera.vercel.app/IMUGA/sovety-nachinayushchemu-barberu.jpg
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\IMUGA\sovety-nachinayushchemu-barberu.jpg
 Content Type: image/jpeg
 
-Uri: https://massazh-kursy.ru/IMUGA/sovety-nachinayushchemu-barberu1.jpg
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\IMUGA\sovety-nachinayushchemu-barberu1.jpg
+Uri: https://kursy-barbera.vercel.app/IMUGA/sovety-nachinayushchemu-barberu1.jpg
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\IMUGA\sovety-nachinayushchemu-barberu1.jpg
 Content Type: image/jpeg
 
-Uri: https://massazh-kursy.ru/IMUGA/sovety-nachinayushchemu-barberu2.jpg
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\IMUGA\sovety-nachinayushchemu-barberu2.jpg
+Uri: https://kursy-barbera.vercel.app/IMUGA/sovety-nachinayushchemu-barberu2.jpg
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\IMUGA\sovety-nachinayushchemu-barberu2.jpg
 Content Type: image/jpeg
 
-Uri: https://massazh-kursy.ru/IMUGA/sovety-nachinayushchemu-barberu3.jpg
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\IMUGA\sovety-nachinayushchemu-barberu3.jpg
+Uri: https://kursy-barbera.vercel.app/IMUGA/sovety-nachinayushchemu-barberu3.jpg
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\IMUGA\sovety-nachinayushchemu-barberu3.jpg
 Content Type: image/jpeg
 
-Uri: https://massazh-kursy.ru/IMUGA/sovety-nachinayushchemu-barberu4.jpg
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\IMUGA\sovety-nachinayushchemu-barberu4.jpg
+Uri: https://kursy-barbera.vercel.app/IMUGA/sovety-nachinayushchemu-barberu4.jpg
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\IMUGA\sovety-nachinayushchemu-barberu4.jpg
 Content Type: image/jpeg
 
-Uri: https://massazh-kursy.ru/IMUGA/sovety-nachinayushchemu-barberu5.jpg
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\IMUGA\sovety-nachinayushchemu-barberu5.jpg
+Uri: https://kursy-barbera.vercel.app/IMUGA/sovety-nachinayushchemu-barberu5.jpg
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\IMUGA\sovety-nachinayushchemu-barberu5.jpg
 Content Type: image/jpeg
 
-Uri: https://massazh-kursy.ru/IMUGA/sovety-nachinayushchemu-barberu6.jpg
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\IMUGA\sovety-nachinayushchemu-barberu6.jpg
+Uri: https://kursy-barbera.vercel.app/IMUGA/sovety-nachinayushchemu-barberu6.jpg
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\IMUGA\sovety-nachinayushchemu-barberu6.jpg
 Content Type: image/jpeg
 
-Uri: https://massazh-kursy.ru/IMUGA/sovety-nachinayushchemu-barberu7.jpg
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\IMUGA\sovety-nachinayushchemu-barberu7.jpg
+Uri: https://kursy-barbera.vercel.app/IMUGA/sovety-nachinayushchemu-barberu7.jpg
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\IMUGA\sovety-nachinayushchemu-barberu7.jpg
 Content Type: image/jpeg
 
-Uri: https://massazh-kursy.ru/IMUGA/sovety-nachinayushchemu-barberu8.jpg
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\IMUGA\sovety-nachinayushchemu-barberu8.jpg
+Uri: https://kursy-barbera.vercel.app/IMUGA/sovety-nachinayushchemu-barberu8.jpg
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\IMUGA\sovety-nachinayushchemu-barberu8.jpg
 Content Type: image/jpeg
 
-Uri: https://massazh-kursy.ru/IMUGA/sovety-nachinayushchemu-barberu9.jpg
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\IMUGA\sovety-nachinayushchemu-barberu9.jpg
+Uri: https://kursy-barbera.vercel.app/IMUGA/sovety-nachinayushchemu-barberu9.jpg
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\IMUGA\sovety-nachinayushchemu-barberu9.jpg
 Content Type: image/jpeg
 
-Uri: https://massazh-kursy.ru/IMUGA/top-barber-work.jpg
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\IMUGA\top-barber-work.jpg
+Uri: https://kursy-barbera.vercel.app/IMUGA/top-barber-work.jpg
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\IMUGA\top-barber-work.jpg
 Content Type: image/jpeg
 
-Uri: https://massazh-kursy.ru/ioshkar-ola.php
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\ioshkar-ola.php.html
+Uri: https://kursy-barbera.vercel.app/ioshkar-ola.php
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\ioshkar-ola.php.html
 Content Type: text/html
 
-Uri: https://massazh-kursy.ru/irkutsk.php
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\irkutsk.php.html
+Uri: https://kursy-barbera.vercel.app/irkutsk.php
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\irkutsk.php.html
 Content Type: text/html
 
-Uri: https://massazh-kursy.ru/ivanovo.php
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\ivanovo.php.html
+Uri: https://kursy-barbera.vercel.app/ivanovo.php
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\ivanovo.php.html
 Content Type: text/html
 
-Uri: https://massazh-kursy.ru/izhevsk.php
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\izhevsk.php.html
+Uri: https://kursy-barbera.vercel.app/izhevsk.php
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\izhevsk.php.html
 Content Type: text/html
 
-Uri: https://massazh-kursy.ru/js/aff-wrap.ecolespb.js
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\js\aff-wrap.ecolespb.js
+Uri: https://kursy-barbera.vercel.app/js/aff-wrap.ecolespb.js
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\js\aff-wrap.ecolespb.js
 Content Type: application/x-javascript
 
-Uri: https://massazh-kursy.ru/kaliningrad.php
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\kaliningrad.php.html
+Uri: https://kursy-barbera.vercel.app/kaliningrad.php
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\kaliningrad.php.html
 Content Type: text/html
 
-Uri: https://massazh-kursy.ru/kazan.php
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\kazan.php.html
+Uri: https://kursy-barbera.vercel.app/kazan.php
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\kazan.php.html
 Content Type: text/html
 
-Uri: https://massazh-kursy.ru/kemerovo.php
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\kemerovo.php.html
+Uri: https://kursy-barbera.vercel.app/kemerovo.php
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\kemerovo.php.html
 Content Type: text/html
 
-Uri: https://massazh-kursy.ru/kirov.php
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\kirov.php.html
+Uri: https://kursy-barbera.vercel.app/kirov.php
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\kirov.php.html
 Content Type: text/html
 
-Uri: https://massazh-kursy.ru/kovrov.php
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\kovrov.php.html
+Uri: https://kursy-barbera.vercel.app/kovrov.php
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\kovrov.php.html
 Content Type: text/html
 
-Uri: https://massazh-kursy.ru/krasnodar.php
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\krasnodar.php.html
+Uri: https://kursy-barbera.vercel.app/krasnodar.php
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\krasnodar.php.html
 Content Type: text/html
 
-Uri: https://massazh-kursy.ru/krasnoyarsk.php
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\krasnoyarsk.php.html
+Uri: https://kursy-barbera.vercel.app/krasnoyarsk.php
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\krasnoyarsk.php.html
 Content Type: text/html
 
-Uri: https://massazh-kursy.ru/kurgan.php
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\kurgan.php.html
+Uri: https://kursy-barbera.vercel.app/kurgan.php
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\kurgan.php.html
 Content Type: text/html
 
-Uri: https://massazh-kursy.ru/lipetsk.php
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\lipetsk.php.html
+Uri: https://kursy-barbera.vercel.app/lipetsk.php
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\lipetsk.php.html
 Content Type: text/html
 
-Uri: https://massazh-kursy.ru/lyubertsy.php
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\lyubertsy.php.html
+Uri: https://kursy-barbera.vercel.app/lyubertsy.php
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\lyubertsy.php.html
 Content Type: text/html
 
-Uri: https://massazh-kursy.ru/moskva.php
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\moskva.php.html
+Uri: https://kursy-barbera.vercel.app/moskva.php
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\moskva.php.html
 Content Type: text/html
 
-Uri: https://massazh-kursy.ru/mytishchi.php
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\mytishchi.php.html
+Uri: https://kursy-barbera.vercel.app/mytishchi.php
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\mytishchi.php.html
 Content Type: text/html
 
-Uri: https://massazh-kursy.ru/naberezhnye-chelny.php
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\naberezhnye-chelny.php.html
+Uri: https://kursy-barbera.vercel.app/naberezhnye-chelny.php
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\naberezhnye-chelny.php.html
 Content Type: text/html
 
-Uri: https://massazh-kursy.ru/nizhnii-novgorod.php
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\nizhnii-novgorod.php.html
+Uri: https://kursy-barbera.vercel.app/nizhnii-novgorod.php
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\nizhnii-novgorod.php.html
 Content Type: text/html
 
-Uri: https://massazh-kursy.ru/noginske.php
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\noginske.php.html
+Uri: https://kursy-barbera.vercel.app/noginske.php
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\noginske.php.html
 Content Type: text/html
 
-Uri: https://massazh-kursy.ru/novokuznetsk.php
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\novokuznetsk.php.html
+Uri: https://kursy-barbera.vercel.app/novokuznetsk.php
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\novokuznetsk.php.html
 Content Type: text/html
 
-Uri: https://massazh-kursy.ru/novom-urengoe.php
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\novom-urengoe.php.html
+Uri: https://kursy-barbera.vercel.app/novom-urengoe.php
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\novom-urengoe.php.html
 Content Type: text/html
 
-Uri: https://massazh-kursy.ru/novosibirsk.php
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\novosibirsk.php.html
+Uri: https://kursy-barbera.vercel.app/novosibirsk.php
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\novosibirsk.php.html
 Content Type: text/html
 
-Uri: https://massazh-kursy.ru/omsk.php
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\omsk.php.html
+Uri: https://kursy-barbera.vercel.app/omsk.php
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\omsk.php.html
 Content Type: text/html
 
-Uri: https://massazh-kursy.ru/orenburg.php
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\orenburg.php.html
+Uri: https://kursy-barbera.vercel.app/orenburg.php
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\orenburg.php.html
 Content Type: text/html
 
-Uri: https://massazh-kursy.ru/orsk.php
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\orsk.php.html
+Uri: https://kursy-barbera.vercel.app/orsk.php
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\orsk.php.html
 Content Type: text/html
 
-Uri: https://massazh-kursy.ru/penza.php
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\penza.php.html
+Uri: https://kursy-barbera.vercel.app/penza.php
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\penza.php.html
 Content Type: text/html
 
-Uri: https://massazh-kursy.ru/perm.php
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\perm.php.html
+Uri: https://kursy-barbera.vercel.app/perm.php
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\perm.php.html
 Content Type: text/html
 
-Uri: https://massazh-kursy.ru/privacy.php
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\privacy.php.html
+Uri: https://kursy-barbera.vercel.app/privacy.php
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\privacy.php.html
 Content Type: text/html
 
-Uri: https://massazh-kursy.ru/rostov-na-donu.php
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\rostov-na-donu.php.html
+Uri: https://kursy-barbera.vercel.app/rostov-na-donu.php
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\rostov-na-donu.php.html
 Content Type: text/html
 
-Uri: https://massazh-kursy.ru/ryazan.php
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\ryazan.php.html
+Uri: https://kursy-barbera.vercel.app/ryazan.php
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\ryazan.php.html
 Content Type: text/html
 
-Uri: https://massazh-kursy.ru/samara.php
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\samara.php.html
+Uri: https://kursy-barbera.vercel.app/samara.php
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\samara.php.html
 Content Type: text/html
 
-Uri: https://massazh-kursy.ru/sankt-peterburg.php
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\sankt-peterburg.php.html
+Uri: https://kursy-barbera.vercel.app/sankt-peterburg.php
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\sankt-peterburg.php.html
 Content Type: text/html
 
-Uri: https://massazh-kursy.ru/saratov.php
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\saratov.php.html
+Uri: https://kursy-barbera.vercel.app/saratov.php
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\saratov.php.html
 Content Type: text/html
 
-Uri: https://massazh-kursy.ru/sevastopole.php
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\sevastopole.php.html
+Uri: https://kursy-barbera.vercel.app/sevastopole.php
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\sevastopole.php.html
 Content Type: text/html
 
-Uri: https://massazh-kursy.ru/stavropol.php
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\stavropol.php.html
+Uri: https://kursy-barbera.vercel.app/stavropol.php
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\stavropol.php.html
 Content Type: text/html
 
-Uri: https://massazh-kursy.ru/surgut.php
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\surgut.php.html
+Uri: https://kursy-barbera.vercel.app/surgut.php
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\surgut.php.html
 Content Type: text/html
 
-Uri: https://massazh-kursy.ru/tolyatti.php
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\tolyatti.php.html
+Uri: https://kursy-barbera.vercel.app/tolyatti.php
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\tolyatti.php.html
 Content Type: text/html
 
-Uri: https://massazh-kursy.ru/tomsk.php
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\tomsk.php.html
+Uri: https://kursy-barbera.vercel.app/tomsk.php
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\tomsk.php.html
 Content Type: text/html
 
-Uri: https://massazh-kursy.ru/tula.php
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\tula.php.html
+Uri: https://kursy-barbera.vercel.app/tula.php
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\tula.php.html
 Content Type: text/html
 
-Uri: https://massazh-kursy.ru/tver.php
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\tver.php.html
+Uri: https://kursy-barbera.vercel.app/tver.php
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\tver.php.html
 Content Type: text/html
 
-Uri: https://massazh-kursy.ru/tyumen.php
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\tyumen.php.html
+Uri: https://kursy-barbera.vercel.app/tyumen.php
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\tyumen.php.html
 Content Type: text/html
 
-Uri: https://massazh-kursy.ru/ufa.php
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\ufa.php.html
+Uri: https://kursy-barbera.vercel.app/ufa.php
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\ufa.php.html
 Content Type: text/html
 
-Uri: https://massazh-kursy.ru/ulyanovsk.php
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\ulyanovsk.php.html
+Uri: https://kursy-barbera.vercel.app/ulyanovsk.php
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\ulyanovsk.php.html
 Content Type: text/html
 
-Uri: https://massazh-kursy.ru/vladimir.php
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\vladimir.php.html
+Uri: https://kursy-barbera.vercel.app/vladimir.php
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\vladimir.php.html
 Content Type: text/html
 
-Uri: https://massazh-kursy.ru/vladivostok.php
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\vladivostok.php.html
+Uri: https://kursy-barbera.vercel.app/vladivostok.php
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\vladivostok.php.html
 Content Type: text/html
 
-Uri: https://massazh-kursy.ru/volgograd.php
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\volgograd.php.html
+Uri: https://kursy-barbera.vercel.app/volgograd.php
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\volgograd.php.html
 Content Type: text/html
 
-Uri: https://massazh-kursy.ru/voronezh.php
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\voronezh.php.html
+Uri: https://kursy-barbera.vercel.app/voronezh.php
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\voronezh.php.html
 Content Type: text/html
 
-Uri: https://massazh-kursy.ru/yaroslavl.php
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\yaroslavl.php.html
+Uri: https://kursy-barbera.vercel.app/yaroslavl.php
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\yaroslavl.php.html
 Content Type: text/html
 
 Uri: https://mc.yandex.ru/watch/104699306
-File Name: C:\Downloaded Web Sites\massazh-kursy.ru\watch\104699306
+File Name: C:\Downloaded Web Sites\kursy-barbera.vercel.app\watch\104699306
 Content Type: image/gif
 
