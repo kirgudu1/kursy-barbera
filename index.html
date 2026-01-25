@@ -916,12 +916,90 @@ footer{
   border-bottom: 1px solid #eee;
 }
 
+</style>
 
 
+  <style>
+/* ===== Popular posts ===== */
+.popular-posts {
+  padding: 64px 0;
+  background: #fafafa;
+}
 
+.popular-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+  margin-bottom: 24px;
+}
 
+.popular-link {
+  font-weight: 600;
+  color: #d97c00;
+  text-decoration: none;
+}
+.popular-link:hover { text-decoration: underline; }
 
+.popular-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
 
+.post-card {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 14px;
+  overflow: hidden;
+  padding: 14px;
+  transition: box-shadow .2s, transform .15s;
+}
+.post-card:hover {
+  box-shadow: 0 8px 20px rgba(0,0,0,.06);
+  transform: translateY(-2px);
+}
+
+.post-card .figure {
+  display: block;
+  border-radius: 10px;
+  overflow: hidden;
+  aspect-ratio: 16 / 10;
+  margin-bottom: 12px;
+  background: #f0f0f0;
+}
+.post-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.post-card h3 {
+  font-size: 1.05rem;
+  margin: 0 0 6px;
+}
+.post-card h3 a {
+  color: #222;
+  text-decoration: none;
+}
+.post-card h3 a:hover { color: #d97c00; }
+
+.post-card p {
+  margin: 0;
+  color: #555;
+  line-height: 1.5;
+  font-size: .95rem;
+}
+
+/* Adaptive */
+@media (max-width: 1024px) {
+  .popular-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 640px) {
+  .popular-grid { grid-template-columns: 1fr; }
+  .popular-head { flex-direction: column; align-items: flex-start; }
+}
 </style>
 
   <!-- Yandex.Metrika counter -->
@@ -1130,6 +1208,72 @@ footer{
     </div>
   </section>
 
+  <section class="popular-posts">
+  <div class="container">
+    <div class="popular-head">
+      <h2 class="section-title">Популярные статьи</h2>
+      <a class="popular-link" href="blog-category.html">Все статьи →</a>
+    </div>
+
+    <div class="popular-grid">
+              <article class="post-card">
+          <a href="blog/horoshie-barbery-ne-populyarny.html" class="figure">
+            <img src="IMUGA/horoshie-barbery-ne-populyarny.jpg" alt="Почему хорошие барберы не популярны" loading="lazy">
+          </a>
+          <h3>
+            <a href="blog/horoshie-barbery-ne-populyarny.html">Почему хорошие барберы не популярны</a>
+          </h3>
+          <p>В барберинге качество работы и популярность в соцсетях — не одно и то же. Объясняем, почему сильные мастера часто остаются незаметными и почему это не мешает карьере.</p>
+        </article>
+              <article class="post-card">
+          <a href="blog/kak-menyaetsya-professiya-barbera.html" class="figure">
+            <img src="IMUGA/kak-menyaetsya-professiya-barbera.jpg" alt="Как меняется профессия барбера" loading="lazy">
+          </a>
+          <h3>
+            <a href="blog/kak-menyaetsya-professiya-barbera.html">Как меняется профессия барбера</a>
+          </h3>
+          <p>Профессия барбера больше не статична. Разбираем, какие изменения происходят сегодня, что влияет на карьеру и почему география стала важным фактором.</p>
+        </article>
+              <article class="post-card">
+          <a href="blog/tehnika-ne-glavnoe-barber.html" class="figure">
+            <img src="IMUGA/tehnika-ne-glavnoe-barber.jpg" alt="Почему техника — не главное в барберинге" loading="lazy">
+          </a>
+          <h3>
+            <a href="blog/tehnika-ne-glavnoe-barber.html">Почему техника — не главное в барберинге</a>
+          </h3>
+          <p>Многие новички делают ставку только на технику, но в реальной работе решают совсем другие вещи. Объясняем, что действительно делает барбера востребованным.</p>
+        </article>
+              <article class="post-card">
+          <a href="blog/rost-barbera-v-malom-gorode.html" class="figure">
+            <img src="IMUGA/rost-barbera-v-malom-gorode.jpg" alt="Рост барбера в малом городе" loading="lazy">
+          </a>
+          <h3>
+            <a href="blog/rost-barbera-v-malom-gorode.html">Рост барбера в малом городе</a>
+          </h3>
+          <p>Малый город часто воспринимается как ограничение для барбера. Разбираем, как на самом деле строится рост, спрос и карьера вне столицы.</p>
+        </article>
+              <article class="post-card">
+          <a href="blog/barber-ne-v-stolice.html" class="figure">
+            <img src="IMUGA/barber-ne-v-stolice.jpg" alt="Барбер не в столице: осознанная карьера вне мегаполиса" loading="lazy">
+          </a>
+          <h3>
+            <a href="blog/barber-ne-v-stolice.html">Барбер не в столице: осознанная карьера вне мегаполиса</a>
+          </h3>
+          <p>Работа барбера возможна не только в столице. В статье разбираем, как строится карьера вне мегаполиса и почему стратегия важнее географии.</p>
+        </article>
+              <article class="post-card">
+          <a href="blog/kak-nabrat-klientov-barber.html" class="figure">
+            <img src="IMUGA/kak-nabrat-klientov-barber.jpg" alt="Как набрать клиентов барберу: пошагово и без мифов" loading="lazy">
+          </a>
+          <h3>
+            <a href="blog/kak-nabrat-klientov-barber.html">Как набрать клиентов барберу: пошагово и без мифов</a>
+          </h3>
+          <p>Разбираем, как барберу набрать клиентов с нуля: от первых визитов до устойчивой базы, без скидок, демпинга и завышенных ожиданий.</p>
+        </article>
+          </div>
+  </div>
+</section>
+
   <!-- ====== FAQ ====== -->
   <section id="faq">
     <div class="container">
@@ -1245,3 +1389,4 @@ footer{
 
 </body>
 </html>
+
