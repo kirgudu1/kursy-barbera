@@ -1,0 +1,2075 @@
+﻿<!-- start blok -->
+<!-- <url>konflikty-v-barbershope.php</url> -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <title>Курсы барбера и мужских стрижек — обучение с нуля и повышение квалификации</title>
+  <meta name="description" content="Профессиональное обучение барберингу и мужским стрижкам: курсы для новичков и практикующих мастеров. Практика на моделях, сертификат, помощь с началом карьеры и привлечением клиентов.">
+
+  <meta property="og:title" content="Курсы барбера — обучение мужским стрижкам с нуля">
+  <meta property="og:description" content="Освой профессию барбера: мужские стрижки, fade, оформление бороды и основы сервиса. Очные и онлайн-курсы с практикой и выдачей сертификата.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="">
+
+  <style>
+:root{
+  --bg:#faf7f3;
+  --card:#ffffff;
+  --ink:#1f2937;
+  --muted:#6b7280;
+  --brand:#c98e5b;   /* тёплый карамельный */
+  --brand-2:#2f3e46; /* холодный серо-синий */
+  --accent:#f5e6d3;  /* светлая кожа/лён */
+  --line:#d6c7b6;    /* «нитка» */
+  --ring: 0 10px 30px rgba(0,0,0,.06);
+  --radius:18px;
+}
+
+/* Base */
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Helvetica Neue", sans-serif;
+  color:var(--ink);
+  background:
+    radial-gradient(1200px 600px at 110% -10%, rgba(201,142,91,.06), transparent 60%),
+    radial-gradient(900px 500px at -10% 10%, rgba(47,62,70,.06), transparent 55%),
+    var(--bg);
+  line-height:1.65;
+  letter-spacing:.2px;
+}
+.container{max-width:1100px;margin:0 auto;padding:0 20px}
+
+/* Header */
+header{
+  position:sticky; top:0; z-index:50;
+  backdrop-filter:saturate(180%) blur(10px);
+  background:rgba(250,247,243,.7);
+  border-bottom:1px dashed var(--line);
+}
+.nav{
+  display:flex; align-items:center; justify-content:space-between; gap:16px;
+  padding:14px 0;
+  position: relative; /* важен для позиционирования выпадающего меню */
+}
+.brand{
+  display:flex; align-items:center; gap:10px; text-decoration:none; color:var(--ink);
+  font-weight:700; letter-spacing:.3px;
+}
+.brand svg{width:30px;height:30px}
+nav a{
+  text-decoration:none; color:var(--ink);
+  padding:8px 12px; border-radius:10px;
+  transition:all .2s ease;
+}
+nav a:hover{background:var(--accent)}
+.nav-links{display:flex; gap:8px}
+.nav-toggle{display:none}
+
+/* Hero */
+.hero{ padding:64px 0 40px; }
+.hero-inner{ display:grid; grid-template-columns:1.2fr .8fr; gap:28px; align-items:center; }
+.tag{display:inline-flex; gap:8px; align-items:center; padding:6px 10px; border:1px dashed var(--line); border-radius:999px; background:#fff;}
+.title{font-size:clamp(28px,4vw,44px); line-height:1.15; margin:14px 0 10px;}
+.subtitle{color:var(--muted); max-width:60ch}
+.cta{display:flex; gap:12px; margin-top:22px; flex-wrap:wrap}
+.btn{
+  display:inline-flex; align-items:center; gap:10px;
+  padding:12px 18px; border-radius:12px; text-decoration:none; font-weight:600;
+  border:1px solid transparent; transition:all .2s;
+}
+.btn-primary{background:var(--brand); color:white; box-shadow:var(--ring)}
+.btn-primary:hover{transform:translateY(-1px)}
+.btn-ghost{background:white; border-color:var(--line); color:var(--ink)}
+.btn-ghost:hover{background:var(--accent)}
+
+.hero-card{
+  background:linear-gradient(180deg, #fff, #fffaf4);
+  border:1px solid var(--line); border-radius:var(--radius); box-shadow:var(--ring);
+  padding:20px; position:relative; overflow:hidden;
+}
+.stitches{
+  position:absolute; inset:14px; border:2px dashed var(--line); border-radius:calc(var(--radius) - 8px);
+  pointer-events:none;
+}
+
+/* Figure with real <img> */
+/* Figure with real <img> */
+.figure{
+  position: relative;
+  aspect-ratio: 4 / 5;
+
+  /* 🔥 железобетонное решение */
+  clip-path: inset(0 round 14px);
+
+  border: 1px solid var(--line);
+  background: linear-gradient(
+    135deg,
+    rgba(201,142,91,.08),
+    rgba(47,62,70,.08)
+  );
+}
+
+/* Image */
+.figure img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Caption */
+.figure-caption{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 14px;
+  color: #333;
+  text-align: center;
+  background: rgba(255,255,255,0.7);
+  backdrop-filter: blur(6px);
+  border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+
+
+
+/* Sections */
+section{padding:38px 0}
+.section-title{font-size:clamp(22px,2.6vw,32px); margin:0 0 16px}
+.lede{color:var(--muted); max-width:70ch}
+
+.cards{ display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-top:18px; }
+.card{
+  background:var(--card); border:1px solid var(--line); border-radius:16px; padding:18px;
+  box-shadow:var(--ring); transition:transform .2s ease;
+}
+.card:hover{transform:translateY(-3px)}
+.card h3{margin:.4rem 0 .2rem; font-size:1.1rem}
+.eyebrow{font-size:.8rem; letter-spacing:.12em; text-transform:uppercase; color:var(--brand-2)}
+
+.list{
+  display:grid; grid-template-columns:1fr 1fr; gap:12px;
+  margin:16px 0; padding:0; list-style:none;
+}
+.list li{background:#fff; border:1px dashed var(--line); border-radius:10px; padding:10px 12px}
+
+.note{
+  background:linear-gradient(180deg,#fff, #fff7ee);
+  border:1px solid var(--line); border-radius:14px; padding:16px 18px; box-shadow:var(--ring);
+}
+
+/* Courses */
+.course-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-top:16px}
+.course{
+  background:#fff; border:1px solid var(--line); border-radius:16px; padding:16px;
+  display:flex; flex-direction:column; gap:8px; box-shadow:var(--ring)
+}
+.course-badge{font-size:.77rem; color:#fff; background:var(--brand-2); padding:4px 8px; border-radius:999px; width:max-content}
+.course a{
+  margin-top:auto; align-self:flex-start;
+  text-decoration:none; font-weight:700; color:#fff;
+  background:var(--brand); padding:10px 14px; border-radius:10px; transition:opacity .2s
+}
+.course a:hover{opacity:.9}
+
+/* Footer */
+footer{
+  margin-top:20px; padding:36px 0; background:#fff; border-top:1px dashed var(--line);
+}
+.foot-grid{display:grid; grid-template-columns:2fr 1fr 1fr; gap:16px}
+.foot-grid a{color:var(--ink); text-decoration:none}
+.foot-grid a:hover{text-decoration:underline}
+.small{color:var(--muted); font-size:.9rem}
+
+/* Cities grid */
+.city-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:12px;
+  margin:16px 0 0;
+  padding:0;
+  list-style:none;
+}
+.city-grid li a{
+  display:block;
+  background:#fff;
+  border:1px dashed var(--line);
+  border-radius:10px;
+  padding:10px 12px;
+  text-decoration:none;
+  color:var(--ink);
+  transition:background .2s ease, transform .15s ease;
+}
+.city-grid li a:hover{
+  background:var(--accent);
+  transform:translateY(-1px);
+}
+
+/* ===== FAQ Accordion ===== */
+.faq-accordion{ display:grid; gap:12px; margin-top:16px; }
+.faq-item{
+  background:#fff; border:1px solid var(--line); border-radius:16px; box-shadow: var(--ring);
+  overflow:hidden;
+}
+.faq-q{
+  list-style:none; display:flex; align-items:center; justify-content:space-between; gap:12px;
+  padding:14px 16px; cursor:pointer; font-weight:600;
+}
+.faq-q::-webkit-details-marker{ display:none; }
+.faq-q svg{ transition: transform .2s ease; }
+.faq-item[open] .faq-q svg{ transform: rotate(180deg); }
+.faq-a{
+  padding:0 16px 14px 16px; color: var(--ink);
+  background: linear-gradient(180deg,#fff, #fffaf4);
+  border-top: 1px dashed var(--line);
+}
+.faq-a p{ margin:12px 0 0; }
+
+/* ===== Hamburger icon ===== */
+.nav-toggle{
+  display:none; /* показываем на мобилке */
+  position:relative;
+  width:44px; height:40px;
+  border:1px dashed var(--line);
+  border-radius:10px;
+  background:#fff;
+}
+.nav-toggle .burger,
+.nav-toggle .burger::before,
+.nav-toggle .burger::after{
+  content:"";
+  position:absolute; left:10px; right:10px;
+  height:2px; background:var(--ink);
+  transition:transform .2s ease, opacity .2s ease, top .2s ease, bottom .2s ease;
+}
+.nav-toggle .burger{ top:19px; }
+.nav-toggle .burger::before{ top:11px; }
+.nav-toggle .burger::after{ bottom:11px; }
+
+/* open -> X */
+.nav.open .nav-toggle .burger{ transform:rotate(45deg); }
+.nav.open .nav-toggle .burger::before{ opacity:0; }
+.nav.open .nav-toggle .burger::after{ transform:rotate(-90deg); bottom:auto; top:19px; }
+
+/* ===== Mobile ===== */
+@media (max-width: 980px){
+  .hero-inner{grid-template-columns:1fr}
+  .cards{grid-template-columns:1fr;gap:12px}
+  .list{grid-template-columns:1fr}
+  .course-grid{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr}
+  .city-grid{grid-template-columns:1fr}
+
+  /* скрываем меню по умолчанию */
+  .nav .nav-links{ display:none; }
+
+  /* кнопка-гамбургер */
+  .nav-toggle{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+    padding:8px 12px;
+    border:1px dashed var(--line);
+    border-radius:10px;
+    background:#fff;
+    cursor:pointer;
+  }
+
+  /* раскрытое меню */
+  .nav.open .nav-links{
+    display:flex !important;
+    position:absolute;
+    top:56px; right:20px;
+    flex-direction:column; gap:8px;
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:12px;
+    box-shadow:var(--ring);
+    padding:8px;
+    transform-origin: top right;
+    animation: menuIn .15s ease-out;
+    z-index:100;
+  }
+
+  @keyframes menuIn{
+    from{ opacity:0; transform:translateY(-6px) scale(.98); }
+    to{ opacity:1; transform:translateY(0) scale(1); }
+  }
+
+  /* FAQ spacing tweaks */
+  .faq-accordion{ gap:10px; }
+  .faq-q{ padding:12px 14px; }
+  .faq-a{ padding:0 14px 12px 14px; }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce){
+  *{animation:none!important; transition:none!important}
+}
+
+
+/* ===== Courses compact ===== */
+.courses .course-list{
+  display:grid; grid-template-columns:1fr; gap:16px;
+  counter-reset: course;
+}
+.course-card{
+  background:#fff; border:1px solid var(--line); border-radius:16px;
+  padding:14px; box-shadow:var(--ring);
+  counter-increment: course;
+}
+.course-topline{
+  display:flex; align-items:center; gap:10px; margin-bottom:6px;
+}
+.course-num::before{
+  content:"Курс " counter(course);
+  display:inline-block; font-weight:700; color:var(--muted);
+  background:#fff; border:1px dashed var(--line); border-radius:999px;
+  padding:3px 8px; font-size:.8rem;
+}
+.course-title{ margin:0; font-size:1.25rem; line-height:1.2; }
+.course-org{ margin:.25rem 0 .5rem; color:var(--muted); font-size:.95rem; }
+
+/* двухколоночная компакт-сетка на десктопе */
+.course-compact .course-compact-grid{
+  display:grid; grid-template-columns:1.15fr .85fr; gap:16px;
+}
+.meta-grid{
+  display:grid; grid-template-columns:repeat(2,minmax(220px,1fr));
+  gap:6px 12px; margin:.6rem 0 .8rem; font-size:.95rem;
+}
+.meta-grid.meta-tight{ grid-template-columns:repeat(2,minmax(240px,1fr)); }
+.meta-grid .price{ color:var(--brand); font-weight:700; }
+.meta-grid .old{ text-decoration:line-through; opacity:.6; }
+
+.course-section{ margin-top:.8rem; }
+.course-section h4{ margin:0 0 .4rem; font-size:1.06rem; }
+
+/* компактные цифры программы */
+.program-stats{ display:flex; flex-wrap:wrap; gap:6px 10px; margin:0 0 .5rem; padding:0; list-style:none; }
+.program-stats.compact li{
+  border:1px dashed var(--line); border-radius:999px; padding:4px 8px; background:#fff; font-size:.85rem;
+}
+
+/* таблица — компакт */
+.program-table table{ width:100%; border-collapse:collapse; font-size:.95rem; }
+.program-table td{
+  border-bottom:1px solid var(--line);
+  padding:.5rem .6rem; vertical-align:top;
+}
+.program-table.compact td:first-child{ width:34%; }
+.program-table.compact td:nth-child(2){ width:20%; }
+
+/* плюсы/минусы */
+.pros-cons{
+  display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:.8rem;
+}
+.pros-cons h4{ margin-bottom:.3rem; }
+.pros ul, .cons ul{ margin:0; padding-left:1.1rem; }
+.pros li::marker{ content:"✓ "; color:green; }
+.cons li::marker{ content:"– "; color:#b84; }
+
+/* footer карточки */
+.course-footer{
+  margin-top:1rem; display:flex; align-items:center; gap:12px; flex-wrap:wrap;
+}
+.course-footer .btn{
+  background:var(--brand); color:#fff; padding:.55rem .9rem; border-radius:10px; text-decoration:none; font-weight:600;
+}
+.course-footer .btn:hover{ opacity:.9; }
+
+/* адаптив */
+@media (max-width: 980px){
+  .course-compact .course-compact-grid{ grid-template-columns:1fr; }
+  .meta-grid, .meta-grid.meta-tight{ grid-template-columns:1fr; }
+  .course-title{ font-size:1.2rem; }
+  .program-table.compact td:first-child,
+  .program-table.compact td:nth-child(2){ width:auto; }
+}
+
+
+/* === Внутренние под-карточки и ритм === */
+.course-card{ padding:18px 20px; }
+.course-topline{ margin-bottom:10px; }
+.course-title{ font-size:1.28rem; letter-spacing:.2px; }
+
+.subcard{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:12px;
+  padding:14px;
+  box-shadow: var(--ring);
+}
+.course-compact .course-compact-grid{
+  display:grid;
+  grid-template-columns: 1.05fr 0.95fr; /* компактнее */
+  gap:14px;
+}
+
+/* текстовая иерархия */
+.course-org{ margin:.1rem 0 .7rem; color:var(--muted); font-size:.95rem; }
+.course-section{ margin-top:.7rem; }
+.course-section h4{ font-size:1.05rem; margin:0 0 .45rem; }
+.section-right{ margin-bottom:.6rem; }
+
+/* компактная мета: ровные строки, тонкий разделитель */
+.meta-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(240px,1fr));
+  gap:8px 14px;
+  margin:.5rem 0 .9rem;
+  font-size:.95rem;
+}
+.meta-grid > div{
+  padding:6px 0;
+  border-bottom:1px dashed var(--line);
+}
+.meta-grid > div:nth-last-child(-n+2){ border-bottom:none; } /* последняя строка в сетке без линии */
+.meta-grid .price{ color:var(--brand); font-weight:700; }
+.meta-grid .old{ text-decoration:line-through; opacity:.55; }
+
+/* программа: визуальное сжатие и «воздух» справа */
+.program-stats.compact li{
+  padding:5px 10px; font-size:.85rem;
+}
+.program-table table{ width:100%; border-collapse:separate; border-spacing:0; font-size:.95rem; }
+.program-table td{
+  padding:.55rem .6rem;
+  border-bottom:1px solid var(--line);
+}
+.program-table tr:last-child td{ border-bottom:none; }
+.program-table.compact td:first-child{ width:36%; white-space:nowrap; }
+.program-table.compact td:nth-child(2){ width:22%; white-space:nowrap; }
+
+/* плюсы/минусы в единой под-карточке, колонками */
+.pros-cons{
+  display:grid; grid-template-columns:1fr 1fr; gap:18px;
+  margin-top:14px;
+}
+.pros-cons h4{ margin:.2rem 0 .4rem; }
+.pros ul, .cons ul{ margin:0; padding-left:1.1rem; }
+.pros li{ margin:.28rem 0; }
+.cons li{ margin:.28rem 0; }
+.pros li::marker{ content:"✓ "; color:#0a8a2a; }
+.cons li::marker{ content:"– "; color:#b87426; }
+
+/* низ карточки */
+.course-footer{
+  margin-top:14px;
+  display:flex; gap:10px; flex-wrap:wrap; align-items:center;
+}
+.course-footer .btn{ padding:.5rem .9rem; border-radius:10px; }
+
+/* разделители и общий ритм секции курсов */
+.courses .course-list{ gap:20px; }
+.courses .course-card + .course-card{ position:relative; }
+.courses .course-card + .course-card::before{
+  content:"";
+  position:absolute; top:-10px; left:0; right:0;
+  height:1px; background:var(--line);
+  opacity:.8;
+}
+
+/* адаптив: собираем в одну колонку, чуть больше «воздуха» */
+@media (max-width: 980px){
+  .course-compact .course-compact-grid{ grid-template-columns:1fr; gap:12px; }
+  .subcard{ padding:12px; }
+  .meta-grid{ grid-template-columns:1fr; }
+  .meta-grid > div{ border-bottom:1px dashed var(--line); }
+  .meta-grid > div:last-child{ border-bottom:none; }
+  .program-table.compact td:first-child,
+  .program-table.compact td:nth-child(2){ width:auto; white-space:normal; }
+}
+
+/* ===== Ribbon Course Card ===== */
+.course-card.ribbon{
+  counter-increment: course;
+  background:#fff; border:1px solid var(--line); border-radius:16px;
+  box-shadow:var(--ring); padding:16px 18px; display:block;
+}
+.course-card.ribbon + .course-card.ribbon{ margin-top:16px; }
+
+.course-head{ display:grid; grid-template-columns:auto 1fr; align-items:center; gap:10px 12px; margin-bottom:10px; }
+.course-head .course-num::before{
+  content:"Курс " counter(course);
+  display:inline-block; font-weight:700; color:var(--muted);
+  border:1px dashed var(--line); border-radius:999px; padding:3px 8px; font-size:.8rem;
+}
+.course-head .course-title{ margin:0; font-size:1.26rem; line-height:1.2; }
+.course-head .course-org{ grid-column:1 / -1; color:var(--muted); font-size:.95rem; margin-top:-2px; }
+
+/* тело: лента + программа */
+.course-body{ display:grid; grid-template-columns: minmax(420px,1.2fr) minmax(340px,0.8fr); gap:14px; }
+@media (max-width: 980px){
+  .course-body{ grid-template-columns:1fr; }
+}
+
+/* лента с чипами */
+.chiprail{
+  display:flex; flex-wrap:wrap; gap:8px; margin:0; padding:0; list-style:none;
+  align-content:flex-start;
+}
+.chip{
+  display:inline-flex; gap:6px; align-items:center;
+  background:#fff; border:1px dashed var(--line); border-radius:999px;
+  padding:6px 10px; font-size:.92rem; white-space:nowrap;
+}
+.chip b{ font-weight:700; }
+.chip s{ opacity:.55; }
+.chip .price{ color:var(--brand); }
+.chip.hot{ background:linear-gradient(180deg,#fff, #fff7ee); border-color:var(--line); }
+.chip a{ color:var(--ink); text-decoration:none; }
+.chip a:hover{ text-decoration:underline; }
+
+/* программа: аккордеон на <details> */
+.program h4{ margin:0 0 .5rem; font-size:1.06rem; }
+.program-stats.mini{
+  display:flex; gap:8px; margin:0 0 .4rem; padding:0; list-style:none;
+}
+.program-stats.mini li{
+  border:1px dashed var(--line); border-radius:999px; padding:4px 8px; font-size:.84rem;
+}
+.prog-item{
+  border:1px solid var(--line); border-radius:10px; background:#fff; margin-bottom:8px; overflow:hidden;
+}
+.prog-item[open]{ box-shadow:var(--ring); }
+.prog-item summary{
+  list-style:none; cursor:pointer; user-select:none;
+  padding:10px 12px; display:flex; align-items:center; justify-content:space-between; gap:10px;
+  font-weight:600;
+}
+.prog-item summary::-webkit-details-marker{ display:none; }
+.prog-item summary em{ font-style:normal; color:var(--muted); font-weight:500; font-size:.92rem; }
+.prog-item p{ padding:0 12px 12px; margin:0; color:var(--ink); }
+
+/* «О курсе» */
+.course-intro{ margin-top:12px; }
+.course-intro h4{ margin:0 0 .4rem; font-size:1.06rem; }
+.course-intro p{ margin:0; color:var(--ink); }
+
+/* Плюсы/минусы блок */
+.pm{
+  margin-top:12px; display:grid; grid-template-columns:1fr 1fr; gap:14px;
+  background:#fff; border:1px solid var(--line); border-radius:12px; padding:12px;
+}
+.pm h4{ margin:.1rem 0 .3rem; font-size:1.02rem; }
+.pm ul{ margin:0; padding-left:1.1rem; }
+.pm li{ margin:.28rem 0; }
+.pm .pros li::marker{ content:"✓ "; color:#0a8a2a; }
+.pm .cons li::marker{ content:"– "; color:#b87426; }
+@media (max-width: 980px){
+  .pm{ grid-template-columns:1fr; }
+}
+
+/* CTA */
+.course-cta{
+  margin-top:12px; display:flex; gap:10px; flex-wrap:wrap; align-items:center;
+}
+.course-cta .btn{
+  background:var(--brand); color:#fff; padding:.55rem .95rem; border-radius:10px; text-decoration:none; font-weight:600;
+}
+.course-cta .btn:hover{ opacity:.9; }
+
+
+
+
+/* ====== Neo card (как на скрине) ====== */
+.courses .course-list{ counter-reset:course; }
+.course-card.neo{ counter-increment:course; background:#fff; border:1px solid #f3d89a; border-radius:16px; padding:16px; box-shadow: 0 6px 18px rgba(255,179,0,.12), inset 0 0 0 2px #fff; }
+.course-card.neo + .course-card.neo{ margin-top:18px; }
+
+/* шапка */
+.neo-head{ position:relative; padding:10px 12px 12px; border:2px solid #ffe6ab; border-radius:12px; background:#fff; box-shadow: 0 6px 18px rgba(255,179,0,.12); }
+.neo-head .badge-num::before{
+  content:"Курс " counter(course);
+  display:inline-block; background:#fff8e1; border:1px solid #ffd56c; color:#8a6b00;
+  border-radius:999px; padding:4px 10px; font-size:.82rem; font-weight:700;
+}
+.neo-title{ margin:6px 0 2px; text-align:center; color:#e14a2a; font-weight:800; letter-spacing:.8px; }
+.neo-sub{ text-align:center; color:#666; font-size:.95rem; }
+.linkish{ color:#0a66c2; text-decoration:underline; text-decoration-thickness:.5px; text-underline-offset:2px; }
+
+/* мета */
+.neo-body{ padding:14px 10px 0; }
+.neo-meta{ list-style:none; margin:0; padding:0; display:grid; grid-template-columns:1fr 1fr; gap:8px 16px; }
+@media (max-width:980px){ .neo-meta{ grid-template-columns:1fr; } }
+.neo-meta li{ background:#fff; border:1px solid #f1efe9; border-radius:10px; padding:8px 10px; box-shadow: var(--ring); }
+.m-key{ color:#444; font-weight:600; }
+.m-accent{ color:#e14a2a; font-weight:700; }
+.m-old{ text-decoration:line-through; color:#8c8c8c; margin-left:6px; }
+.m-hot{ color:#d35400; font-weight:700; }
+.tel{ color:#e14a2a; text-decoration:none; }
+.tel:hover{ text-decoration:underline; }
+
+/* разделы */
+.neo-section{ margin-top:18px; }
+.neo-h4{ margin:0 0 .6rem; text-align:center; font-size:1.06rem; }
+.neo-section p{ margin:0; }
+
+/* pills */
+.neo-pills{ display:flex; flex-wrap:wrap; gap:8px; margin:0 0 .8rem; padding:0; list-style:none; justify-content:center; }
+.neo-pills li{
+  background:#fff8e8; border:1px solid #ffd9a6; color:#8a6b00;
+  border-radius:999px; padding:6px 10px; font-size:.9rem;
+}
+
+/* таблица */
+.neo-table table{ width:100%; border-collapse:separate; border-spacing:0; background:#fff; overflow:hidden; border-radius:12px; box-shadow: var(--ring); }
+.neo-table thead th{
+  background:#fff4d6; border-bottom:1px solid #ffe0a8; padding:10px 12px; text-align:left; font-weight:700;
+}
+.neo-table td{ border-bottom:1px solid #f0f0f0; padding:10px 12px; vertical-align:top; }
+.neo-table tr:last-child td{ border-bottom:none; }
+
+/* плюсы/минусы */
+.neo-card{ display:grid; grid-template-columns:1fr 1fr; gap:16px; background:#fff; border:1px solid #ffe0a8; border-radius:12px; padding:12px; box-shadow: var(--ring); }
+@media (max-width:980px){ .neo-card{ grid-template-columns:1fr; } }
+.pm-list{ margin:0; padding-left:1.1rem; }
+.pm-list.pros li::marker{ content:"✓ "; color:#0a8a2a; }
+.pm-list.cons li::marker{ content:"– "; color:#b87426; }
+
+/* CTA */
+.neo-cta{ margin-top:16px; display:flex; justify-content:center; }
+.neo-cta .btn{ background:#ff6a2d; }
+
+
+
+
+.btn {
+  display: inline-block;
+  background: #c9864b;         /* карамельный, как на скрине */
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 10px 22px;
+  border-radius: 10px;         /* мягкие скругления */
+  text-decoration: none;
+  border: none;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.05);
+}
+
+.btn:hover {
+  background: #a56d3e;         /* немного темнее при наведении */
+  box-shadow: 0 5px 10px rgba(0,0,0,0.08);
+  transform: translateY(-1px);
+}
+
+.btn:active {
+  background: #8d5e35;         /* эффект нажатия */
+  transform: translateY(0);
+}
+
+
+/* === LSI BENEFITS GRID === */
+.benefits.lsi {
+  padding: 60px 0;
+  background: #fafafa;
+}
+
+.benefits.lsi .section-title {
+  text-align: center;
+  font-size: 1.9rem;
+  margin-bottom: 2.5rem;
+  font-weight: 700;
+}
+
+.lsi-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.lsi-card {
+  background: #fff;
+  border: 1px solid #e6e6e6;
+  border-radius: 16px;
+  padding: 1.6rem 1.4rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.lsi-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+}
+
+.lsi-badge {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.6rem;
+}
+
+.lsi-badge .dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ff80ab, #ff4081);
+  margin-right: 8px;
+}
+
+.lsi-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #222;
+  margin: 0 0 0.4rem 0;
+}
+
+.lsi-text {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .benefits.lsi {
+    padding: 40px 0;
+  }
+  .lsi-card {
+    padding: 1.2rem;
+  }
+  .lsi-title {
+    font-size: 1rem;
+  }
+}
+
+
+
+
+/* рекламная врезка */
+.promo-disclaimer {
+  border-top: 1px dashed rgba(0,0,0,0.1);
+  background: #fafafa;
+  margin-top: 32px;
+  padding: 18px 0;
+}
+.note-ads {
+  margin: 0;
+  text-align: center;
+  font-size: 0.95rem;
+  color: #666;
+}
+.note-ads strong {
+  color: #222;
+  font-weight: 600;
+}
+
+
+
+
+
+/* ============================
+   Мобильная адаптация блока "Программа обучения"
+   (исправляет вылезание за границы экрана ТОЛЬКО средствами CSS)
+   ============================ */
+
+/* 1) Плашки: разрешаем перенос и многострочность */
+.neo-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.neo-pills li {
+  max-width: 100%;
+  white-space: nowrap;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: #f5f5f7;
+  font-size: 14px;
+  line-height: 1.2;
+}
+@media (max-width: 480px) {
+  .neo-pills li {
+    white-space: normal;          /* разрешаем перенос на очень узких экранах */
+    word-break: break-word;
+    hyphens: auto;
+  }
+}
+
+/* 2) Таблица: горизонтальная прокрутка без поломки вёрстки */
+.neo-table {
+  width: 100%;
+  overflow-x: auto;               /* включаем прокрутку при узком экране */
+  -webkit-overflow-scrolling: touch;
+}
+.neo-table table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;            /* фиксированная вёрстка => перенос содержимого */
+  min-width: 640px;               /* не даём таблице сжиматься меньше минимума */
+}
+
+/* 3) Ячейки: перенос длинных слов/фраз */
+.neo-table th,
+.neo-table td {
+  padding: 10px 12px;
+  vertical-align: top;
+  text-align: left;
+  word-break: break-word;         /* переносим длинные слова */
+  overflow-wrap: anywhere;        /* переносим любые длинные токены */
+  hyphens: auto;
+  border-bottom: 1px solid #eee;
+  background-clip: padding-box;   /* чтобы фон не "лез" за границы при скролле */
+}
+
+/* 4) Узкие экраны: уменьшаем плотность и типографику */
+@media (max-width: 768px) {
+  .neo-section {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .neo-h4 {
+    font-size: 18px;
+    line-height: 1.3;
+    margin-bottom: 12px;
+  }
+  .neo-table th,
+  .neo-table td {
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+}
+
+/* 5) Колонки: даём первой колонке (название блока) больше места на перенос */
+@media (max-width: 768px) {
+  .neo-table table th:nth-child(1),
+  .neo-table table td:nth-child(1) { width: 42%; }
+  .neo-table table th:nth-child(2),
+  .neo-table table td:nth-child(2) { width: 22%; white-space: nowrap; }
+  .neo-table table th:nth-child(3),
+  .neo-table table td:nth-child(3) { width: 36%; }
+}
+
+/* 6) Мелкие правки для лучшего UX при скролле */
+.neo-table::-webkit-scrollbar {
+  height: 8px;
+}
+.neo-table::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0,.15);
+  border-radius: 4px;
+}
+.neo-table::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+
+/* ======== ДОРАБОТКА ПРОГРАММЫ ОБУЧЕНИЯ ======== */
+
+/* Отступ между бейджами и таблицей */
+.neo-table {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-top: 16px; /* 🔸 расстояние между бейджами и таблицей */
+  position: relative;
+  padding-top: 22px; /* 🔸 добавляем место под верхнюю подсказку */
+}
+
+/* Намёки на горизонтальный скролл (две подсказки — сверху и снизу) */
+.neo-table::before,
+.neo-table::after {
+  content: "← сдвиньте чтобы посмотреть →";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  color: rgba(0,0,0,0.55); /* чуть заметнее, чем раньше */
+  background: rgba(255,255,255,0.9);
+  padding: 3px 8px;
+  border-radius: 6px;
+  pointer-events: none;
+  opacity: 0;
+  white-space: nowrap;
+  transition: opacity .3s ease;
+}
+
+/* Верхняя подсказка */
+.neo-table::before {
+  top: -8px; /* 🔸 над таблицей, не перекрывает */
+}
+
+/* Нижняя подсказка */
+.neo-table::after {
+  bottom: 4px;
+}
+
+/* Показываем подсказки на узких экранах */
+@media (max-width: 768px) {
+  .neo-table::before,
+  .neo-table::after {
+    opacity: 1;
+    animation: hintScroll 3s ease-in-out 1;
+  }
+}
+
+/* Эффект появления/затухания подсказки */
+@keyframes hintScroll {
+  0% { opacity: 0; transform: translateX(-45%) translateY(6px); }
+  10% { opacity: 1; transform: translateX(-50%) translateY(0); }
+  80% { opacity: 1; }
+  100% { opacity: 0; transform: translateX(-55%) translateY(-6px); }
+}
+
+/* Остальные стили таблицы */
+.neo-table table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  min-width: 640px;
+}
+.neo-table th,
+.neo-table td {
+  padding: 10px 12px;
+  vertical-align: top;
+  text-align: left;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+  hyphens: auto;
+  border-bottom: 1px solid #eee;
+}
+
+
+
+
+.js-nav {
+  cursor: pointer;
+}
+.js-nav.linkish {
+  text-decoration: underline;
+}
+
+.js-nav.linkish:hover {
+  text-decoration: none;
+}
+
+/* CTA-кнопка из span */
+/* span.js-nav как кнопка в CTA */
+.neo-cta .linkish.js-nav {
+  display: inline-block;
+  background: #ff6a2d;         /* оранжевый */
+  color: #fff !important;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 10px 22px;
+  border-radius: 10px;
+  text-decoration: none;
+  border: none;
+
+  cursor: pointer;
+  user-select: none;
+
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.05);
+}
+
+.neo-cta .linkish.js-nav:hover {
+  background: #a56d3e;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.08);
+  transform: translateY(-1px);
+}
+
+.neo-cta .linkish.js-nav:active {
+  background: #8d5e35;
+  transform: translateY(0);
+}
+
+
+blockquote {
+  margin: 2.5rem 0;
+  padding: 1.8rem 2.2rem;
+  position: relative;
+
+  background: linear-gradient(135deg, #f7f7f7, #ffffff);
+  border-left: 4px solid #111;
+
+  font-style: italic;
+  color: #222;
+}
+
+blockquote p {
+  margin: 0;
+  font-size: 1.15rem;
+  line-height: 1.6;
+}
+
+blockquote::before {
+  content: "“";
+  position: absolute;
+  top: -0.6rem;
+  left: 0.8rem;
+
+  font-size: 4rem;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.08);
+  line-height: 1;
+}
+
+
+</style>
+
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+      (function(m,e,t,r,i,k,a){
+          m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}
+          m[i].l=1*new Date();
+          for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+          k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+      })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=104699306', 'ym');
+
+      ym(104699306, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", accurateTrackBounce:true, trackLinks:true});
+  </script>
+  <noscript><div><img src="../watch/104699306" style="position:absolute; left:-9999px;" alt=""></div></noscript>
+  <!-- /Yandex.Metrika counter -->
+
+  <script src="../js/aff-wrap.ecolespb.js" defer=""></script>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="nav" id="nav">
+        <a href="../" class="brand" aria-label="На главную">
+          <svg viewbox="0 0 64 64" fill="none" aria-hidden="true">
+            <path d="M32 6c6 0 10 5 10 11 0 5-3 9-7 10v6h9a3 3 0 0 1 0 6h-9v15a3 3 0 1 1-6 0V39h-9a3 3 0 0 1 0-6h9v-6c-4-1-7-5-7-10 0-6 4-11 10-11Z" fill="currentColor"></path>
+          </svg>
+          <span>Курсы барбера и мужских стрижек</span>
+        </a>
+
+        <!-- Гамбургер -->
+        <button class="nav-toggle" id="menuToggle" aria-label="Открыть меню" aria-expanded="false" aria-controls="primary-menu">
+          <span class="burger" aria-hidden="true"></span>
+        </button>
+
+        <nav class="nav-links" id="primary-menu" aria-label="Главная навигация">
+          <a href="../">На главную</a>
+          <a href="#faq">FAQ</a>
+          <a href="../blog-category.html">Блог</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+<!-- ===== локальные стили ТОЛЬКО для блога ===== -->
+
+
+
+<style>
+/* BLOG SCOPE — всё внутри атрибута data-blog-root */
+
+/* 1) Чиним «залипающий» hero только внутри блога */
+[data-blog-root] header.hero {
+  position: static; inset: auto; height: auto; min-height: 0; z-index: 1;
+  overflow: visible; background-attachment: scroll; padding-top: 32px; padding-bottom: 16px;
+}
+[data-blog-root] header.hero .hero-inner,
+[data-blog-root] header.hero .hero-card,
+[data-blog-root] header.hero .figure { position: static; transform:none; }
+[data-blog-root] header.hero, [data-blog-root] header.hero .hero-inner { min-height: 0; }
+[data-blog-root] main, [data-blog-root] .container:first-of-type { margin-top: 0; }
+
+/* 2) Контент статьи */
+[data-blog-root] .article .content { line-height: 1.65; }
+[data-blog-root] .article .content img { max-width: 100%; height: auto; border-radius: 12px; }
+[data-blog-root] .article .content h2 { margin: 1.2em 0 .5em; }
+[data-blog-root] .article .content h3 { margin: 1em 0 .5em; }
+[data-blog-root] #toc.card { border-radius: 16px; padding: 16px; }
+[data-blog-root] .section_links ul.list { margin: .5em 0 0; }
+[data-blog-root] .section_links ul.list li + li { margin-top: .25em; }
+
+/* 3) Сетка */
+@media (min-width: 960px) {
+  [data-blog-root] .article .container.grid2 {
+    display: grid; grid-template-columns: minmax(0,1fr) 320px; gap: 24px;
+  }
+}
+@media (max-width: 959.98px) {
+  [data-blog-root] .article .container.grid2 { display: block; }
+  [data-blog-root] aside { margin-top: 24px; }
+}
+
+/* --- HERO: подпись и отступы --- */
+[data-blog-root] header.hero .figure-caption {
+  position: static !important; text-align: center; font-size: 0.9rem; color: var(--muted, #666);
+  margin-top: 8px; line-height: 1.4;
+}
+[data-blog-root] header.hero .hero-card { display:flex; flex-direction:column; align-items:center; margin-bottom:24px; }
+[data-blog-root] header.hero .hero-inner { padding-bottom: 24px; }
+
+/* --- HERO: адаптивная обложка (любой формат фото выглядит красиво) --- */
+[data-blog-root] header.hero .hero-card {
+  width: 100%;
+  max-width: 640px;
+  margin-left: auto; margin-right: auto;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #f9f9f9;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+[data-blog-root] header.hero .figure {
+  width: 100%;
+  height: 400px;                  /* базовая высота обложки */
+  overflow: hidden;
+}
+[data-blog-root] header.hero .figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;              /* вписываем изображение без искажений */
+  object-position: center;
+  display: block;
+}
+@media (max-width: 768px) {
+  [data-blog-root] header.hero .figure { height: 280px; }
+}
+[data-blog-root] header.hero .figure-caption {
+  padding: 12px 16px;
+  background: #fff;
+  border-top: 1px solid #eee;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* воздух между героем и секциями */
+[data-blog-root] .article .container.grid2 { margin-top: 32px; }
+@media (max-width: 768px) { [data-blog-root] .article .container.grid2 { margin-top: 24px; } }
+
+/* Внимание (жёлтая) */
+[data-blog-root] .section_attention {
+  background:#fff8e6; border:1px solid #f5d68e; border-left:4px solid #f0b400;
+  border-radius:8px; padding:14px 18px 14px 44px; margin:20px 0; font-size:.97rem; line-height:1.55; color:#333; position:relative;
+}
+[data-blog-root] .section_attention::before { content:"📌"; position:absolute; left:16px; top:12px; font-size:1.1rem; line-height:1; }
+[data-blog-root] .section_attention strong { color:#000; font-weight:600; }
+
+/* Подсказка (голубая) */
+[data-blog-root] .section_tip {
+  background:#e8f6ff; border:1px solid #b5e2ff; border-left:4px solid #1fa4e3;
+  border-radius:8px; padding:14px 18px 14px 44px; margin:20px 0; position:relative; font-size:.97rem; line-height:1.55;
+}
+[data-blog-root] .section_tip::before { content:"💡"; position:absolute; left:16px; top:12px; font-size:1.1rem; line-height:1; }
+
+/* Ссылки внутри блога */
+[data-blog-root] a { color:#d97c00; text-decoration:none; border-bottom:1px dotted rgba(217,124,0,0.4); transition:color .2s, border-color .2s; }
+[data-blog-root] a:hover { color:#a65e00; border-color: rgba(217,124,0,0.8); }
+[data-blog-root] .section_attention a { font-weight:600; }
+
+/* Кнопка в сайдбаре */
+[data-blog-root] .btn.btn-primary {
+  display:inline-block; background:#d97c00; color:#fff !important; font-weight:600;
+  padding:10px 18px; border-radius:8px; text-align:center; text-decoration:none; transition:background .2s, transform .1s; border:none;
+}
+[data-blog-root] .btn.btn-primary:hover { background:#a65e00; transform:translateY(-1px); }
+[data-blog-root] .btn.btn-primary:active { background:#8a4f00; transform:translateY(0); }
+
+/* --- Related (картинка сверху, заголовок снизу, 1 карточка в строке) --- */
+[data-blog-root] .related-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+}
+[data-blog-root] .related-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+  transition: box-shadow 0.2s ease, transform 0.15s ease;
+}
+[data-blog-root] .related-card:hover {
+  box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+  transform: translateY(-2px);
+}
+[data-blog-root] .related-card .thumb {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  display: block;
+  background: #f4f4f4;
+}
+[data-blog-root] .related-card .thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+[data-blog-root] .related-card .rel-title {
+  padding: 10px 12px 12px;
+}
+[data-blog-root] .related-card .rel-title a {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #222;
+  line-height: 1.4;
+  text-decoration: none;
+  display: block;
+}
+[data-blog-root] .related-card .rel-title a:hover { color: #d97c00; }
+
+/* ===== Таблицы в статье (красиво + адаптивно) ===== */
+[data-blog-root] .table-wrap{
+  margin:16px 0;
+  padding:8px;
+  border:1px solid #eee;
+  border-radius:12px;
+  background:#fff;
+  overflow-x:auto;             /* горизонтальный скролл на узких экранах */
+  -webkit-overflow-scrolling: touch;
+  box-shadow: 0 2px 6px rgba(0,0,0,.03);
+}
+
+[data-blog-root] .data-table{
+  width:100%;
+  min-width:680px;             /* чтобы колонки не слипались на узких экранах */
+  border-collapse:separate;
+  border-spacing:0;
+  font-size:0.98rem;
+  line-height:1.55;
+}
+
+/* Шапка */
+[data-blog-root] .data-table thead th{
+  background:#f7f7f7;
+  color:#222;
+  font-weight:700;
+  text-align:left;
+  padding:12px 14px;
+  border-bottom:1px solid #e9e9e9;
+  position:sticky;
+  top:0;                       /* шапка липнет при скролле внутри обёртки */
+  z-index:1;
+}
+[data-blog-root] .data-table thead th:first-child{ border-top-left-radius:10px; }
+[data-blog-root] .data-table thead th:last-child{  border-top-right-radius:10px; }
+
+/* Ячейки */
+[data-blog-root] .data-table td{
+  padding:12px 14px;
+  border-bottom:1px solid #f0f0f0;
+  vertical-align:top;
+  color:#333;
+}
+
+/* Зебра и ховер */
+[data-blog-root] .data-table tbody tr:nth-child(odd){ background:#fcfcfc; }
+[data-blog-root] .data-table tbody tr:hover{ background:#fff8e6; }
+
+/* Последняя строка без нижней линии */
+[data-blog-root] .data-table tbody tr:last-child td{ border-bottom:0; }
+
+/* Узкие экраны: уменьшим минимальную ширину и отступы */
+@media (max-width: 640px){
+  [data-blog-root] .data-table{ min-width:560px; font-size:0.96rem; }
+  [data-blog-root] .data-table th,
+  [data-blog-root] .data-table td{ padding:10px 12px; }
+}
+
+/* Пояснение под таблицей */
+[data-blog-root] .table-wrap + .muted{ margin-top:6px; display:block; }
+
+</style>
+
+
+<div data-blog-root="">
+
+  <!-- SEO (JSON-LD + фолбэк для title/description/OG) -->
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BlogPosting","headline":"Конфликты в барбершопе: как они возникают и что с ними делать","description":"Конфликты в барбершопе: почему они возникают, как связаны с адаптацией и атмосферой в команде, и что помогает решать напряжённые ситуации без потерь.","image":"/IMUGA/konflikty-v-barbershope.jpg","mainEntityOfPage":"https://kursy-barbera.vercel.app/blog/konflikty-v-barbershope.php","url":"https://kursy-barbera.vercel.app/blog/konflikty-v-barbershope.php"}  </script>
+  <script>
+  (function(){
+    var t = "Конфликты в барбершопе: причины, последствия и как с ними работать";
+    var d = "Конфликты в барбершопе: почему они возникают, как связаны с адаптацией и атмосферой в команде, и что помогает решать напряжённые ситуации без потерь.";
+    if (document.title !== t) document.title = t;
+    function ensureMeta(selector, attrName, content){
+      var el = document.querySelector(selector);
+      if(!el){ el=document.createElement('meta');
+        var m = selector.match(/\[(.+?)="(.+?)"\]/); if (m) el.setAttribute(m[1], m[2]);
+        document.head.appendChild(el);
+      }
+      el.setAttribute(attrName, content);
+    }
+    ensureMeta('meta[name="description"]', 'content', d);
+    ensureMeta('meta[property="og:title"]', 'content', t);
+    ensureMeta('meta[property="og:description"]', 'content', d);
+    ensureMeta('meta[property="og:type"]', 'content', 'article');
+    ensureMeta('meta[property="og:url"]', 'content', "https:\/\/kursy-barbera.vercel.app\/blog\/konflikty-v-barbershope.php");
+    ensureMeta('meta[property="og:image"]', 'content', "\/IMUGA\/konflikty-v-barbershope.jpg");
+  })();
+  </script>
+
+  <!-- Хлебные крошки -->
+  <nav class="breadcrumbs" aria-label="Хлебные крошки" itemscope="" itemtype="https://schema.org/BreadcrumbList">
+    <span itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+      <a itemprop="item" href="../"><span itemprop="name">Главная</span></a>
+      <meta itemprop="position" content="1">
+    </span>
+    <span> / </span>
+    <span itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+      <a itemprop="item" href="../blog-category.html"><span itemprop="name">Блог</span></a>
+      <meta itemprop="position" content="2">
+    </span>
+      </nav>
+
+  <article class="article" itemscope="" itemtype="https://schema.org/BlogPosting">
+    <header class="hero">
+      <div class="container">
+        <div class="hero-inner">
+          <div>
+            <span class="tag">Статья блога</span>
+            <h1 class="title" itemprop="headline">Конфликты в барбершопе: как они возникают и что с ними делать</h1>
+            <p class="subtitle" itemprop="description">Разбираем, почему конфликты в барбершопе — не редкость, как они связаны с адаптацией и атмосферой в команде, и какие ошибки мешают их решать.</p>                      </div>
+          <div class="hero-card">
+            <div class="stitches" aria-hidden="true"></div>
+            <div class="figure" role="img" aria-label="Конфликты в барбершопе: как они возникают и что с ними делать">
+              <img src="../IMUGA/konflikty-v-barbershope.jpg" alt="" loading="lazy" itemprop="image">
+            </div>
+              <div class="figure-caption">Барбершоп — это живая среда с высокой нагрузкой и плотным общением. Конфликты здесь неизбежны, но именно подход к ним определяет устойчивость команды и каждого барбера.</div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <meta itemprop="mainEntityOfPage" content="https://kursy-barbera.vercel.app/blog/konflikty-v-barbershope.php">
+
+    <div class="container grid2">
+      <!-- Контент -->
+      <div id="article-body" class="content" itemprop="articleBody">
+        <!-- Оглавление (авто) -->
+        <nav id="toc" class="card" aria-label="Содержание" style="display:none;margin-bottom:16px;">
+          <h3 style="margin:0 0 8px 0;">Содержание</h3>
+          <ul class="list" id="toc-list"></ul>
+        </nav>
+
+        <!-- end blok -->
+
+<!-- start blok -->
+<!-- <url>konflikty-v-barbershope.php</url> -->
+<!-- excerpt: Конфликты в барбершопе возникают чаще, чем принято признавать, и почти всегда связаны с процессами внутри команды. -->
+
+<h2>Почему конфликты в барбершопе — это нормально</h2>
+
+<p>Барбершоп — это живая рабочая среда с высокой плотностью общения, постоянным потоком клиентов и разным уровнем нагрузки у мастеров. В таких условиях конфликты не являются чем-то аномальным — скорее, это естественное следствие взаимодействия людей.</p>
+
+<p>Проблемы начинаются не из-за самого факта конфликта, а из-за того, как с ним обходятся. Игнорирование, замалчивание или попытка «перетерпеть» почти всегда усугубляют ситуацию и бьют по атмосфере внутри команды.</p>
+
+<p>Особенно заметно это в первые месяцы работы, когда барбер только входит в коллектив. Примерно по такому же принципу идут <a href="../orsk.html">курсы барбера в Орске</a>: в учебной группе напряжение тоже появляется, но там его чаще разбирают сразу, а в рабочей среде это делают далеко не всегда.</p>
+
+<div class="section_attention">
+  <strong>Важно:</strong> отсутствие конфликтов чаще говорит не о здоровье команды, а о том, что напряжение просто не проговаривается.
+</div>
+
+<h2>Рабочие и личные конфликты — в чём разница</h2>
+
+<p>Не каждый конфликт в барбершопе связан с личной неприязнью. Чаще всего речь идёт о рабочих столкновениях: ожидания не совпали, темп разный, правила поняты по-разному.</p>
+
+<p>Проблема возникает, когда рабочий конфликт начинают воспринимать как личный. Тогда вместо обсуждения задачи появляется защита, обиды и закрытость.</p>
+
+<ul class="section_list">
+  <li><strong>Рабочие конфликты:</strong> связаны с графиком, стандартами, процессами.</li>
+  <li><strong>Личные конфликты:</strong> затрагивают самооценку, уважение, границы.</li>
+  <li><strong>Смешанные ситуации:</strong> начинаются как рабочие, но быстро уходят в личное.</li>
+</ul>
+
+<p>Чем раньше команда умеет отделять одно от другого, тем меньше шансов, что напряжение перерастёт в затяжной конфликт.</p>
+
+<h2>Откуда берётся напряжение внутри команды</h2>
+
+<p>Конфликт редко появляется «на пустом месте». Обычно ему предшествует период накопленного напряжения, которое по разным причинам не обсуждается.</p>
+
+<div class="table-wrap">
+  <table class="data-table">
+    <thead>
+      <tr>
+        <th>Источник напряжения</th>
+        <th>Как проявляется</th>
+        <th>К чему приводит</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Разный темп работы</td>
+        <td>Недовольство, комментарии, ирония</td>
+        <td>Раздражение в команде</td>
+      </tr>
+      <tr>
+        <td>Негласные правила</td>
+        <td>Замечания без объяснений</td>
+        <td>Чувство несправедливости</td>
+      </tr>
+      <tr>
+        <td>Усталость</td>
+        <td>Резкие реакции на мелочи</td>
+        <td>Эскалация конфликтов</td>
+      </tr>
+      <tr>
+        <td>Новые сотрудники</td>
+        <td>Дистанция, холодность</td>
+        <td>Изоляция новичка</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p>Если эти сигналы игнорируются, конфликт становится лишь вопросом времени.</p>
+
+<div class="section_attention">
+  <strong>Важно:</strong> напряжение внутри команды почти всегда ощущается клиентами, даже если конфликт формально «скрытый».
+</div>
+
+<h2>Почему конфликты чаще возникают на этапе адаптации</h2>
+
+<p>Новички находятся в уязвимом положении: они ещё не знают внутренних правил, но уже должны соответствовать ожиданиям. Любая резкая фраза или замечание может восприниматься болезненно.</p>
+
+<p>Команда же часто ждёт от нового барбера быстрой самостоятельности и включённости, не всегда понимая, сколько неопределённости и стресса он испытывает.</p>
+
+<p>На этом пересечении и возникает большинство конфликтных ситуаций — не из-за злого умысла, а из-за отсутствия диалога.</p>
+
+<div class="section_tip">
+  <strong>Совет:</strong> если напряжение возникло в первые месяцы, стоит рассматривать его как часть адаптации, а не как признак несовместимости.
+</div>
+<!-- end blok -->
+
+<!-- start blok -->
+<!-- <url>konflikty-v-barbershope.php</url> -->
+<!-- excerpt: Большинство конфликтов в барбершопе имеют системные причины, а не личную неприязнь. -->
+
+<h2>Основные причины конфликтов внутри барбершопа</h2>
+
+<p>Когда конфликт уже произошёл, его часто объясняют характером конкретного человека. Но если посмотреть глубже, становится понятно: в большинстве случаев причина лежит в процессах, а не в личностях.</p>
+
+<p>Барбершоп — это место с высокой нагрузкой и постоянным взаимодействием. Если система внутри команды не отлажена, напряжение неизбежно выходит наружу.</p>
+
+<h3>Ожидания без договорённостей</h3>
+
+<p>Одна из самых частых причин конфликтов — ситуация, когда от барбера чего-то ждут, но это никак не проговорено. Ожидается определённый темп, стиль общения или уровень инициативы, но правила существуют только «в голове» у руководства или коллег.</p>
+
+<p>Новичок искренне считает, что работает нормально, а команда — что он «не дотягивает». В результате возникает раздражение с обеих сторон.</p>
+
+<div class="section_attention">
+  <strong>Важно:</strong> непрояснённые ожидания почти всегда становятся почвой для конфликтов.
+</div>
+
+<h3>Разный темп и подход к работе</h3>
+
+<p>Даже в одном барбершопе мастера могут сильно отличаться по стилю работы. Кто-то делает акцент на скорость, кто-то — на общение с клиентом, кто-то — на максимальную аккуратность.</p>
+
+<p>Проблемы начинаются, когда один подход начинают считать «правильным», а остальные — ошибочными. Особенно болезненно это воспринимают новички, которые ещё ищут свой ритм.</p>
+
+<h3>Усталость и перегрузка</h3>
+
+<p>Плотные записи, минимум пауз и высокая эмоциональная вовлечённость приводят к накопленной усталости. В таком состоянии даже нейтральные слова могут звучать как упрёк.</p>
+
+<p>Когда команда работает на пределе, терпимость снижается, а конфликты вспыхивают из-за мелочей: смен, записей, бытовых вопросов.</p>
+
+<div class="section_tip">
+  <strong>Совет:</strong> если конфликт произошёл в конце тяжёлой смены, стоит учитывать фактор усталости, а не делать выводы на эмоциях.
+</div>
+
+<h2>Связь конфликтов и адаптации новичков</h2>
+
+<p>Отдельная группа конфликтов напрямую связана с этапом адаптации. Новичок ещё не встроен в систему, но уже находится под давлением ожиданий.</p>
+
+<p>Если адаптация проходит без поддержки и диалога, мелкие недоразумения быстро перерастают в устойчивое напряжение. Именно поэтому важно, чтобы ещё на этапе <a href="../">обучения барбера</a> формировалось понимание: конфликты — это часть реальной работы, а не признак неудачи.</p>
+
+<p>Команды, которые осознанно относятся к адаптации новых мастеров, сталкиваются с конфликтами реже и решают их быстрее.</p>
+
+<div class="section_attention">
+  <strong>Важно:</strong> конфликт с новичком почти всегда сигнал о том, что процесс встраивания пошёл не по плану.
+</div>
+
+<h2>Почему попытка «не конфликтовать» только усугубляет ситуацию</h2>
+
+<p>Некоторые барберы стараются любой ценой избегать конфликтов, считая их угрозой рабочей атмосфере. На практике это приводит к обратному эффекту.</p>
+
+<p>Непроговорённые проблемы не исчезают, а накапливаются. Со временем напряжение проявляется в пассивной агрессии, холодности или резких вспышках.</p>
+
+<p>Здоровая команда отличается не отсутствием конфликтов, а умением обсуждать сложные моменты до того, как они станут разрушительными.</p>
+<!-- end blok -->
+
+<!-- start blok -->
+<!-- <url>konflikty-v-barbershope.php</url> -->
+<!-- excerpt: Атмосфера в барбершопе напрямую влияет на то, как команда проживает конфликты — сглаживает их или усиливает. -->
+
+<h2>Как атмосфера барбершопа влияет на конфликты</h2>
+
+<p>Один и тот же конфликт в разных барбершопах может развиваться по совершенно разным сценариям. Где-то напряжение быстро гасится через диалог, а где-то копится и разрушает команду. Ключевая разница — в атмосфере внутри коллектива.</p>
+
+<p>Атмосфера формируется не лозунгами и не интерьером, а ежедневным взаимодействием: тоном общения, реакцией на ошибки, готовностью обсуждать сложные моменты. Именно она определяет, станет ли конфликт рабочим инструментом или хронической проблемой.</p>
+
+<h3>Поддерживающая среда</h3>
+
+<p>В поддерживающей атмосфере конфликт воспринимается как сигнал, а не как угроза. Здесь принято обсуждать, а не обвинять, уточнять, а не додумывать.</p>
+
+<ul class="section_list">
+  <li>замечания даются по делу и без унижения;</li>
+  <li>ошибки разбираются, а не накапливаются;</li>
+  <li>есть пространство для вопросов и обратной связи;</li>
+  <li>новички получают время на адаптацию.</li>
+</ul>
+
+<p>В такой среде даже острые ситуации редко переходят в личную плоскость, потому что у команды есть привычка разговаривать.</p>
+
+<h3>Напряжённая или токсичная среда</h3>
+
+<p>В противоположной ситуации конфликт становится способом сбросить накопленное напряжение. Замечания звучат резко, обсуждения откладываются, а недовольство выражается косвенно.</p>
+
+<p>Даже нейтральные фразы могут восприниматься как атака, потому что общий фон уже перегрет. В итоге конфликты вспыхивают чаще и проживаются болезненнее.</p>
+
+<div class="section_attention">
+  <strong>Важно:</strong> токсичная атмосфера усиливает любые разногласия, даже если их изначальная причина незначительна.
+</div>
+
+<h2>Почему атмосфера важнее отдельных ситуаций</h2>
+
+<p>Отдельный конфликт редко разрушает команду сам по себе. Гораздо опаснее, когда напряжение становится фоном. В такой среде даже мелкие недоразумения воспринимаются как подтверждение «здесь небезопасно».</p>
+
+<p>Поэтому разговоры о конфликтах невозможно вести в отрыве от общей среды. <a href="atmosfera-i-dohod.html">Атмосфера в барбершопе</a> влияет не только на настроение команды, но и на устойчивость процессов, доверие клиентов и готовность мастеров оставаться в этом месте надолго.</p>
+
+<h2>Что может сделать команда, чтобы конфликты не разрушали работу</h2>
+
+<p>Атмосфера — это не абстракция, а результат конкретных действий. Даже небольшие изменения в подходе к общению заметно снижают уровень напряжения.</p>
+
+<ul class="section_list">
+  <li>регулярно проговаривать ожидания и правила;</li>
+  <li>разделять рабочее и личное в обсуждениях;</li>
+  <li>реагировать на напряжение раньше, чем на конфликт;</li>
+  <li>поддерживать новичков в период адаптации.</li>
+</ul>
+
+<p>Когда команда осознанно работает с атмосферой, конфликты перестают быть угрозой и становятся частью нормального рабочего процесса.</p>
+
+<div class="section_tip">
+  <strong>Совет:</strong> если в барбершопе часто «взрываются» мелочи, стоит смотреть не на людей, а на фон, в котором они работают.
+</div>
+<!-- end blok -->
+
+<!-- start blok -->
+<!-- <url>konflikty-v-barbershope.php</url> -->
+<!-- excerpt: Конфликты в барбершопе редко выглядят одинаково — чаще они развиваются по повторяющимся сценариям. -->
+
+<h2>Типичные сценарии конфликтов в барбершопе</h2>
+
+<p>Конфликт не всегда выглядит как открытая ссора. В барбершопах напряжение часто накапливается тихо и проявляется в привычных, повторяющихся формах. Понимание этих сценариев помогает распознать проблему раньше, чем она станет разрушительной.</p>
+
+<h3>Молчаливый конфликт</h3>
+
+<p>Самый распространённый и самый опасный сценарий. Внешне всё выглядит спокойно: никто не спорит, работа идёт, клиенты обслуживаются. Но между отдельными членами команды появляется дистанция.</p>
+
+<ul class="section_list">
+  <li>сокращаются разговоры и контакт;</li>
+  <li>замечания заменяются молчанием;</li>
+  <li>решения принимаются в обход;</li>
+  <li>возникает ощущение «меня избегают».</li>
+</ul>
+
+<p>Молчаливый конфликт редко решается сам. Напряжение копится и со временем выходит либо в резкой вспышке, либо в уходе одного из участников.</p>
+
+<div class="section_attention">
+  <strong>Важно:</strong> если в команде стало «слишком тихо», это не всегда признак гармонии.
+</div>
+
+<h3>Пассивная агрессия</h3>
+
+<p>В этом сценарии недовольство выражается не напрямую, а через иронию, шутки с подтекстом или демонстративное поведение. Формально придраться не к чему, но атмосфера становится тяжёлой.</p>
+
+<p>Новички часто попадают под пассивную агрессию, потому что не до конца понимают, как реагировать: игнорировать, оправдываться или отвечать тем же.</p>
+
+<p>Опасность такого конфликта в том, что он подтачивает уверенность и разрушает доверие, оставаясь при этом «невидимым».</p>
+
+<h3>Открытое столкновение</h3>
+
+<p>Самый заметный, но не всегда самый сложный вариант. Здесь напряжение выходит наружу сразу — в виде спора, резкого разговора или конфронтации.</p>
+
+<p>Парадоксально, но при зрелом подходе открытый конфликт иногда проще решить, чем скрытый. Если стороны готовы говорить по делу, ситуация может проясниться достаточно быстро.</p>
+
+<div class="section_tip">
+  <strong>Совет:</strong> важно различать эмоции и суть проблемы. Крик — это форма, а не всегда содержание.
+</div>
+
+<h3>Конфликт «новичок — команда»</h3>
+
+<p>Отдельный сценарий — напряжение между новым барбером и уже сложившимся коллективом. Оно может проявляться в холодном отношении, постоянных замечаниях или ощущении, что новичка «проверяют».</p>
+
+<p>Такой конфликт редко бывает личным. Чаще он связан со страхом изменений, перегрузкой команды или неясными ожиданиями.</p>
+
+<div class="section_attention">
+  <strong>Важно:</strong> если конфликт повторяется с разными новичками, причина почти всегда системная.
+</div>
+
+<h2>Почему сценарии повторяются</h2>
+
+<p>Конфликты в барбершопе часто идут по одним и тем же рельсам, потому что условия похожи: высокий темп, усталость, плотное общение и ограниченное время на диалог.</p>
+
+<p>Понимание типовых сценариев даёт возможность не реагировать импульсивно, а выбрать более спокойную и продуктивную стратегию.</p>
+<!-- end blok -->
+
+<!-- start blok -->
+<!-- <url>konflikty-v-barbershope.php</url> -->
+<!-- excerpt: Большинство конфликтов усугубляются не из-за причины, а из-за неправильной реакции на неё. -->
+
+<h2>Ошибки, которые усугубляют конфликт</h2>
+
+<p>В момент напряжения легко действовать импульсивно. Барбер защищается, оправдывается или старается доказать свою правоту. Именно эти реакции чаще всего и превращают рабочий конфликт в затяжную проблему.</p>
+
+<p>Важно понимать: конфликт почти никогда не разрушается одним неверным словом. Его усиливает серия типичных ошибок, которые повторяются снова и снова.</p>
+
+<h3>Уход в молчание</h3>
+
+<p>Одна из самых частых стратегий — замкнуться и перестать обсуждать проблему. Внешне это выглядит как попытка «не раздувать», но внутри напряжение продолжает расти.</p>
+
+<p>Молчание редко воспринимается как нейтралитет. Чаще его читают как обиду, игнорирование или пассивную агрессию.</p>
+
+<div class="section_attention">
+  <strong>Важно:</strong> отсутствие реакции — это тоже реакция, и она не всегда безопасна для команды.
+</div>
+
+<h3>Защита и оправдания</h3>
+
+<p>Когда барбер начинает оправдываться, он автоматически встаёт в позицию обороны. В таком режиме услышать суть замечаний становится практически невозможно.</p>
+
+<p>Даже если замечание действительно несправедливо, постоянная защита создаёт ощущение закрытости и усиливает раздражение у второй стороны.</p>
+
+<h3>Перенос рабочего в личное</h3>
+
+<p>Одна из самых болезненных ошибок — воспринимать рабочую критику как оценку личности. В этот момент разговор перестаёт быть профессиональным и уходит в эмоциональную плоскость.</p>
+
+<p>Фразы вроде «меня не уважают» или «ко мне придираются» часто возникают именно здесь, даже если исходно речь шла о конкретной ситуации.</p>
+
+<h3>Попытка «выиграть» конфликт</h3>
+
+<p>Когда целью становится не решение проблемы, а доказательство правоты, конфликт заходит в тупик. Победителей в таких ситуациях не бывает — даже если формально кто-то оказался прав.</p>
+
+<p>В барбершопе, где важна командная работа, попытка выиграть конфликт почти всегда приводит к потере доверия.</p>
+
+<div class="section_tip">
+  <strong>Совет:</strong> полезный вопрос в конфликте — не «кто прав», а «что нам сейчас мешает нормально работать».
+</div>
+
+<h2>Почему эмоции усиливают конфликт</h2>
+
+<p>Высокая нагрузка и усталость делают эмоции резче. В таком состоянии сложнее отделить суть проблемы от формы, в которой она была высказана.</p>
+
+<p>Если конфликт развивается на фоне накопленной усталости, любые слова звучат жёстче, чем задумывались. Поэтому важно учитывать контекст, а не только содержание разговора.</p>
+
+<div class="section_attention">
+  <strong>Важно:</strong> иногда лучший шаг в конфликте — не продолжать разговор здесь и сейчас, а взять паузу.
+</div>
+
+<h2>Как не усугубить ситуацию на старте</h2>
+
+<p>Даже в сложной ситуации есть способы снизить напряжение, а не усилить его. Они не требуют идеального поведения, но помогают сохранить рабочий контакт.</p>
+
+<ul class="section_list">
+  <li>сначала выслушать, а потом отвечать;</li>
+  <li>уточнять, а не додумывать;</li>
+  <li>говорить о ситуации, а не о личности;</li>
+  <li>признавать свою часть ответственности.</li>
+</ul>
+
+<p>Такой подход не гарантирует мгновенного решения, но создаёт почву для диалога вместо эскалации.</p>
+<!-- end blok -->
+
+<!-- start blok -->
+<!-- <url>konflikty-v-barbershope.php</url> -->
+<!-- excerpt: Правильная реакция в первые минуты конфликта часто важнее, чем идеальные слова. -->
+
+<h2>Как правильно реагировать на конфликт в команде</h2>
+
+<p>Когда конфликт уже возник, многое решают первые реакции. Именно в этот момент либо закладывается путь к решению, либо ситуация уходит в эскалацию. При этом не требуется быть психологом — достаточно базовой осознанности.</p>
+
+<p>Главная задача на старте — не усугубить напряжение и сохранить возможность для диалога.</p>
+
+<h3>Что делать сразу</h3>
+
+<p>В первые минуты конфликта важно не торопиться с выводами и ответами. Даже короткая пауза может изменить ход разговора.</p>
+
+<ul class="section_list">
+  <li>остановиться и не отвечать на эмоциях;</li>
+  <li>отделить тон от сути сказанного;</li>
+  <li>понять, о чём именно идёт речь — о фактах или интерпретациях;</li>
+  <li>сохранить спокойный рабочий формат общения.</li>
+</ul>
+
+<div class="section_attention">
+  <strong>Важно:</strong> резкий ответ почти всегда усиливает конфликт, даже если по сути ты прав.
+</div>
+
+<h3>Как говорить, чтобы тебя услышали</h3>
+
+<p>Форма общения в конфликте часто важнее содержания. Одни и те же слова могут либо разрядить ситуацию, либо взорвать её.</p>
+
+<p>Рабочий диалог строится на конкретике и ответственности за свои слова.</p>
+
+<ul class="section_list">
+  <li>говорить от первого лица: «я вижу», «мне важно», «я чувствую»;</li>
+  <li>описывать ситуацию, а не давать оценку человеку;</li>
+  <li>задавать уточняющие вопросы;</li>
+  <li>признавать свою часть участия, если она есть.</li>
+</ul>
+
+<p>Такой подход снижает защитную реакцию у собеседника и повышает шанс быть услышанным.</p>
+
+<h3>Когда стоит взять паузу</h3>
+
+<p>Иногда лучший шаг — не продолжать разговор. Если эмоции зашкаливают, попытка «договорить сейчас» часто приводит к новым уколам и обидам.</p>
+
+<p>Пауза — это не уход от конфликта, а способ дать эмоциям остыть и вернуться к разговору в более конструктивном состоянии.</p>
+
+<div class="section_tip">
+  <strong>Совет:</strong> можно прямо обозначить паузу: «давай вернёмся к этому позже, когда будет спокойнее».
+</div>
+
+<h2>Как вести себя после конфликта</h2>
+
+<p>Даже если разговор прошёл тяжело, важно не «застревать» в конфликте. Поведение после него влияет на атмосферу не меньше, чем сам разговор.</p>
+
+<ul class="section_list">
+  <li>не возвращаться к конфликту в ироничной форме;</li>
+  <li>сохранять рабочее взаимодействие;</li>
+  <li>выполнять договорённости, если они были;</li>
+  <li>отслеживать, снизилось ли напряжение.</li>
+</ul>
+
+<p>Если конфликт был разобран, но отношения остались напряжёнными, это повод для дополнительного диалога, а не для игнорирования.</p>
+
+<div class="section_attention">
+  <strong>Важно:</strong> цель конфликта — не разрядка эмоций, а восстановление нормальной работы.
+</div>
+<!-- end blok -->
+
+<!-- start blok -->
+<!-- <url>konflikty-v-barbershope.php</url> -->
+<!-- excerpt: Конфликт может стать точкой роста, а может — сигналом, что среда перестала быть рабочей. -->
+
+<h2>Когда конфликт становится точкой роста</h2>
+
+<p>Не каждый конфликт в барбершопе — проблема. В здоровой среде он может стать моментом прояснения и настройки процессов. Главное отличие таких ситуаций — наличие диалога и реальных изменений после него.</p>
+
+<p>Конфликт начинает работать на рост, если после него:</p>
+
+<ul class="section_list">
+  <li>становятся яснее ожидания и роли;</li>
+  <li>меняются договорённости или процессы;</li>
+  <li>снижается напряжение, а не маскируется;</li>
+  <li>появляется ощущение, что тебя услышали.</li>
+</ul>
+
+<p>Даже неприятный разговор может укрепить команду, если он приводит к конкретным выводам и действиям.</p>
+
+<div class="section_attention">
+  <strong>Важно:</strong> рост возможен только там, где есть готовность слышать и меняться с обеих сторон.
+</div>
+
+<h2>Признаки здорового конфликта</h2>
+
+<p>Есть несколько маркеров, по которым можно понять, что конфликт проживается конструктивно, а не разрушительно.</p>
+
+<div class="table-wrap">
+  <table class="data-table">
+    <thead>
+      <tr>
+        <th>Признак</th>
+        <th>Как проявляется</th>
+        <th>Что это значит</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Диалог</td>
+        <td>Есть обсуждение, а не только эмоции</td>
+        <td>Среда рабочая</td>
+      </tr>
+      <tr>
+        <td>Изменения</td>
+        <td>После конфликта что-то корректируется</td>
+        <td>Конфликт не был напрасным</td>
+      </tr>
+      <tr>
+        <td>Уважение</td>
+        <td>Нет унижения и давления</td>
+        <td>Сохраняются границы</td>
+      </tr>
+      <tr>
+        <td>Стабильность</td>
+        <td>Напряжение снижается со временем</td>
+        <td>Команда адаптируется</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p>Если большинство этих признаков присутствуют, конфликт можно рассматривать как часть нормального рабочего процесса.</p>
+
+<h2>Когда конфликт — сигнал задуматься об уходе</h2>
+
+<p>Бывают ситуации, когда конфликт перестаёт быть рабочим инструментом и превращается в постоянный фон. В таком случае важно честно оценить среду, а не только отдельные эпизоды.</p>
+
+<p>Тревожные сигналы:</p>
+
+<ul class="section_list">
+  <li>конфликты повторяются по одному сценарию;</li>
+  <li>диалог отсутствует или обесценивается;</li>
+  <li>замечания сопровождаются унижением;</li>
+  <li>напряжение не снижается со временем;</li>
+  <li>ты постоянно находишься в состоянии защиты.</li>
+</ul>
+
+<p>Если попытки наладить диалог не дают результата, а атмосфера продолжает разрушать мотивацию и уверенность, конфликт становится не точкой роста, а индикатором токсичности.</p>
+
+<div class="section_attention">
+  <strong>Важно:</strong> профессионализм — это не терпеть всё, а уметь выбирать среду, в которой можно расти.
+</div>
+
+<h2>Как принять решение без эмоций</h2>
+
+<p>Решение уйти или остаться лучше принимать не на пике конфликта, а после паузы и анализа. Полезно задать себе несколько вопросов:</p>
+
+<ul class="section_list">
+  <li>есть ли готовность к диалогу с другой стороны;</li>
+  <li>меняется ли что-то после разговоров;</li>
+  <li>влияет ли среда на твоё состояние и работу;</li>
+  <li>видишь ли ты здесь перспективу.</li>
+</ul>
+
+<p>Ответы на эти вопросы помогают сделать выбор осознанно, а не под давлением эмоций.</p>
+<!-- end blok -->
+
+<!-- start blok -->
+<!-- <url>konflikty-v-barbershope.php</url> -->
+
+        <!-- Внутренние ссылки 
+        <section class="section_links" style="margin-top:18px">
+          <h3>Полезные ссылки</h3>
+          <ul class="list">
+            <li><a href="/moskva.php">Курсы барбера в Москве</a></li>
+            <li><a href="/sankt-peterburg.php">Курсы барбера в Санкт-Петербурге</a></li>
+            <li><a href="/#cities">Курсы в других городах</a></li>
+          </ul>
+        </section>-->
+      </div>
+
+      <!-- Сайдбар -->
+      <aside>
+        <!-- Подбор курсов -->
+        <div class="card">
+          <h3>Подбор курсов</h3>
+          <p class="muted">Посмотрите очные программы в вашем городе.</p>
+          <a class="btn btn-primary" href="..//#cities">Выберите ваш город</a>
+        </div>
+
+        <!-- Читайте также -->
+                  <div class="card">
+            <h3>Читайте также</h3>
+            <div class="related-grid">
+                              <div class="related-card">
+                  <a href="adaptaciya-v-barbershope.html" class="thumb">
+                    <img src="../IMUGA/adaptaciya-v-barbershope.jpg" alt="Адаптация в барбершопе: как новичку влиться в команду и не сломаться" loading="lazy">
+                  </a>
+                  <div class="rel-title">
+                    <a href="adaptaciya-v-barbershope.html">Адаптация в барбершопе: как новичку влиться в команду и не сломаться</a>
+                  </div>
+                </div>
+                              <div class="related-card">
+                  <a href="atmosfera-i-dohod.html" class="thumb">
+                    <img src="../IMUGA/atmosfera-i-dohod.jpg" alt="Атмосфера барбершопа и доход: как пространство влияет на деньги" loading="lazy">
+                  </a>
+                  <div class="rel-title">
+                    <a href="atmosfera-i-dohod.html">Атмосфера барбершопа и доход: как пространство влияет на деньги</a>
+                  </div>
+                </div>
+                              <div class="related-card">
+                  <a href="barber-v-bolshom-i-malom-gorode.html" class="thumb">
+                    <img src="../IMUGA/barber-v-bolshom-i-malom-gorode.jpg" alt="Барбер в большом и малом городе: в чём разница" loading="lazy">
+                  </a>
+                  <div class="rel-title">
+                    <a href="barber-v-bolshom-i-malom-gorode.html">Барбер в большом и малом городе: в чём разница</a>
+                  </div>
+                </div>
+                              <div class="related-card">
+                  <a href="barbering-ne-prosto-strizhki.html" class="thumb">
+                    <img src="../IMUGA/barbering-ne-prosto-strizhki.jpg" alt="Барберинг — это не просто стрижки" loading="lazy">
+                  </a>
+                  <div class="rel-title">
+                    <a href="barbering-ne-prosto-strizhki.html">Барберинг — это не просто стрижки</a>
+                  </div>
+                </div>
+                              <div class="related-card">
+                  <a href="barber-ne-vozvraschayetsya.html" class="thumb">
+                    <img src="../IMUGA/barber-ne-vozvraschayetsya.jpg" alt="Барбер не возвращается: почему уход из профессии становится окончательным" loading="lazy">
+                  </a>
+                  <div class="rel-title">
+                    <a href="barber-ne-vozvraschayetsya.html">Барбер не возвращается: почему уход из профессии становится окончательным</a>
+                  </div>
+                </div>
+                          </div>
+          </div>
+              </aside>
+
+    </div>
+  </article>
+
+  <!-- Авто-оглавление по h2/h3 -->
+  <script>
+  (function(){
+    const root = document.querySelector('[data-blog-root]');
+    if (!root) return;
+
+    // Снимаем возможный sticky/fixed у HERO от глобальных скриптов
+    const hero = root.querySelector('header.hero');
+    if (hero) {
+      ['sticky','is-sticky','fixed','hero--sticky','pin','pinned'].forEach(c => hero.classList.remove(c));
+      const pos = hero.style.position || getComputedStyle(hero).position;
+      if (pos === 'fixed' || pos === 'sticky') {
+        hero.style.position = 'static';
+        hero.style.top = 'auto'; hero.style.bottom = 'auto'; hero.style.inset = 'auto';
+      }
+    }
+
+    // Генерация оглавления
+    const body = root.querySelector('#article-body');
+    const toc  = root.querySelector('#toc');
+    const list = root.querySelector('#toc-list');
+    if (!body || !toc || !list) return;
+
+    const headings = body.querySelectorAll('h2, h3');
+    let hasH2 = false;
+    headings.forEach((el, i) => {
+      const text = el.textContent.trim();
+      const slug = (text.toLowerCase()
+        .replace(/[^\p{L}\p{N}\s-]/gu,'')
+        .replace(/\s+/g,'-')
+        .replace(/-+/g,'-')).substring(0,64) || ('h-' + i);
+      if (!el.id) el.id = slug;
+      const li = document.createElement('li');
+      const a = document.createElement('a');
+      a.href = '#' + el.id; a.textContent = text;
+      li.appendChild(a);
+      if (el.tagName === 'H3') li.style.marginLeft = '12px';
+      list.appendChild(li);
+      if (el.tagName === 'H2') hasH2 = true;
+    });
+    if (hasH2) toc.style.display = '';
+  })();
+  </script>
+</div>
+<footer>
+  <div class="container" style="text-align:center; padding:36px 0;">
+    <p class="small" style="margin:0 0 8px;">
+Лучшие курсы барбера, обучение мужским стрижкам и бритью в городах России. Практика на моделях, диплом, стажировка.    </p>
+    <a href="../privacy.html" class="small" style="color:var(--muted); text-decoration:none;">
+      Политика конфиденциальности
+    </a>
+  </div>
+</footer>
+
+<!-- Cookie Notice -->
+<div id="cookieNotice" style="
+  position:fixed;
+  bottom:16px; left:50%;
+  transform:translateX(-50%);
+  background:rgba(255,255,255,0.95);
+  color:var(--ink);
+  border:1px solid var(--line);
+  border-radius:12px;
+  box-shadow:var(--ring);
+  padding:10px 16px;
+  font-size:.85rem;
+  display:flex;
+  align-items:center;
+  gap:8px;
+  z-index:200;
+  max-width:90%;
+">
+  <span>
+    Мы используем cookie для улучшения работы сайта.
+    Подробнее — <a href="../privacy.html" style="color:var(--brand); text-decoration:none;">в политике конфиденциальности</a>.
+  </span>
+  <button id="cookieBtn" style="
+    background:var(--brand);
+    color:#fff;
+    border:none;
+    border-radius:8px;
+    padding:6px 10px;
+    font-size:.8rem;
+    cursor:pointer;
+  ">OK</button>
+</div>
+
+<script>
+  // скрыть/показать cookie notice
+  (function(){
+    const box = document.getElementById('cookieNotice');
+    const btn = document.getElementById('cookieBtn');
+    if(localStorage.getItem('cookieAccepted')) box.remove();
+    else btn.addEventListener('click', ()=>{
+      localStorage.setItem('cookieAccepted','1');
+      box.style.opacity='0';
+      setTimeout(()=>box.remove(),300);
+    });
+  })();
+
+  // плавный скролл
+  document.querySelectorAll('a[href^="#"]').forEach(a=>{
+    a.addEventListener('click', e=>{
+      const id=a.getAttribute('href').slice(1);
+      const el=document.getElementById(id);
+      if(el){ e.preventDefault(); el.scrollIntoView({behavior:'smooth', block:'start'}); }
+    });
+  });
+
+  // гамбургер
+  (function(){
+    const nav = document.getElementById('nav');
+    const btn = document.getElementById('menuToggle');
+    const menu = document.getElementById('primary-menu');
+    if(!nav || !btn || !menu) return;
+
+    function toggle(){
+      nav.classList.toggle('open');
+      btn.setAttribute('aria-expanded', nav.classList.contains('open'));
+    }
+    btn.addEventListener('click', toggle);
+    menu.addEventListener('click', e=>{
+      if(e.target.closest('a')){ nav.classList.remove('open'); btn.setAttribute('aria-expanded','false'); }
+    });
+    document.addEventListener('click', e=>{
+      if(nav.classList.contains('open') && !nav.contains(e.target)){
+        nav.classList.remove('open'); btn.setAttribute('aria-expanded','false');
+      }
+    });
+    document.addEventListener('keydown', e=>{
+      if(e.key==='Escape'){ nav.classList.remove('open'); btn.setAttribute('aria-expanded','false'); }
+    });
+  })();
+</script>
+
+
+<script>
+document.addEventListener('click', function (e) {
+  const el = e.target.closest('[data-nav]');
+  if (!el) return;
+
+  const url = el.dataset.nav;
+  if (!url) return;
+
+  window.open(url, '_blank', 'noopener');
+});
+</script>
+
+
+</body>
+</html>
+<!-- end blok -->
+
