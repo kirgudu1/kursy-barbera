@@ -1,14 +1,14 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
 
-  <title>Курсы барбера и мужских стрижек — обучение с нуля, борода и бритьё</title>
-  <meta name="description" content="Профессиональное обучение барберов: мужские стрижки, фейды, борода и бритьё. Курсы с нуля и повышение квалификации. Практика, диплом, трудоустройство.">
+  <title>Курсы барбера и мужских стрижек — обучение с нуля и повышение квалификации</title>
+  <meta name="description" content="Профессиональное обучение барберингу и мужским стрижкам: курсы для новичков и практикующих мастеров. Практика на моделях, сертификат, помощь с началом карьеры и привлечением клиентов.">
 
-  <meta property="og:title" content="Курсы барбера и мужских стрижек — обучение с нуля и повышение квалификации">
-  <meta property="og:description" content="Освой профессию барбера: мужские стрижки, бритьё и борода. Курсы очно и онлайн с практикой на моделях и выдачей сертификата.">
+  <meta property="og:title" content="Курсы барбера — обучение мужским стрижкам с нуля">
+  <meta property="og:description" content="Освой профессию барбера: мужские стрижки, fade, оформление бороды и основы сервиса. Очные и онлайн-курсы с практикой и выдачей сертификата.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="">
 
@@ -96,23 +96,47 @@ nav a:hover{background:var(--accent)}
 }
 
 /* Figure with real <img> */
+/* Figure with real <img> */
 .figure{
   position: relative;
-  aspect-ratio: 4/5;
-  border-radius: 14px;
-  overflow: hidden;
+  aspect-ratio: 4 / 5;
+
+  /* 🔥 железобетонное решение */
+  clip-path: inset(0 round 14px);
+
   border: 1px solid var(--line);
-  background: linear-gradient(135deg, rgba(201,142,91,.08), rgba(47,62,70,.08));
+  background: linear-gradient(
+    135deg,
+    rgba(201,142,91,.08),
+    rgba(47,62,70,.08)
+  );
 }
+
+/* Image */
 .figure img{
-  width:100%; height:100%; object-fit:cover; display:block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
+
+/* Caption */
 .figure-caption{
-  position:absolute; bottom:0; left:0; width:100%;
-  padding:10px 12px; font-size:14px; color:#333; text-align:center;
-  background: rgba(255,255,255,0.7); backdrop-filter: blur(6px);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 14px;
+  color: #333;
+  text-align: center;
+  background: rgba(255,255,255,0.7);
+  backdrop-filter: blur(6px);
   border-top: 1px solid rgba(0,0,0,0.1);
 }
+
+
+
 
 /* Sections */
 section{padding:38px 0}
@@ -919,7 +943,78 @@ footer{
 
 
 
+.js-nav {
+  cursor: pointer;
+}
+.js-nav.linkish {
+  text-decoration: underline;
+}
 
+.js-nav.linkish:hover {
+  text-decoration: none;
+}
+
+/* CTA-кнопка из span */
+/* span.js-nav как кнопка в CTA */
+.neo-cta .linkish.js-nav {
+  display: inline-block;
+  background: #ff6a2d;         /* оранжевый */
+  color: #fff !important;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 10px 22px;
+  border-radius: 10px;
+  text-decoration: none;
+  border: none;
+
+  cursor: pointer;
+  user-select: none;
+
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.05);
+}
+
+.neo-cta .linkish.js-nav:hover {
+  background: #a56d3e;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.08);
+  transform: translateY(-1px);
+}
+
+.neo-cta .linkish.js-nav:active {
+  background: #8d5e35;
+  transform: translateY(0);
+}
+
+
+blockquote {
+  margin: 2.5rem 0;
+  padding: 1.8rem 2.2rem;
+  position: relative;
+
+  background: linear-gradient(135deg, #f7f7f7, #ffffff);
+  border-left: 4px solid #111;
+
+  font-style: italic;
+  color: #222;
+}
+
+blockquote p {
+  margin: 0;
+  font-size: 1.15rem;
+  line-height: 1.6;
+}
+
+blockquote::before {
+  content: "“";
+  position: absolute;
+  top: -0.6rem;
+  left: 0.8rem;
+
+  font-size: 4rem;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.08);
+  line-height: 1;
+}
 
 
 </style>
@@ -927,7 +1022,7 @@ footer{
   <!-- Yandex.Metrika counter -->
   <script type="text/javascript">
       (function(m,e,t,r,i,k,a){
-          m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+          m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}
           m[i].l=1*new Date();
           for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
           k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
@@ -1055,6 +1150,489 @@ footer{
 
           <div class="cards" role="list">
                   <article class="card" role="listitem">
+            <a href="blog/pervye-klienty-barbera.html" class="figure" aria-label="Первые клиенты барбера: как найти, удержать и не слить старт">
+              <img src="IMUGA/pervye-klienty-barbera.jpg" alt="">
+            </a>
+            <div class="body">
+              <h3><a href="blog/pervye-klienty-barbera.html">Первые клиенты барбера: как найти, удержать и не слить старт</a></h3>
+              <p>Первые клиенты — самый сложный и важный этап в профессии барбера. Разбираем, где их искать, как не потерять и почему сервис на старте важнее идеальной техники.</p>
+              <a class="btn" href="blog/pervye-klienty-barbera.html">Читать статью</a>
+            </div>
+          </article>
+                  <article class="card" role="listitem">
+            <a href="blog/silnyj-barbershop.html" class="figure" aria-label="Сильный барбершоп: как формируется и чем отличается от остальных">
+              <img src="IMUGA/silnyj-barbershop.jpg" alt="">
+            </a>
+            <div class="body">
+              <h3><a href="blog/silnyj-barbershop.html">Сильный барбершоп: как формируется и чем отличается от остальных</a></h3>
+              <p>Сильный барбершоп — это не интерьер и не поток клиентов. Разбираем, из каких элементов складывается устойчивая команда, сервис и среда, которая удерживает мастеров.</p>
+              <a class="btn" href="blog/silnyj-barbershop.html">Читать статью</a>
+            </div>
+          </article>
+                  <article class="card" role="listitem">
+            <a href="blog/karera-barbera-na-gody.html" class="figure" aria-label="Карьера барбера на годы: путь, рост и реальные перспективы">
+              <img src="IMUGA/karera-barbera-na-gody.jpg" alt="">
+            </a>
+            <div class="body">
+              <h3><a href="blog/karera-barbera-na-gody.html">Карьера барбера на годы: путь, рост и реальные перспективы</a></h3>
+              <p>Барберинг — это не быстрый заработок, а профессия на длинную дистанцию. Разбираем, как развивается карьера барбера со временем и что влияет на устойчивость в профессии.</p>
+              <a class="btn" href="blog/karera-barbera-na-gody.html">Читать статью</a>
+            </div>
+          </article>
+                  <article class="card" role="listitem">
+            <a href="blog/stil-obscheniya-i-dohod.html" class="figure" aria-label="Стиль общения барбера и доход: как разговор превращается в деньги">
+              <img src="IMUGA/stil-obscheniya-i-dohod.jpg" alt="">
+            </a>
+            <div class="body">
+              <h3><a href="blog/stil-obscheniya-i-dohod.html">Стиль общения барбера и доход: как разговор превращается в деньги</a></h3>
+              <p>В барберинге клиенты платят не только за стрижку. Стиль общения, умение выстроить контакт и создать доверие напрямую влияют на чек, возврат клиентов и стабильность дохода мастера.</p>
+              <a class="btn" href="blog/stil-obscheniya-i-dohod.html">Читать статью</a>
+            </div>
+          </article>
+                  <article class="card" role="listitem">
+            <a href="blog/raznyj-dohod-barberov.html" class="figure" aria-label="Разный доход барберов: почему одни зарабатывают больше других">
+              <img src="IMUGA/raznyj-dohod-barberov.jpg" alt="">
+            </a>
+            <div class="body">
+              <h3><a href="blog/raznyj-dohod-barberov.html">Разный доход барберов: почему одни зарабатывают больше других</a></h3>
+              <p>Даже при одинаковом стаже и навыках барберы могут зарабатывать по-разному. Разбираем реальные причины различий в доходе и типичные ошибки на старте.</p>
+              <a class="btn" href="blog/raznyj-dohod-barberov.html">Читать статью</a>
+            </div>
+          </article>
+                  <article class="card" role="listitem">
+            <a href="blog/barber-segodnya.html" class="figure" aria-label="Барбер сегодня: больше чем стрижка">
+              <img src="IMUGA/barber-segodnya.jpg" alt="">
+            </a>
+            <div class="body">
+              <h3><a href="blog/barber-segodnya.html">Барбер сегодня: больше чем стрижка</a></h3>
+              <p>Профессия барбера изменилась. Сегодня важны не только техника и форма, но и сервис, общение и доверие клиента.</p>
+              <a class="btn" href="blog/barber-segodnya.html">Читать статью</a>
+            </div>
+          </article>
+                  <article class="card" role="listitem">
+            <a href="blog/gorod-i-karera-barbera.html" class="figure" aria-label="Город и карьера барбера: что действительно влияет на рост">
+              <img src="IMUGA/gorod-i-karera-barbera.jpg" alt="">
+            </a>
+            <div class="body">
+              <h3><a href="blog/gorod-i-karera-barbera.html">Город и карьера барбера: что действительно влияет на рост</a></h3>
+              <p>Многие считают, что успешная карьера барбера возможна только в столице. В статье разбираем, как город влияет на рост и почему стратегия важнее географии.</p>
+              <a class="btn" href="blog/gorod-i-karera-barbera.html">Читать статью</a>
+            </div>
+          </article>
+                  <article class="card" role="listitem">
+            <a href="blog/gorod-ili-obuchenie.html" class="figure" aria-label="Город или обучение: что действительно определяет карьеру барбера">
+              <img src="IMUGA/gorod-ili-obuchenie.jpg" alt="">
+            </a>
+            <div class="body">
+              <h3><a href="blog/gorod-ili-obuchenie.html">Город или обучение: что действительно определяет карьеру барбера</a></h3>
+              <p>Новички часто выбирают между переездом и обучением. В статье разбираем, что на самом деле влияет на рост в профессии и почему стратегия важнее географии.</p>
+              <a class="btn" href="blog/gorod-ili-obuchenie.html">Читать статью</a>
+            </div>
+          </article>
+                  <article class="card" role="listitem">
+            <a href="blog/kak-ne-vygoret-barber.html" class="figure" aria-label="Как не выгореть барберу и сохранить интерес к профессии">
+              <img src="IMUGA/kak-ne-vygoret-barber.jpg" alt="">
+            </a>
+            <div class="body">
+              <h3><a href="blog/kak-ne-vygoret-barber.html">Как не выгореть барберу и сохранить интерес к профессии</a></h3>
+              <p>Барберинг — это не только клиенты и стиль, но и высокая нагрузка. В этой статье разбираем, почему возникает выгорание и как выстроить работу так, чтобы не потерять мотивацию.</p>
+              <a class="btn" href="blog/kak-ne-vygoret-barber.html">Читать статью</a>
+            </div>
+          </article>
+                  <article class="card" role="listitem">
+            <a href="blog/barber-ne-v-stolice.html" class="figure" aria-label="Барбер не в столице: осознанная карьера вне мегаполиса">
+              <img src="IMUGA/barber-ne-v-stolice.jpg" alt="">
+            </a>
+            <div class="body">
+              <h3><a href="blog/barber-ne-v-stolice.html">Барбер не в столице: осознанная карьера вне мегаполиса</a></h3>
+              <p>Работа барбера возможна не только в столице. В статье разбираем, как строится карьера вне мегаполиса и почему стратегия важнее географии.</p>
+              <a class="btn" href="blog/barber-ne-v-stolice.html">Читать статью</a>
+            </div>
+          </article>
+                  <article class="card" role="listitem">
+            <a href="blog/vnutrennyaya-kuhnya-barbershopa.html" class="figure" aria-label="Внутренняя кухня барбершопа: что на самом деле влияет на атмосферу">
+              <img src="IMUGA/vnutrennyaya-kuhnya-barbershopa.jpg" alt="">
+            </a>
+            <div class="body">
+              <h3><a href="blog/vnutrennyaya-kuhnya-barbershopa.html">Внутренняя кухня барбершопа: что на самом деле влияет на атмосферу</a></h3>
+              <p>Атмосфера барбершопа формируется не дизайном и музыкой. Разбираем, какие внутренние процессы, отношения и правила создают ощущение сильного или слабого места.</p>
+              <a class="btn" href="blog/vnutrennyaya-kuhnya-barbershopa.html">Читать статью</a>
+            </div>
+          </article>
+                  <article class="card" role="listitem">
+            <a href="blog/nedovolnyj-klient-barber.html" class="figure" aria-label="Недовольный клиент у барбера: как не потерять доверие и доход">
+              <img src="IMUGA/nedovolnyj-klient-barber.jpg" alt="">
+            </a>
+            <div class="body">
+              <h3><a href="blog/nedovolnyj-klient-barber.html">Недовольный клиент у барбера: как не потерять доверие и доход</a></h3>
+              <p>Недовольные клиенты бывают у каждого барбера. Разбираем, откуда берётся недовольство, как правильно реагировать и почему грамотная работа с претензиями может усилить лояльность.</p>
+              <a class="btn" href="blog/nedovolnyj-klient-barber.html">Читать статью</a>
+            </div>
+          </article>
+                  <article class="card" role="listitem">
+            <a href="blog/atmosfera-i-dohod.html" class="figure" aria-label="Атмосфера барбершопа и доход: как пространство влияет на деньги">
+              <img src="IMUGA/atmosfera-i-dohod.jpg" alt="">
+            </a>
+            <div class="body">
+              <h3><a href="blog/atmosfera-i-dohod.html">Атмосфера барбершопа и доход: как пространство влияет на деньги</a></h3>
+              <p>Клиенты платят не только за стрижку. Атмосфера барбершопа влияет на возврат, доверие и готовность платить. Разбираем, из чего она складывается и как работает на доход.</p>
+              <a class="btn" href="blog/atmosfera-i-dohod.html">Читать статью</a>
+            </div>
+          </article>
+                  <article class="card" role="listitem">
+            <a href="blog/molchalivyj-barber.html" class="figure" aria-label="Молчаливый барбер: проблема или конкурентное преимущество">
+              <img src="IMUGA/molchalivyj-barber.jpg" alt="">
+            </a>
+            <div class="body">
+              <h3><a href="blog/molchalivyj-barber.html">Молчаливый барбер: проблема или конкурентное преимущество</a></h3>
+              <p>В барберинге не все клиенты хотят разговоров. Разбираем, когда молчаливый стиль усиливает сервис и доход, а когда становится причиной потери клиентов.</p>
+              <a class="btn" href="blog/molchalivyj-barber.html">Читать статью</a>
+            </div>
+          </article>
+                  <article class="card" role="listitem">
+            <a href="blog/barber-ne-vozvraschayetsya.html" class="figure" aria-label="Барбер не возвращается: почему уход из профессии становится окончательным">
+              <img src="IMUGA/barber-ne-vozvraschayetsya.jpg" alt="">
+            </a>
+            <div class="body">
+              <h3><a href="blog/barber-ne-vozvraschayetsya.html">Барбер не возвращается: почему уход из профессии становится окончательным</a></h3>
+              <p>Барберинг не всегда оказывается тем, чего ждут новичок и мастер. Разбираем, почему некоторые уходят и не возвращаются, и что на это влияет.</p>
+              <a class="btn" href="blog/barber-ne-vozvraschayetsya.html">Читать статью</a>
+            </div>
+          </article>
+                  <article class="card" role="listitem">
+            <a href="blog/interes-k-professii-barber.html" class="figure" aria-label="Интерес к профессии барбера: как поддерживать мотивацию на долгой дистанции">
+              <img src="IMUGA/interes-k-professii-barber.jpg" alt="">
+            </a>
+            <div class="body">
+              <h3><a href="blog/interes-k-professii-barber.html">Интерес к профессии барбера: как поддерживать мотивацию на долгой дистанции</a></h3>
+              <p>Барберинг — это не только техника и клиенты. Разбираем, как интерес к профессии влияет на долгосрочную карьеру и помогает избежать выгорания.</p>
+              <a class="btn" href="blog/interes-k-professii-barber.html">Читать статью</a>
+            </div>
+          </article>
+                  <article class="card" role="listitem">
+            <a href="blog/pervye-minuty-vizita.html" class="figure" aria-label="Первые минуты визита: как общение барбера влияет на впечатление и доход">
+              <img src="IMUGA/pervye-minuty-vizita.jpg" alt="">
+            </a>
+            <div class="body">
+              <h3><a href="blog/pervye-minuty-vizita.html">Первые минуты визита: как общение барбера влияет на впечатление и доход</a></h3>
+              <p>В барберинге первые минуты визита формируют доверие, расположение и будущий доход. Разбираем, что важно на старте работы с клиентом.</p>
+              <a class="btn" href="blog/pervye-minuty-vizita.html">Читать статью</a>
+            </div>
+          </article>
+                  <article class="card" role="listitem">
+            <a href="blog/barber-cherez-5-10-let.html" class="figure" aria-label="Барбер через 5–10 лет: реальность профессии на длинной дистанции">
+              <img src="IMUGA/barber-cherez-5-10-let.jpg" alt="">
+            </a>
+            <div class="body">
+              <h3><a href="blog/barber-cherez-5-10-let.html">Барбер через 5–10 лет: реальность профессии на длинной дистанции</a></h3>
+              <p>Барберинг редко остаётся таким же, как на старте. Разбираем, как меняется профессия через 5–10 лет и какие пути выбирают мастера.</p>
+              <a class="btn" href="blog/barber-cherez-5-10-let.html">Читать статью</a>
+            </div>
+          </article>
+                  <article class="card" role="listitem">
+            <a href="blog/stabilnost-vazhnee-rosta.html" class="figure" aria-label="Стабильность важнее роста: как барберу выстроить карьеру на годы">
+              <img src="IMUGA/stabilnost-vazhnee-rosta.jpg" alt="">
+            </a>
+            <div class="body">
+              <h3><a href="blog/stabilnost-vazhnee-rosta.html">Стабильность важнее роста: как барберу выстроить карьеру на годы</a></h3>
+              <p>Быстрый рост в барберинге выглядит привлекательно, но часто приводит к выгоранию. Разбираем, почему стабильность важнее скачков и как она формирует долгую карьеру.</p>
+              <a class="btn" href="blog/stabilnost-vazhnee-rosta.html">Читать статью</a>
+            </div>
+          </article>
+                  <article class="card" role="listitem">
+            <a href="blog/adaptaciya-v-barbershope.html" class="figure" aria-label="Адаптация в барбершопе: как новичку влиться в команду и не сломаться">
+              <img src="IMUGA/adaptaciya-v-barbershope.jpg" alt="">
+            </a>
+            <div class="body">
+              <h3><a href="blog/adaptaciya-v-barbershope.html">Адаптация в барбершопе: как новичку влиться в команду и не сломаться</a></h3>
+              <p>Даже сильному барберу непросто войти в новый коллектив. Разбираем, как проходит адаптация в барбершопе, какие ошибки совершают новички и что реально помогает пройти этот этап.</p>
+              <a class="btn" href="blog/adaptaciya-v-barbershope.html">Читать статью</a>
+            </div>
+          </article>
+                  <article class="card" role="listitem">
+            <a href="blog/konflikty-v-barbershope.html" class="figure" aria-label="Конфликты в барбершопе: как они возникают и что с ними делать">
+              <img src="IMUGA/konflikty-v-barbershope.jpg" alt="">
+            </a>
+            <div class="body">
+              <h3><a href="blog/konflikty-v-barbershope.html">Конфликты в барбершопе: как они возникают и что с ними делать</a></h3>
+              <p>Разбираем, почему конфликты в барбершопе — не редкость, как они связаны с адаптацией и атмосферой в команде, и какие ошибки мешают их решать.</p>
+              <a class="btn" href="blog/konflikty-v-barbershope.html">Читать статью</a>
+            </div>
+          </article>
+                  <article class="card" role="listitem">
+            <a href="blog/obuchenie-posle-kursov-barber.html" class="figure" aria-label="Обучение после курсов барбера: зачем продолжать учиться">
+              <img src="IMUGA/obuchenie-posle-kursov-barber.jpg" alt="">
+            </a>
+            <div class="body">
+              <h3><a href="blog/obuchenie-posle-kursov-barber.html">Обучение после курсов барбера: зачем продолжать учиться</a></h3>
+              <p>Курсы дают базу, но реальный рост в профессии начинается после них. Разбираем, почему барберам важно продолжать обучение и как это влияет на уверенность, клиентов и доход.</p>
+              <a class="btn" href="blog/obuchenie-posle-kursov-barber.html">Читать статью</a>
+            </div>
+          </article>
+                  <article class="card" role="listitem">
+            <a href="blog/top-uroven-barber.html" class="figure" aria-label="Топ-уровень барбера: что он реально означает">
+              <img src="IMUGA/top-uroven-barber.jpg" alt="">
+            </a>
+            <div class="body">
+              <h3><a href="blog/top-uroven-barber.html">Топ-уровень барбера: что он реально означает</a></h3>
+              <p>Топ-уровень в барберинге часто путают со статусом и ценой. Разбираем, какие признаки действительно говорят о профессиональной зрелости и как к этому уровню приходят.</p>
+              <a class="btn" href="blog/top-uroven-barber.html">Читать статью</a>
+            </div>
+          </article>
+                  <article class="card" role="listitem">
+            <a href="blog/vybor-konkretnogo-mastera.html" class="figure" aria-label="Почему клиенты выбирают конкретного барбера">
+              <img src="IMUGA/vybor-konkretnogo-mastera.jpg" alt="">
+            </a>
+            <div class="body">
+              <h3><a href="blog/vybor-konkretnogo-mastera.html">Почему клиенты выбирают конкретного барбера</a></h3>
+              <p>В барберинге всё чаще выбирают не салон, а человека. Разбираем, как формируется доверие, возвращаемость и лояльность к конкретному мастеру.</p>
+              <a class="btn" href="blog/vybor-konkretnogo-mastera.html">Читать статью</a>
+            </div>
+          </article>
+                  <article class="card" role="listitem">
+            <a href="blog/chto-tormozit-rost-barbera.html" class="figure" aria-label="Что тормозит рост барбера: основные причины">
+              <img src="IMUGA/chto-tormozit-rost-barbera.jpg" alt="">
+            </a>
+            <div class="body">
+              <h3><a href="blog/chto-tormozit-rost-barbera.html">Что тормозит рост барбера: основные причины</a></h3>
+              <p>Даже при клиентах и опыте рост барбера может остановиться. Разбираем ключевые ошибки, ограничения и факторы, которые мешают профессиональному развитию.</p>
+              <a class="btn" href="blog/chto-tormozit-rost-barbera.html">Читать статью</a>
+            </div>
+          </article>
+                  <article class="card" role="listitem">
+            <a href="blog/kak-menyaetsya-professiya-barbera.html" class="figure" aria-label="Как меняется профессия барбера">
+              <img src="IMUGA/kak-menyaetsya-professiya-barbera.jpg" alt="">
+            </a>
+            <div class="body">
+              <h3><a href="blog/kak-menyaetsya-professiya-barbera.html">Как меняется профессия барбера</a></h3>
+              <p>Профессия барбера больше не статична. Разбираем, какие изменения происходят сегодня, что влияет на карьеру и почему география стала важным фактором.</p>
+              <a class="btn" href="blog/kak-menyaetsya-professiya-barbera.html">Читать статью</a>
+            </div>
+          </article>
+                  <article class="card" role="listitem">
+            <a href="blog/kogda-povyshat-ceny-barber.html" class="figure" aria-label="Когда повышать цены барберу: как понять, что ты готов">
+              <img src="IMUGA/kogda-povyshat-ceny-barber.jpg" alt="">
+            </a>
+            <div class="body">
+              <h3><a href="blog/kogda-povyshat-ceny-barber.html">Когда повышать цены барберу: как понять, что ты готов</a></h3>
+              <p>Повышение цен — один из самых сложных шагов в карьере барбера. Разбираем, по каким признакам можно понять, что старый прайс тебя уже тормозит, и как повышать стоимость услуг без потери клиентов.</p>
+              <a class="btn" href="blog/kogda-povyshat-ceny-barber.html">Читать статью</a>
+            </div>
+          </article>
+                  <article class="card" role="listitem">
+            <a href="blog/loyalnost-bez-skidok.html" class="figure" aria-label="Лояльность клиентов без скидок">
+              <img src="IMUGA/loyalnost-bez-skidok.jpg" alt="">
+            </a>
+            <div class="body">
+              <h3><a href="blog/loyalnost-bez-skidok.html">Лояльность клиентов без скидок</a></h3>
+              <p>Скидки дают краткосрочный эффект, но редко формируют настоящую лояльность. Разбираем, как удерживать клиентов без демпинга и ценовых войн.</p>
+              <a class="btn" href="blog/loyalnost-bez-skidok.html">Читать статью</a>
+            </div>
+          </article>
+                  <article class="card" role="listitem">
+            <a href="blog/barbering-ne-prosto-strizhki.html" class="figure" aria-label="Барберинг — это не просто стрижки">
+              <img src="IMUGA/barbering-ne-prosto-strizhki.jpg" alt="">
+            </a>
+            <div class="body">
+              <h3><a href="blog/barbering-ne-prosto-strizhki.html">Барберинг — это не просто стрижки</a></h3>
+              <p>Барберинг часто воспринимают упрощённо, как набор техник. Разбираем, в чём реальная суть профессии барбера и почему сервис и подход важнее формы.</p>
+              <a class="btn" href="blog/barbering-ne-prosto-strizhki.html">Читать статью</a>
+            </div>
+          </article>
+                  <article class="card" role="listitem">
+            <a href="blog/trudnye-klienty-barber.html" class="figure" aria-label="Трудные клиенты у барбера: как выстраивать работу без конфликтов">
+              <img src="IMUGA/trudnye-klienty-barber.jpg" alt="">
+            </a>
+            <div class="body">
+              <h3><a href="blog/trudnye-klienty-barber.html">Трудные клиенты у барбера: как выстраивать работу без конфликтов</a></h3>
+              <p>С трудными клиентами сталкивается каждый барбер — особенно на старте. Разбираем типичные ситуации, причины напряжения и рабочие способы сохранять контроль, спокойствие и профессионализм.</p>
+              <a class="btn" href="blog/trudnye-klienty-barber.html">Читать статью</a>
+            </div>
+          </article>
+                  <article class="card" role="listitem">
+            <a href="blog/klienty-vozvraschayutsya-k-masteru.html" class="figure" aria-label="Почему клиенты возвращаются к барберу, а не ищут нового">
+              <img src="IMUGA/klienty-vozvraschayutsya-k-masteru.jpg" alt="">
+            </a>
+            <div class="body">
+              <h3><a href="blog/klienty-vozvraschayutsya-k-masteru.html">Почему клиенты возвращаются к барберу, а не ищут нового</a></h3>
+              <p>Возвращаемость клиентов — главный показатель зрелости барбера. Разбираем, что формирует лояльность, почему люди выбирают мастера и как удерживать без скидок.</p>
+              <a class="btn" href="blog/klienty-vozvraschayutsya-k-masteru.html">Читать статью</a>
+            </div>
+          </article>
+                  <article class="card" role="listitem">
+            <a href="blog/rol-obscheniya-barber.html" class="figure" aria-label="Роль общения в работе барбера: больше, чем просто разговор">
+              <img src="IMUGA/rol-obscheniya-barber.jpg" alt="">
+            </a>
+            <div class="body">
+              <h3><a href="blog/rol-obscheniya-barber.html">Роль общения в работе барбера: больше, чем просто разговор</a></h3>
+              <p>Общение в кресле барбера — это не фон, а рабочий инструмент. Разбираем, как диалог, паузы и подача мастера влияют на доверие клиента, повторные записи и доход.</p>
+              <a class="btn" href="blog/rol-obscheniya-barber.html">Читать статью</a>
+            </div>
+          </article>
+                  <article class="card" role="listitem">
+            <a href="blog/rost-barbera-novichok.html" class="figure" aria-label="Рост барбера-новичка: от первых клиентов к уверенной практике">
+              <img src="IMUGA/rost-barbera-novichok.jpg" alt="">
+            </a>
+            <div class="body">
+              <h3><a href="blog/rost-barbera-novichok.html">Рост барбера-новичка: от первых клиентов к уверенной практике</a></h3>
+              <p>После курсов рост барбера не происходит автоматически. Рассказываем, с какими трудностями сталкиваются новички и что реально помогает выйти на стабильный уровень.</p>
+              <a class="btn" href="blog/rost-barbera-novichok.html">Читать статью</a>
+            </div>
+          </article>
+                  <article class="card" role="listitem">
+            <a href="blog/spros-na-barberov.html" class="figure" aria-label="Есть ли спрос на барберов и почему клиенты есть не у всех">
+              <img src="IMUGA/spros-na-barberov.jpg" alt="">
+            </a>
+            <div class="body">
+              <h3><a href="blog/spros-na-barberov.html">Есть ли спрос на барберов и почему клиенты есть не у всех</a></h3>
+              <p>Вопрос спроса на барберов волнует почти каждого мастера. Разбираемся, как на самом деле работает рынок, почему клиенты не распределяются поровну и от чего зависит стабильная загрузка.</p>
+              <a class="btn" href="blog/spros-na-barberov.html">Читать статью</a>
+            </div>
+          </article>
+                  <article class="card" role="listitem">
+            <a href="blog/klienty-pri-konkurencii.html" class="figure" aria-label="Как барберу находить клиентов при высокой конкуренции">
+              <img src="IMUGA/klienty-pri-konkurencii.jpg" alt="">
+            </a>
+            <div class="body">
+              <h3><a href="blog/klienty-pri-konkurencii.html">Как барберу находить клиентов при высокой конкуренции</a></h3>
+              <p>Когда барбершопы и мастера появляются на каждом углу, кажется, что клиентов на всех не хватит. Разбираем, как на самом деле работает конкуренция и за счёт чего барберы находят «своих» клиентов.</p>
+              <a class="btn" href="blog/klienty-pri-konkurencii.html">Читать статью</a>
+            </div>
+          </article>
+                  <article class="card" role="listitem">
+            <a href="blog/navyki-vazhnee-tehniki.html" class="figure" aria-label="Почему навыки важнее техники в профессии барбера">
+              <img src="IMUGA/navyki-vazhnee-tehniki.jpg" alt="">
+            </a>
+            <div class="body">
+              <h3><a href="blog/navyki-vazhnee-tehniki.html">Почему навыки важнее техники в профессии барбера</a></h3>
+              <p>Хорошо стричь сегодня умеют многие. Но клиенты возвращаются не ко всем. Разбираем, какие навыки на самом деле определяют успех барбера.</p>
+              <a class="btn" href="blog/navyki-vazhnee-tehniki.html">Читать статью</a>
+            </div>
+          </article>
+                  <article class="card" role="listitem">
+            <a href="blog/servis-vazhnee-strizhki.html" class="figure" aria-label="Почему сервис важнее самой стрижки в профессии барбера">
+              <img src="IMUGA/servis-vazhnee-strizhki.jpg" alt="">
+            </a>
+            <div class="body">
+              <h3><a href="blog/servis-vazhnee-strizhki.html">Почему сервис важнее самой стрижки в профессии барбера</a></h3>
+              <p>Хорошая стрижка — это база. Но именно сервис определяет, вернётся ли клиент и станет ли он постоянным. Разбираем, как работает этот механизм.</p>
+              <a class="btn" href="blog/servis-vazhnee-strizhki.html">Читать статью</a>
+            </div>
+          </article>
+                  <article class="card" role="listitem">
+            <a href="blog/barber-v-bolshom-i-malom-gorode.html" class="figure" aria-label="Барбер в большом и малом городе: в чём разница">
+              <img src="IMUGA/barber-v-bolshom-i-malom-gorode.jpg" alt="">
+            </a>
+            <div class="body">
+              <h3><a href="blog/barber-v-bolshom-i-malom-gorode.html">Барбер в большом и малом городе: в чём разница</a></h3>
+              <p>Размер города напрямую влияет на карьеру барбера. Разбираем, как меняются возможности, конкуренция и рост в большом и малом городе.</p>
+              <a class="btn" href="blog/barber-v-bolshom-i-malom-gorode.html">Читать статью</a>
+            </div>
+          </article>
+                  <article class="card" role="listitem">
+            <a href="blog/horoshie-barbery-ne-populyarny.html" class="figure" aria-label="Почему хорошие барберы не популярны">
+              <img src="IMUGA/horoshie-barbery-ne-populyarny.jpg" alt="">
+            </a>
+            <div class="body">
+              <h3><a href="blog/horoshie-barbery-ne-populyarny.html">Почему хорошие барберы не популярны</a></h3>
+              <p>В барберинге качество работы и популярность в соцсетях — не одно и то же. Объясняем, почему сильные мастера часто остаются незаметными и почему это не мешает карьере.</p>
+              <a class="btn" href="blog/horoshie-barbery-ne-populyarny.html">Читать статью</a>
+            </div>
+          </article>
+                  <article class="card" role="listitem">
+            <a href="blog/perenasyschenie-barberami.html" class="figure" aria-label="Перенасыщение барберами: есть ли будущее у профессии">
+              <img src="IMUGA/perenasyschenie-barberami.jpg" alt="">
+            </a>
+            <div class="body">
+              <h3><a href="blog/perenasyschenie-barberami.html">Перенасыщение барберами: есть ли будущее у профессии</a></h3>
+              <p>Барберов становится всё больше, курсы открываются один за другим, а конкуренция кажется жёстче с каждым годом. Разбираемся, существует ли реальное перенасыщение профессии и что на самом деле влияет на востребованность мастера.</p>
+              <a class="btn" href="blog/perenasyschenie-barberami.html">Читать статью</a>
+            </div>
+          </article>
+                  <article class="card" role="listitem">
+            <a href="blog/rost-barbera-v-malom-gorode.html" class="figure" aria-label="Рост барбера в малом городе">
+              <img src="IMUGA/rost-barbera-v-malom-gorode.jpg" alt="">
+            </a>
+            <div class="body">
+              <h3><a href="blog/rost-barbera-v-malom-gorode.html">Рост барбера в малом городе</a></h3>
+              <p>Малый город часто воспринимается как ограничение для барбера. Разбираем, как на самом деле строится рост, спрос и карьера вне столицы.</p>
+              <a class="btn" href="blog/rost-barbera-v-malom-gorode.html">Читать статью</a>
+            </div>
+          </article>
+                  <article class="card" role="listitem">
+            <a href="blog/kak-nabrat-klientov-barber.html" class="figure" aria-label="Как набрать клиентов барберу: пошагово и без мифов">
+              <img src="IMUGA/kak-nabrat-klientov-barber.jpg" alt="">
+            </a>
+            <div class="body">
+              <h3><a href="blog/kak-nabrat-klientov-barber.html">Как набрать клиентов барберу: пошагово и без мифов</a></h3>
+              <p>Разбираем, как барберу набрать клиентов с нуля: от первых визитов до устойчивой базы, без скидок, демпинга и завышенных ожиданий.</p>
+              <a class="btn" href="blog/kak-nabrat-klientov-barber.html">Читать статью</a>
+            </div>
+          </article>
+                  <article class="card" role="listitem">
+            <a href="blog/barbershop-ili-na-sebya.html" class="figure" aria-label="Барбершоп или на себя: что выбрать барберу">
+              <img src="IMUGA/barbershop-ili-na-sebya.jpg" alt="">
+            </a>
+            <div class="body">
+              <h3><a href="blog/barbershop-ili-na-sebya.html">Барбершоп или на себя: что выбрать барберу</a></h3>
+              <p>Почти каждый барбер рано или поздно встаёт перед выбором: работать в барбершопе или уходить на себя. Разбираем, как форматы отличаются на практике и кому что подходит.</p>
+              <a class="btn" href="blog/barbershop-ili-na-sebya.html">Читать статью</a>
+            </div>
+          </article>
+                  <article class="card" role="listitem">
+            <a href="blog/doverie-klienta-barber.html" class="figure" aria-label="Доверие клиента в барберинге: основа стабильной записи">
+              <img src="IMUGA/doverie-klienta-barber.jpg" alt="">
+            </a>
+            <div class="body">
+              <h3><a href="blog/doverie-klienta-barber.html">Доверие клиента в барберинге: основа стабильной записи</a></h3>
+              <p>Клиенты возвращаются не только за формой и техникой. Разбираем, как возникает доверие к барберу и почему именно оно определяет успех в профессии.</p>
+              <a class="btn" href="blog/doverie-klienta-barber.html">Читать статью</a>
+            </div>
+          </article>
+                  <article class="card" role="listitem">
+            <a href="blog/tehnika-ne-glavnoe-barber.html" class="figure" aria-label="Почему техника — не главное в барберинге">
+              <img src="IMUGA/tehnika-ne-glavnoe-barber.jpg" alt="">
+            </a>
+            <div class="body">
+              <h3><a href="blog/tehnika-ne-glavnoe-barber.html">Почему техника — не главное в барберинге</a></h3>
+              <p>Многие новички делают ставку только на технику, но в реальной работе решают совсем другие вещи. Объясняем, что действительно делает барбера востребованным.</p>
+              <a class="btn" href="blog/tehnika-ne-glavnoe-barber.html">Читать статью</a>
+            </div>
+          </article>
+                  <article class="card" role="listitem">
+            <a href="blog/chek-barbera-i-dohod.html" class="figure" aria-label="Чек барбера и доход: из чего на самом деле складываются деньги">
+              <img src="IMUGA/chek-barbera-i-dohod.jpg" alt="">
+            </a>
+            <div class="body">
+              <h3><a href="blog/chek-barbera-i-dohod.html">Чек барбера и доход: из чего на самом деле складываются деньги</a></h3>
+              <p>Высокий доход в барберинге — это не случайность. Разбираем, как формируется чек барбера, почему одни мастера зарабатывают больше других и что реально влияет на деньги в профессии.</p>
+              <a class="btn" href="blog/chek-barbera-i-dohod.html">Читать статью</a>
+            </div>
+          </article>
+                  <article class="card" role="listitem">
+            <a href="blog/pochemu-vybirayut-barbera.html" class="figure" aria-label="Почему клиенты выбирают барбера: не стрижка, а мастер">
+              <img src="IMUGA/pochemu-vybirayut-barbera.jpg" alt="">
+            </a>
+            <div class="body">
+              <h3><a href="blog/pochemu-vybirayut-barbera.html">Почему клиенты выбирают барбера: не стрижка, а мастер</a></h3>
+              <p>В барберинге клиенты приходят не за услугой, а к человеку. Разбираем, какие факторы заставляют выбирать конкретного барбера и возвращаться к нему снова.</p>
+              <a class="btn" href="blog/pochemu-vybirayut-barbera.html">Читать статью</a>
+            </div>
+          </article>
+                  <article class="card" role="listitem">
+            <a href="blog/den-iz-zhizni-barbera.html" class="figure" aria-label="День из жизни барбера: реальность профессии изнутри">
+              <img src="IMUGA/den-iz-zhizni-barbera.jpg" alt="">
+            </a>
+            <div class="body">
+              <h3><a href="blog/den-iz-zhizni-barbera.html">День из жизни барбера: реальность профессии изнутри</a></h3>
+              <p>Работа барбера — это не только стрижки и бороды. Рассказываем, как проходит обычный рабочий день, с какими задачами сталкивается мастер и что на самом деле формирует профессионализм.</p>
+              <a class="btn" href="blog/den-iz-zhizni-barbera.html">Читать статью</a>
+            </div>
+          </article>
+		  
+		  
+		  <div class="cards" role="list">
+                  <article class="card" role="listitem">
             <a href="blog/komu-podoydet-professiya-barbera.html" class="figure" aria-label="Кому подойдёт профессия барбера: 5 признаков, что тебе стоит попробовать">
               <img src="IMUGA/komu-podoydet-professiya-barbera.jpg" alt="">
             </a>
@@ -1131,8 +1709,7 @@ footer{
 <footer>
   <div class="container" style="text-align:center; padding:36px 0;">
     <p class="small" style="margin:0 0 8px;">
-      Лучшие курсы барбера, обучение мужским стрижкам и бритью в городах России. Практика на моделях, диплом, стажировка.
-    </p>
+Лучшие курсы барбера, обучение мужским стрижкам и бритью в городах России. Практика на моделях, диплом, стажировка.    </p>
     <a href="privacy.html" class="small" style="color:var(--muted); text-decoration:none;">
       Политика конфиденциальности
     </a>
@@ -1219,6 +1796,20 @@ footer{
     });
   })();
 </script>
+
+
+<script>
+document.addEventListener('click', function (e) {
+  const el = e.target.closest('[data-nav]');
+  if (!el) return;
+
+  const url = el.dataset.nav;
+  if (!url) return;
+
+  window.open(url, '_blank', 'noopener');
+});
+</script>
+
 
 </body>
 </html>
