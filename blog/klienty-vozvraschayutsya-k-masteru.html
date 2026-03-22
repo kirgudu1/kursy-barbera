@@ -1,15 +1,27 @@
 <!-- start blok --><!-- <url>klienty-vozvraschayutsya-k-masteru.php</url> --><!DOCTYPE html>
+
 <html lang="ru">
+
 <head>
+
 <meta charset="utf-8"/>
 
+
+
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
+
 <title>Почему клиенты возвращаются к барберу, а не ищут нового</title>
+
 <meta content="Разбираем, почему клиенты возвращаются именно к мастеру, а не в салон: роль первого визита, доверие, стабильность результата и удержание без скидок." name="description"/>
+
 <meta content="Почему клиенты возвращаются к барберу, а не ищут нового" property="og:title"/>
+
 <meta content="Разбираем, почему клиенты возвращаются именно к мастеру, а не в салон: роль первого визита, доверие, стабильность результата и удержание без скидок." property="og:description"/>
+
 <meta content="article" property="og:type"/>
+
 <meta content="https://kursy-barbera.vercel.app/blog/klienty-vozvraschayutsya-k-masteru.php" property="og:url"/>
+
 <meta content="/IMUGA/klienty-vozvraschayutsya-k-masteru.jpg" property="og:image"/>
 
 
@@ -18,1698 +30,3419 @@
 
 
 
+
+
+
+
+
+
+
+
+  <link rel="canonical" href="https://kursy-barbera.vercel.app/blog/klienty-vozvraschayutsya-k-masteru.html">
 <style>
+
 :root{
+
   --bg:#faf7f3;
+
   --card:#ffffff;
+
   --ink:#1f2937;
+
   --muted:#6b7280;
+
   --brand:#c98e5b;   /* тёплый карамельный */
+
   --brand-2:#2f3e46; /* холодный серо-синий */
+
   --accent:#f5e6d3;  /* светлая кожа/лён */
+
   --line:#d6c7b6;    /* «нитка» */
+
   --ring: 0 10px 30px rgba(0,0,0,.06);
+
   --radius:18px;
+
 }
+
+
 
 /* Base */
+
 *{box-sizing:border-box}
+
 html,body{height:100%}
+
 body{
+
   margin:0;
+
   font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Helvetica Neue", sans-serif;
+
   color:var(--ink);
+
   background:
+
     radial-gradient(1200px 600px at 110% -10%, rgba(201,142,91,.06), transparent 60%),
+
     radial-gradient(900px 500px at -10% 10%, rgba(47,62,70,.06), transparent 55%),
+
     var(--bg);
+
   line-height:1.65;
+
   letter-spacing:.2px;
+
 }
+
 .container{max-width:1100px;margin:0 auto;padding:0 20px}
 
+
+
 /* Header */
+
 header{
+
   position:sticky; top:0; z-index:50;
+
   backdrop-filter:saturate(180%) blur(10px);
+
   background:rgba(250,247,243,.7);
+
   border-bottom:1px dashed var(--line);
+
 }
+
 .nav{
+
   display:flex; align-items:center; justify-content:space-between; gap:16px;
+
   padding:14px 0;
+
   position: relative; /* важен для позиционирования выпадающего меню */
+
 }
+
 .brand{
+
   display:flex; align-items:center; gap:10px; text-decoration:none; color:var(--ink);
+
   font-weight:700; letter-spacing:.3px;
+
 }
+
 .brand svg{width:30px;height:30px}
+
 nav a{
+
   text-decoration:none; color:var(--ink);
+
   padding:8px 12px; border-radius:10px;
+
   transition:all .2s ease;
+
 }
+
 nav a:hover{background:var(--accent)}
+
 .nav-links{display:flex; gap:8px}
+
 .nav-toggle{display:none}
 
+
+
 /* Hero */
+
 .hero{ padding:64px 0 40px; }
+
 .hero-inner{ display:grid; grid-template-columns:1.2fr .8fr; gap:28px; align-items:center; }
+
 .tag{display:inline-flex; gap:8px; align-items:center; padding:6px 10px; border:1px dashed var(--line); border-radius:999px; background:#fff;}
+
 .title{font-size:clamp(28px,4vw,44px); line-height:1.15; margin:14px 0 10px;}
+
 .subtitle{color:var(--muted); max-width:60ch}
+
 .cta{display:flex; gap:12px; margin-top:22px; flex-wrap:wrap}
+
 .btn{
+
   display:inline-flex; align-items:center; gap:10px;
+
   padding:12px 18px; border-radius:12px; text-decoration:none; font-weight:600;
+
   border:1px solid transparent; transition:all .2s;
+
 }
+
 .btn-primary{background:var(--brand); color:white; box-shadow:var(--ring)}
+
 .btn-primary:hover{transform:translateY(-1px)}
+
 .btn-ghost{background:white; border-color:var(--line); color:var(--ink)}
+
 .btn-ghost:hover{background:var(--accent)}
 
+
+
 .hero-card{
+
   background:linear-gradient(180deg, #fff, #fffaf4);
+
   border:1px solid var(--line); border-radius:var(--radius); box-shadow:var(--ring);
+
   padding:20px; position:relative; overflow:hidden;
-}
-.stitches{
-  position:absolute; inset:14px; border:2px dashed var(--line); border-radius:calc(var(--radius) - 8px);
-  pointer-events:none;
+
 }
 
+.stitches{
+
+  position:absolute; inset:14px; border:2px dashed var(--line); border-radius:calc(var(--radius) - 8px);
+
+  pointer-events:none;
+
+}
+
+
+
 /* Figure with real <img> */
+
 /* Figure with real <img> */
+
 .figure{
+
   position: relative;
+
   aspect-ratio: 4 / 5;
 
+
+
   /* 🔥 железобетонное решение */
+
   clip-path: inset(0 round 14px);
 
+
+
   border: 1px solid var(--line);
+
   background: linear-gradient(
+
     135deg,
+
     rgba(201,142,91,.08),
+
     rgba(47,62,70,.08)
+
   );
+
 }
+
+
 
 /* Image */
+
 .figure img{
+
   width: 100%;
+
   height: 100%;
+
   object-fit: cover;
+
   display: block;
+
 }
 
+
+
 /* Caption */
+
 .figure-caption{
+
   position: absolute;
+
   bottom: 0;
+
   left: 0;
+
   width: 100%;
+
   padding: 10px 12px;
+
   font-size: 14px;
+
   color: #333;
+
   text-align: center;
+
   background: rgba(255,255,255,0.7);
+
   backdrop-filter: blur(6px);
+
   border-top: 1px solid rgba(0,0,0,0.1);
+
 }
+
+
+
+
+
 
 
 
 
 /* Sections */
+
 section{padding:38px 0}
+
 .section-title{font-size:clamp(22px,2.6vw,32px); margin:0 0 16px}
+
 .lede{color:var(--muted); max-width:70ch}
 
+
+
 .cards{ display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-top:18px; }
+
 .card{
+
   background:var(--card); border:1px solid var(--line); border-radius:16px; padding:18px;
+
   box-shadow:var(--ring); transition:transform .2s ease;
+
 }
+
 .card:hover{transform:translateY(-3px)}
+
 .card h3{margin:.4rem 0 .2rem; font-size:1.1rem}
+
 .eyebrow{font-size:.8rem; letter-spacing:.12em; text-transform:uppercase; color:var(--brand-2)}
 
+
+
 .list{
+
   display:grid; grid-template-columns:1fr 1fr; gap:12px;
+
   margin:16px 0; padding:0; list-style:none;
+
 }
+
 .list li{background:#fff; border:1px dashed var(--line); border-radius:10px; padding:10px 12px}
 
+
+
 .note{
+
   background:linear-gradient(180deg,#fff, #fff7ee);
+
   border:1px solid var(--line); border-radius:14px; padding:16px 18px; box-shadow:var(--ring);
+
 }
+
+
 
 /* Courses */
+
 .course-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-top:16px}
+
 .course{
+
   background:#fff; border:1px solid var(--line); border-radius:16px; padding:16px;
+
   display:flex; flex-direction:column; gap:8px; box-shadow:var(--ring)
+
 }
+
 .course-badge{font-size:.77rem; color:#fff; background:var(--brand-2); padding:4px 8px; border-radius:999px; width:max-content}
+
 .course a{
+
   margin-top:auto; align-self:flex-start;
+
   text-decoration:none; font-weight:700; color:#fff;
+
   background:var(--brand); padding:10px 14px; border-radius:10px; transition:opacity .2s
+
 }
+
 .course a:hover{opacity:.9}
 
+
+
 /* Footer */
+
 footer{
+
   margin-top:20px; padding:36px 0; background:#fff; border-top:1px dashed var(--line);
+
 }
+
 .foot-grid{display:grid; grid-template-columns:2fr 1fr 1fr; gap:16px}
+
 .foot-grid a{color:var(--ink); text-decoration:none}
+
 .foot-grid a:hover{text-decoration:underline}
+
 .small{color:var(--muted); font-size:.9rem}
 
+
+
 /* Cities grid */
+
 .city-grid{
+
   display:grid;
+
   grid-template-columns:repeat(3,1fr);
+
   gap:12px;
+
   margin:16px 0 0;
+
   padding:0;
+
   list-style:none;
+
 }
+
 .city-grid li a{
+
   display:block;
+
   background:#fff;
+
   border:1px dashed var(--line);
+
   border-radius:10px;
+
   padding:10px 12px;
+
   text-decoration:none;
+
   color:var(--ink);
+
   transition:background .2s ease, transform .15s ease;
+
 }
+
 .city-grid li a:hover{
+
   background:var(--accent);
+
   transform:translateY(-1px);
+
 }
+
+
 
 /* ===== FAQ Accordion ===== */
+
 .faq-accordion{ display:grid; gap:12px; margin-top:16px; }
+
 .faq-item{
+
   background:#fff; border:1px solid var(--line); border-radius:16px; box-shadow: var(--ring);
+
   overflow:hidden;
+
 }
+
 .faq-q{
+
   list-style:none; display:flex; align-items:center; justify-content:space-between; gap:12px;
+
   padding:14px 16px; cursor:pointer; font-weight:600;
+
 }
+
 .faq-q::-webkit-details-marker{ display:none; }
+
 .faq-q svg{ transition: transform .2s ease; }
+
 .faq-item[open] .faq-q svg{ transform: rotate(180deg); }
+
 .faq-a{
+
   padding:0 16px 14px 16px; color: var(--ink);
+
   background: linear-gradient(180deg,#fff, #fffaf4);
+
   border-top: 1px dashed var(--line);
+
 }
+
 .faq-a p{ margin:12px 0 0; }
 
+
+
 /* ===== Hamburger icon ===== */
+
 .nav-toggle{
+
   display:none; /* показываем на мобилке */
+
   position:relative;
+
   width:44px; height:40px;
+
   border:1px dashed var(--line);
+
   border-radius:10px;
+
   background:#fff;
+
 }
+
 .nav-toggle .burger,
+
 .nav-toggle .burger::before,
+
 .nav-toggle .burger::after{
+
   content:"";
+
   position:absolute; left:10px; right:10px;
+
   height:2px; background:var(--ink);
+
   transition:transform .2s ease, opacity .2s ease, top .2s ease, bottom .2s ease;
+
 }
+
 .nav-toggle .burger{ top:19px; }
+
 .nav-toggle .burger::before{ top:11px; }
+
 .nav-toggle .burger::after{ bottom:11px; }
 
+
+
 /* open -> X */
+
 .nav.open .nav-toggle .burger{ transform:rotate(45deg); }
+
 .nav.open .nav-toggle .burger::before{ opacity:0; }
+
 .nav.open .nav-toggle .burger::after{ transform:rotate(-90deg); bottom:auto; top:19px; }
 
+
+
 /* ===== Mobile ===== */
+
 @media (max-width: 980px){
+
   .hero-inner{grid-template-columns:1fr}
+
   .cards{grid-template-columns:1fr;gap:12px}
+
   .list{grid-template-columns:1fr}
+
   .course-grid{grid-template-columns:1fr}
+
   .foot-grid{grid-template-columns:1fr}
+
   .city-grid{grid-template-columns:1fr}
 
+
+
   /* скрываем меню по умолчанию */
+
   .nav .nav-links{ display:none; }
 
+
+
   /* кнопка-гамбургер */
+
   .nav-toggle{
+
     display:inline-flex;
+
     align-items:center;
+
     justify-content:center;
+
     gap:8px;
+
     padding:8px 12px;
+
     border:1px dashed var(--line);
+
     border-radius:10px;
+
     background:#fff;
+
     cursor:pointer;
+
   }
+
+
 
   /* раскрытое меню */
+
   .nav.open .nav-links{
+
     display:flex !important;
+
     position:absolute;
+
     top:56px; right:20px;
+
     flex-direction:column; gap:8px;
+
     background:#fff;
+
     border:1px solid var(--line);
+
     border-radius:12px;
+
     box-shadow:var(--ring);
+
     padding:8px;
+
     transform-origin: top right;
+
     animation: menuIn .15s ease-out;
+
     z-index:100;
+
   }
+
+
 
   @keyframes menuIn{
+
     from{ opacity:0; transform:translateY(-6px) scale(.98); }
+
     to{ opacity:1; transform:translateY(0) scale(1); }
+
   }
 
+
+
   /* FAQ spacing tweaks */
+
   .faq-accordion{ gap:10px; }
+
   .faq-q{ padding:12px 14px; }
+
   .faq-a{ padding:0 14px 12px 14px; }
+
 }
 
+
+
 /* Reduced motion */
+
 @media (prefers-reduced-motion: reduce){
+
   *{animation:none!important; transition:none!important}
+
 }
+
+
+
 
 
 /* ===== Courses compact ===== */
+
 .courses .course-list{
+
   display:grid; grid-template-columns:1fr; gap:16px;
+
   counter-reset: course;
+
 }
+
 .course-card{
+
   background:#fff; border:1px solid var(--line); border-radius:16px;
+
   padding:14px; box-shadow:var(--ring);
+
   counter-increment: course;
+
 }
+
 .course-topline{
+
   display:flex; align-items:center; gap:10px; margin-bottom:6px;
+
 }
+
 .course-num::before{
+
   content:"Курс " counter(course);
+
   display:inline-block; font-weight:700; color:var(--muted);
+
   background:#fff; border:1px dashed var(--line); border-radius:999px;
+
   padding:3px 8px; font-size:.8rem;
+
 }
+
 .course-title{ margin:0; font-size:1.25rem; line-height:1.2; }
+
 .course-org{ margin:.25rem 0 .5rem; color:var(--muted); font-size:.95rem; }
 
+
+
 /* двухколоночная компакт-сетка на десктопе */
+
 .course-compact .course-compact-grid{
+
   display:grid; grid-template-columns:1.15fr .85fr; gap:16px;
+
 }
+
 .meta-grid{
+
   display:grid; grid-template-columns:repeat(2,minmax(220px,1fr));
+
   gap:6px 12px; margin:.6rem 0 .8rem; font-size:.95rem;
+
 }
+
 .meta-grid.meta-tight{ grid-template-columns:repeat(2,minmax(240px,1fr)); }
+
 .meta-grid .price{ color:var(--brand); font-weight:700; }
+
 .meta-grid .old{ text-decoration:line-through; opacity:.6; }
 
+
+
 .course-section{ margin-top:.8rem; }
+
 .course-section h4{ margin:0 0 .4rem; font-size:1.06rem; }
 
+
+
 /* компактные цифры программы */
+
 .program-stats{ display:flex; flex-wrap:wrap; gap:6px 10px; margin:0 0 .5rem; padding:0; list-style:none; }
+
 .program-stats.compact li{
+
   border:1px dashed var(--line); border-radius:999px; padding:4px 8px; background:#fff; font-size:.85rem;
+
 }
+
+
 
 /* таблица — компакт */
+
 .program-table table{ width:100%; border-collapse:collapse; font-size:.95rem; }
+
 .program-table td{
+
   border-bottom:1px solid var(--line);
+
   padding:.5rem .6rem; vertical-align:top;
+
 }
+
 .program-table.compact td:first-child{ width:34%; }
+
 .program-table.compact td:nth-child(2){ width:20%; }
 
+
+
 /* плюсы/минусы */
+
 .pros-cons{
+
   display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:.8rem;
+
 }
+
 .pros-cons h4{ margin-bottom:.3rem; }
+
 .pros ul, .cons ul{ margin:0; padding-left:1.1rem; }
+
 .pros li::marker{ content:"✓ "; color:green; }
+
 .cons li::marker{ content:"– "; color:#b84; }
 
+
+
 /* footer карточки */
+
 .course-footer{
+
   margin-top:1rem; display:flex; align-items:center; gap:12px; flex-wrap:wrap;
+
 }
+
 .course-footer .btn{
+
   background:var(--brand); color:#fff; padding:.55rem .9rem; border-radius:10px; text-decoration:none; font-weight:600;
+
 }
+
 .course-footer .btn:hover{ opacity:.9; }
 
+
+
 /* адаптив */
+
 @media (max-width: 980px){
+
   .course-compact .course-compact-grid{ grid-template-columns:1fr; }
+
   .meta-grid, .meta-grid.meta-tight{ grid-template-columns:1fr; }
+
   .course-title{ font-size:1.2rem; }
+
   .program-table.compact td:first-child,
+
   .program-table.compact td:nth-child(2){ width:auto; }
+
 }
+
+
+
 
 
 /* === Внутренние под-карточки и ритм === */
+
 .course-card{ padding:18px 20px; }
+
 .course-topline{ margin-bottom:10px; }
+
 .course-title{ font-size:1.28rem; letter-spacing:.2px; }
 
+
+
 .subcard{
+
   background:#fff;
+
   border:1px solid var(--line);
+
   border-radius:12px;
+
   padding:14px;
+
   box-shadow: var(--ring);
+
 }
+
 .course-compact .course-compact-grid{
+
   display:grid;
+
   grid-template-columns: 1.05fr 0.95fr; /* компактнее */
+
   gap:14px;
+
 }
+
+
 
 /* текстовая иерархия */
+
 .course-org{ margin:.1rem 0 .7rem; color:var(--muted); font-size:.95rem; }
+
 .course-section{ margin-top:.7rem; }
+
 .course-section h4{ font-size:1.05rem; margin:0 0 .45rem; }
+
 .section-right{ margin-bottom:.6rem; }
 
+
+
 /* компактная мета: ровные строки, тонкий разделитель */
+
 .meta-grid{
+
   display:grid;
+
   grid-template-columns:repeat(2,minmax(240px,1fr));
+
   gap:8px 14px;
+
   margin:.5rem 0 .9rem;
+
   font-size:.95rem;
+
 }
+
 .meta-grid > div{
+
   padding:6px 0;
+
   border-bottom:1px dashed var(--line);
+
 }
+
 .meta-grid > div:nth-last-child(-n+2){ border-bottom:none; } /* последняя строка в сетке без линии */
+
 .meta-grid .price{ color:var(--brand); font-weight:700; }
+
 .meta-grid .old{ text-decoration:line-through; opacity:.55; }
 
+
+
 /* программа: визуальное сжатие и «воздух» справа */
+
 .program-stats.compact li{
+
   padding:5px 10px; font-size:.85rem;
+
 }
+
 .program-table table{ width:100%; border-collapse:separate; border-spacing:0; font-size:.95rem; }
+
 .program-table td{
+
   padding:.55rem .6rem;
+
   border-bottom:1px solid var(--line);
+
 }
+
 .program-table tr:last-child td{ border-bottom:none; }
+
 .program-table.compact td:first-child{ width:36%; white-space:nowrap; }
+
 .program-table.compact td:nth-child(2){ width:22%; white-space:nowrap; }
 
+
+
 /* плюсы/минусы в единой под-карточке, колонками */
+
 .pros-cons{
+
   display:grid; grid-template-columns:1fr 1fr; gap:18px;
+
   margin-top:14px;
+
 }
+
 .pros-cons h4{ margin:.2rem 0 .4rem; }
+
 .pros ul, .cons ul{ margin:0; padding-left:1.1rem; }
+
 .pros li{ margin:.28rem 0; }
+
 .cons li{ margin:.28rem 0; }
+
 .pros li::marker{ content:"✓ "; color:#0a8a2a; }
+
 .cons li::marker{ content:"– "; color:#b87426; }
 
+
+
 /* низ карточки */
+
 .course-footer{
+
   margin-top:14px;
+
   display:flex; gap:10px; flex-wrap:wrap; align-items:center;
+
 }
+
 .course-footer .btn{ padding:.5rem .9rem; border-radius:10px; }
 
+
+
 /* разделители и общий ритм секции курсов */
+
 .courses .course-list{ gap:20px; }
+
 .courses .course-card + .course-card{ position:relative; }
+
 .courses .course-card + .course-card::before{
+
   content:"";
+
   position:absolute; top:-10px; left:0; right:0;
+
   height:1px; background:var(--line);
+
   opacity:.8;
+
 }
+
+
 
 /* адаптив: собираем в одну колонку, чуть больше «воздуха» */
+
 @media (max-width: 980px){
+
   .course-compact .course-compact-grid{ grid-template-columns:1fr; gap:12px; }
+
   .subcard{ padding:12px; }
+
   .meta-grid{ grid-template-columns:1fr; }
+
   .meta-grid > div{ border-bottom:1px dashed var(--line); }
+
   .meta-grid > div:last-child{ border-bottom:none; }
+
   .program-table.compact td:first-child,
+
   .program-table.compact td:nth-child(2){ width:auto; white-space:normal; }
+
 }
+
+
 
 /* ===== Ribbon Course Card ===== */
+
 .course-card.ribbon{
+
   counter-increment: course;
+
   background:#fff; border:1px solid var(--line); border-radius:16px;
+
   box-shadow:var(--ring); padding:16px 18px; display:block;
+
 }
+
 .course-card.ribbon + .course-card.ribbon{ margin-top:16px; }
 
+
+
 .course-head{ display:grid; grid-template-columns:auto 1fr; align-items:center; gap:10px 12px; margin-bottom:10px; }
+
 .course-head .course-num::before{
+
   content:"Курс " counter(course);
+
   display:inline-block; font-weight:700; color:var(--muted);
+
   border:1px dashed var(--line); border-radius:999px; padding:3px 8px; font-size:.8rem;
+
 }
+
 .course-head .course-title{ margin:0; font-size:1.26rem; line-height:1.2; }
+
 .course-head .course-org{ grid-column:1 / -1; color:var(--muted); font-size:.95rem; margin-top:-2px; }
 
+
+
 /* тело: лента + программа */
+
 .course-body{ display:grid; grid-template-columns: minmax(420px,1.2fr) minmax(340px,0.8fr); gap:14px; }
+
 @media (max-width: 980px){
+
   .course-body{ grid-template-columns:1fr; }
+
 }
+
+
 
 /* лента с чипами */
+
 .chiprail{
+
   display:flex; flex-wrap:wrap; gap:8px; margin:0; padding:0; list-style:none;
+
   align-content:flex-start;
+
 }
+
 .chip{
+
   display:inline-flex; gap:6px; align-items:center;
+
   background:#fff; border:1px dashed var(--line); border-radius:999px;
+
   padding:6px 10px; font-size:.92rem; white-space:nowrap;
+
 }
+
 .chip b{ font-weight:700; }
+
 .chip s{ opacity:.55; }
+
 .chip .price{ color:var(--brand); }
+
 .chip.hot{ background:linear-gradient(180deg,#fff, #fff7ee); border-color:var(--line); }
+
 .chip a{ color:var(--ink); text-decoration:none; }
+
 .chip a:hover{ text-decoration:underline; }
 
+
+
 /* программа: аккордеон на <details> */
+
 .program h4{ margin:0 0 .5rem; font-size:1.06rem; }
+
 .program-stats.mini{
+
   display:flex; gap:8px; margin:0 0 .4rem; padding:0; list-style:none;
+
 }
+
 .program-stats.mini li{
+
   border:1px dashed var(--line); border-radius:999px; padding:4px 8px; font-size:.84rem;
+
 }
+
 .prog-item{
+
   border:1px solid var(--line); border-radius:10px; background:#fff; margin-bottom:8px; overflow:hidden;
+
 }
+
 .prog-item[open]{ box-shadow:var(--ring); }
+
 .prog-item summary{
+
   list-style:none; cursor:pointer; user-select:none;
+
   padding:10px 12px; display:flex; align-items:center; justify-content:space-between; gap:10px;
+
   font-weight:600;
+
 }
+
 .prog-item summary::-webkit-details-marker{ display:none; }
+
 .prog-item summary em{ font-style:normal; color:var(--muted); font-weight:500; font-size:.92rem; }
+
 .prog-item p{ padding:0 12px 12px; margin:0; color:var(--ink); }
 
+
+
 /* «О курсе» */
+
 .course-intro{ margin-top:12px; }
+
 .course-intro h4{ margin:0 0 .4rem; font-size:1.06rem; }
+
 .course-intro p{ margin:0; color:var(--ink); }
 
+
+
 /* Плюсы/минусы блок */
+
 .pm{
+
   margin-top:12px; display:grid; grid-template-columns:1fr 1fr; gap:14px;
+
   background:#fff; border:1px solid var(--line); border-radius:12px; padding:12px;
-}
-.pm h4{ margin:.1rem 0 .3rem; font-size:1.02rem; }
-.pm ul{ margin:0; padding-left:1.1rem; }
-.pm li{ margin:.28rem 0; }
-.pm .pros li::marker{ content:"✓ "; color:#0a8a2a; }
-.pm .cons li::marker{ content:"– "; color:#b87426; }
-@media (max-width: 980px){
-  .pm{ grid-template-columns:1fr; }
+
 }
 
+.pm h4{ margin:.1rem 0 .3rem; font-size:1.02rem; }
+
+.pm ul{ margin:0; padding-left:1.1rem; }
+
+.pm li{ margin:.28rem 0; }
+
+.pm .pros li::marker{ content:"✓ "; color:#0a8a2a; }
+
+.pm .cons li::marker{ content:"– "; color:#b87426; }
+
+@media (max-width: 980px){
+
+  .pm{ grid-template-columns:1fr; }
+
+}
+
+
+
 /* CTA */
+
 .course-cta{
+
   margin-top:12px; display:flex; gap:10px; flex-wrap:wrap; align-items:center;
+
 }
+
 .course-cta .btn{
+
   background:var(--brand); color:#fff; padding:.55rem .95rem; border-radius:10px; text-decoration:none; font-weight:600;
+
 }
+
 .course-cta .btn:hover{ opacity:.9; }
 
 
 
 
+
+
+
+
+
 /* ====== Neo card (как на скрине) ====== */
+
 .courses .course-list{ counter-reset:course; }
+
 .course-card.neo{ counter-increment:course; background:#fff; border:1px solid #f3d89a; border-radius:16px; padding:16px; box-shadow: 0 6px 18px rgba(255,179,0,.12), inset 0 0 0 2px #fff; }
+
 .course-card.neo + .course-card.neo{ margin-top:18px; }
 
+
+
 /* шапка */
+
 .neo-head{ position:relative; padding:10px 12px 12px; border:2px solid #ffe6ab; border-radius:12px; background:#fff; box-shadow: 0 6px 18px rgba(255,179,0,.12); }
+
 .neo-head .badge-num::before{
+
   content:"Курс " counter(course);
+
   display:inline-block; background:#fff8e1; border:1px solid #ffd56c; color:#8a6b00;
+
   border-radius:999px; padding:4px 10px; font-size:.82rem; font-weight:700;
+
 }
+
 .neo-title{ margin:6px 0 2px; text-align:center; color:#e14a2a; font-weight:800; letter-spacing:.8px; }
+
 .neo-sub{ text-align:center; color:#666; font-size:.95rem; }
+
 .linkish{ color:#0a66c2; text-decoration:underline; text-decoration-thickness:.5px; text-underline-offset:2px; }
 
+
+
 /* мета */
+
 .neo-body{ padding:14px 10px 0; }
+
 .neo-meta{ list-style:none; margin:0; padding:0; display:grid; grid-template-columns:1fr 1fr; gap:8px 16px; }
+
 @media (max-width:980px){ .neo-meta{ grid-template-columns:1fr; } }
+
 .neo-meta li{ background:#fff; border:1px solid #f1efe9; border-radius:10px; padding:8px 10px; box-shadow: var(--ring); }
+
 .m-key{ color:#444; font-weight:600; }
+
 .m-accent{ color:#e14a2a; font-weight:700; }
+
 .m-old{ text-decoration:line-through; color:#8c8c8c; margin-left:6px; }
+
 .m-hot{ color:#d35400; font-weight:700; }
+
 .tel{ color:#e14a2a; text-decoration:none; }
+
 .tel:hover{ text-decoration:underline; }
 
+
+
 /* разделы */
+
 .neo-section{ margin-top:18px; }
+
 .neo-h4{ margin:0 0 .6rem; text-align:center; font-size:1.06rem; }
+
 .neo-section p{ margin:0; }
 
+
+
 /* pills */
+
 .neo-pills{ display:flex; flex-wrap:wrap; gap:8px; margin:0 0 .8rem; padding:0; list-style:none; justify-content:center; }
+
 .neo-pills li{
+
   background:#fff8e8; border:1px solid #ffd9a6; color:#8a6b00;
+
   border-radius:999px; padding:6px 10px; font-size:.9rem;
+
 }
+
+
 
 /* таблица */
+
 .neo-table table{ width:100%; border-collapse:separate; border-spacing:0; background:#fff; overflow:hidden; border-radius:12px; box-shadow: var(--ring); }
+
 .neo-table thead th{
+
   background:#fff4d6; border-bottom:1px solid #ffe0a8; padding:10px 12px; text-align:left; font-weight:700;
+
 }
+
 .neo-table td{ border-bottom:1px solid #f0f0f0; padding:10px 12px; vertical-align:top; }
+
 .neo-table tr:last-child td{ border-bottom:none; }
 
+
+
 /* плюсы/минусы */
+
 .neo-card{ display:grid; grid-template-columns:1fr 1fr; gap:16px; background:#fff; border:1px solid #ffe0a8; border-radius:12px; padding:12px; box-shadow: var(--ring); }
+
 @media (max-width:980px){ .neo-card{ grid-template-columns:1fr; } }
+
 .pm-list{ margin:0; padding-left:1.1rem; }
+
 .pm-list.pros li::marker{ content:"✓ "; color:#0a8a2a; }
+
 .pm-list.cons li::marker{ content:"– "; color:#b87426; }
 
+
+
 /* CTA */
+
 .neo-cta{ margin-top:16px; display:flex; justify-content:center; }
+
 .neo-cta .btn{ background:#ff6a2d; }
 
 
 
 
+
+
+
+
+
 .btn {
+
   display: inline-block;
+
   background: #c9864b;         /* карамельный, как на скрине */
+
   color: #fff;
+
   font-weight: 600;
+
   font-size: 1rem;
+
   padding: 10px 22px;
+
   border-radius: 10px;         /* мягкие скругления */
+
   text-decoration: none;
+
   border: none;
+
   transition: all 0.2s ease-in-out;
+
   box-shadow: 0 3px 6px rgba(0,0,0,0.05);
+
 }
+
+
 
 .btn:hover {
+
   background: #a56d3e;         /* немного темнее при наведении */
+
   box-shadow: 0 5px 10px rgba(0,0,0,0.08);
+
   transform: translateY(-1px);
+
 }
 
+
+
 .btn:active {
+
   background: #8d5e35;         /* эффект нажатия */
+
   transform: translateY(0);
+
 }
+
+
+
 
 
 /* === LSI BENEFITS GRID === */
+
 .benefits.lsi {
+
   padding: 60px 0;
+
   background: #fafafa;
+
 }
+
+
 
 .benefits.lsi .section-title {
+
   text-align: center;
+
   font-size: 1.9rem;
+
   margin-bottom: 2.5rem;
+
   font-weight: 700;
+
 }
+
+
 
 .lsi-grid {
+
   display: grid;
+
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+
   gap: 1.5rem;
+
 }
+
+
 
 .lsi-card {
+
   background: #fff;
+
   border: 1px solid #e6e6e6;
+
   border-radius: 16px;
+
   padding: 1.6rem 1.4rem;
+
   box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+
   transition: transform .2s ease, box-shadow .2s ease;
+
 }
+
+
 
 .lsi-card:hover {
+
   transform: translateY(-4px);
+
   box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+
 }
+
+
 
 .lsi-badge {
+
   display: flex;
+
   align-items: center;
+
   margin-bottom: 0.6rem;
+
 }
+
+
 
 .lsi-badge .dot {
+
   display: inline-block;
+
   width: 10px;
+
   height: 10px;
+
   border-radius: 50%;
+
   background: linear-gradient(135deg, #ff80ab, #ff4081);
+
   margin-right: 8px;
+
 }
+
+
 
 .lsi-title {
+
   font-size: 1.1rem;
+
   font-weight: 600;
+
   color: #222;
+
   margin: 0 0 0.4rem 0;
+
 }
+
+
 
 .lsi-text {
+
   color: #555;
+
   font-size: 0.95rem;
+
   line-height: 1.5;
+
   margin: 0;
+
 }
 
+
+
 /* === RESPONSIVE === */
+
 @media (max-width: 768px) {
+
   .benefits.lsi {
+
     padding: 40px 0;
+
   }
+
   .lsi-card {
+
     padding: 1.2rem;
+
   }
+
   .lsi-title {
+
     font-size: 1rem;
+
   }
+
 }
+
+
+
+
+
 
 
 
 
 /* рекламная врезка */
+
 .promo-disclaimer {
+
   border-top: 1px dashed rgba(0,0,0,0.1);
+
   background: #fafafa;
+
   margin-top: 32px;
+
   padding: 18px 0;
+
 }
+
 .note-ads {
+
   margin: 0;
+
   text-align: center;
+
   font-size: 0.95rem;
+
   color: #666;
+
 }
+
 .note-ads strong {
+
   color: #222;
+
   font-weight: 600;
+
 }
+
+
+
+
+
+
 
 
 
 
 
 /* ============================
+
    Мобильная адаптация блока "Программа обучения"
+
    (исправляет вылезание за границы экрана ТОЛЬКО средствами CSS)
+
    ============================ */
 
+
+
 /* 1) Плашки: разрешаем перенос и многострочность */
+
 .neo-pills {
+
   display: flex;
+
   flex-wrap: wrap;
+
   gap: 8px 10px;
+
   margin: 0;
+
   padding: 0;
+
   list-style: none;
+
 }
+
 .neo-pills li {
+
   max-width: 100%;
+
   white-space: nowrap;
+
   padding: 6px 10px;
+
   border-radius: 999px;
+
   background: #f5f5f7;
+
   font-size: 14px;
+
   line-height: 1.2;
+
 }
+
 @media (max-width: 480px) {
+
   .neo-pills li {
+
     white-space: normal;          /* разрешаем перенос на очень узких экранах */
+
     word-break: break-word;
+
     hyphens: auto;
+
   }
+
 }
+
+
 
 /* 2) Таблица: горизонтальная прокрутка без поломки вёрстки */
+
 .neo-table {
+
   width: 100%;
+
   overflow-x: auto;               /* включаем прокрутку при узком экране */
+
   -webkit-overflow-scrolling: touch;
+
 }
+
 .neo-table table {
+
   width: 100%;
+
   border-collapse: collapse;
+
   table-layout: fixed;            /* фиксированная вёрстка => перенос содержимого */
+
   min-width: 640px;               /* не даём таблице сжиматься меньше минимума */
+
 }
+
+
 
 /* 3) Ячейки: перенос длинных слов/фраз */
+
 .neo-table th,
+
 .neo-table td {
+
   padding: 10px 12px;
+
   vertical-align: top;
+
   text-align: left;
+
   word-break: break-word;         /* переносим длинные слова */
+
   overflow-wrap: anywhere;        /* переносим любые длинные токены */
+
   hyphens: auto;
+
   border-bottom: 1px solid #eee;
+
   background-clip: padding-box;   /* чтобы фон не "лез" за границы при скролле */
+
 }
+
+
 
 /* 4) Узкие экраны: уменьшаем плотность и типографику */
+
 @media (max-width: 768px) {
+
   .neo-section {
+
     padding-left: 16px;
+
     padding-right: 16px;
+
   }
+
   .neo-h4 {
+
     font-size: 18px;
+
     line-height: 1.3;
+
     margin-bottom: 12px;
+
   }
+
   .neo-table th,
+
   .neo-table td {
+
     padding: 8px 10px;
+
     font-size: 14px;
+
   }
+
 }
+
+
 
 /* 5) Колонки: даём первой колонке (название блока) больше места на перенос */
+
 @media (max-width: 768px) {
+
   .neo-table table th:nth-child(1),
+
   .neo-table table td:nth-child(1) { width: 42%; }
+
   .neo-table table th:nth-child(2),
+
   .neo-table table td:nth-child(2) { width: 22%; white-space: nowrap; }
+
   .neo-table table th:nth-child(3),
+
   .neo-table table td:nth-child(3) { width: 36%; }
+
 }
 
+
+
 /* 6) Мелкие правки для лучшего UX при скролле */
+
 .neo-table::-webkit-scrollbar {
+
   height: 8px;
+
 }
+
 .neo-table::-webkit-scrollbar-thumb {
+
   background: rgba(0,0,0,.15);
+
   border-radius: 4px;
+
 }
+
 .neo-table::-webkit-scrollbar-track {
+
   background: transparent;
+
 }
+
+
+
 
 
 /* ======== ДОРАБОТКА ПРОГРАММЫ ОБУЧЕНИЯ ======== */
 
+
+
 /* Отступ между бейджами и таблицей */
+
 .neo-table {
+
   width: 100%;
+
   overflow-x: auto;
+
   -webkit-overflow-scrolling: touch;
+
   margin-top: 16px; /* 🔸 расстояние между бейджами и таблицей */
+
   position: relative;
+
   padding-top: 22px; /* 🔸 добавляем место под верхнюю подсказку */
+
 }
+
+
 
 /* Намёки на горизонтальный скролл (две подсказки — сверху и снизу) */
+
 .neo-table::before,
+
 .neo-table::after {
+
   content: "← сдвиньте чтобы посмотреть →";
+
   position: absolute;
+
   left: 50%;
+
   transform: translateX(-50%);
+
   font-size: 12px;
+
   color: rgba(0,0,0,0.55); /* чуть заметнее, чем раньше */
+
   background: rgba(255,255,255,0.9);
+
   padding: 3px 8px;
+
   border-radius: 6px;
+
   pointer-events: none;
+
   opacity: 0;
+
   white-space: nowrap;
+
   transition: opacity .3s ease;
+
 }
+
+
 
 /* Верхняя подсказка */
+
 .neo-table::before {
+
   top: -8px; /* 🔸 над таблицей, не перекрывает */
+
 }
+
+
 
 /* Нижняя подсказка */
+
 .neo-table::after {
+
   bottom: 4px;
+
 }
+
+
 
 /* Показываем подсказки на узких экранах */
+
 @media (max-width: 768px) {
+
   .neo-table::before,
+
   .neo-table::after {
+
     opacity: 1;
+
     animation: hintScroll 3s ease-in-out 1;
+
   }
+
 }
+
+
 
 /* Эффект появления/затухания подсказки */
+
 @keyframes hintScroll {
+
   0% { opacity: 0; transform: translateX(-45%) translateY(6px); }
+
   10% { opacity: 1; transform: translateX(-50%) translateY(0); }
+
   80% { opacity: 1; }
+
   100% { opacity: 0; transform: translateX(-55%) translateY(-6px); }
+
 }
 
+
+
 /* Остальные стили таблицы */
+
 .neo-table table {
+
   width: 100%;
+
   border-collapse: collapse;
+
   table-layout: fixed;
+
   min-width: 640px;
+
 }
+
 .neo-table th,
+
 .neo-table td {
+
   padding: 10px 12px;
+
   vertical-align: top;
+
   text-align: left;
+
   word-break: break-word;
+
   overflow-wrap: anywhere;
+
   hyphens: auto;
+
   border-bottom: 1px solid #eee;
+
 }
+
+
+
+
+
 
 
 
 
 .js-nav {
+
   cursor: pointer;
+
 }
+
 .js-nav.linkish {
+
   text-decoration: underline;
+
 }
+
+
 
 .js-nav.linkish:hover {
+
   text-decoration: none;
+
 }
+
+
 
 /* CTA-кнопка из span */
+
 /* span.js-nav как кнопка в CTA */
+
 .neo-cta .linkish.js-nav {
+
   display: inline-block;
+
   background: #ff6a2d;         /* оранжевый */
+
   color: #fff !important;
+
   font-weight: 600;
+
   font-size: 1rem;
+
   padding: 10px 22px;
+
   border-radius: 10px;
+
   text-decoration: none;
+
   border: none;
 
+
+
   cursor: pointer;
+
   user-select: none;
 
+
+
   transition: all 0.2s ease-in-out;
+
   box-shadow: 0 3px 6px rgba(0,0,0,0.05);
+
 }
+
+
 
 .neo-cta .linkish.js-nav:hover {
+
   background: #a56d3e;
+
   box-shadow: 0 5px 10px rgba(0,0,0,0.08);
+
   transform: translateY(-1px);
+
 }
 
+
+
 .neo-cta .linkish.js-nav:active {
+
   background: #8d5e35;
+
   transform: translateY(0);
+
 }
+
+
+
 
 
 blockquote {
+
   margin: 2.5rem 0;
+
   padding: 1.8rem 2.2rem;
+
   position: relative;
 
+
+
   background: linear-gradient(135deg, #f7f7f7, #ffffff);
+
   border-left: 4px solid #111;
 
+
+
   font-style: italic;
+
   color: #222;
+
 }
+
+
 
 blockquote p {
+
   margin: 0;
+
   font-size: 1.15rem;
+
   line-height: 1.6;
+
 }
+
+
 
 blockquote::before {
+
   content: "“";
+
   position: absolute;
+
   top: -0.6rem;
+
   left: 0.8rem;
 
+
+
   font-size: 4rem;
+
   font-weight: 700;
+
   color: rgba(0, 0, 0, 0.08);
+
   line-height: 1;
+
 }
 
 
+
+
+
 </style>
+
 <!-- Yandex.Metrika counter -->
+
 <script type="text/javascript">
+
       (function(m,e,t,r,i,k,a){
+
           m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}
+
           m[i].l=1*new Date();
+
           for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+
           k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+
       })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=104699306', 'ym');
 
+
+
       ym(104699306, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", accurateTrackBounce:true, trackLinks:true});
+
   </script>
+
 <noscript><div><img alt="" src="../watch/104699306" style="position:absolute; left:-9999px;"/>
+
 </div></noscript>
+
 <!-- /Yandex.Metrika counter -->
+
 <script defer="" src="../js/aff-wrap.ecolespb.js"></script>
+
+<script src="../js/blog-quiz.js" defer></script>
 </head>
+
 <body>
+
 <header>
+
 <div class="container">
+
 <div class="nav" id="nav">
+
 <a aria-label="На главную" class="brand" href="../">
+
 <svg aria-hidden="true" fill="none" viewbox="0 0 64 64">
+
 <path d="M32 6c6 0 10 5 10 11 0 5-3 9-7 10v6h9a3 3 0 0 1 0 6h-9v15a3 3 0 1 1-6 0V39h-9a3 3 0 0 1 0-6h9v-6c-4-1-7-5-7-10 0-6 4-11 10-11Z" fill="currentColor"></path>
+
 </svg>
+
 <span>Курсы барбера и мужских стрижек</span>
+
 </a>
+
 <!-- Гамбургер -->
+
 <button aria-controls="primary-menu" aria-expanded="false" aria-label="Открыть меню" class="nav-toggle" id="menuToggle">
+
 <span aria-hidden="true" class="burger"></span>
+
 </button>
+
 <nav aria-label="Главная навигация" class="nav-links" id="primary-menu">
+
 <a href="../">На главную</a>
+
 <a href="#faq">FAQ</a>
+
 <a href="../blog-category.html">Блог</a>
+
 </nav>
+
 </div>
+
 </div>
+
 </header>
+
 <!-- ===== локальные стили ТОЛЬКО для блога ===== -->
+
 <style>
+
 /* BLOG SCOPE — всё внутри атрибута data-blog-root */
 
+
+
 /* 1) Чиним «залипающий» hero только внутри блога */
+
 [data-blog-root] header.hero {
+
   position: static; inset: auto; height: auto; min-height: 0; z-index: 1;
+
   overflow: visible; background-attachment: scroll; padding-top: 32px; padding-bottom: 16px;
+
 }
+
 [data-blog-root] header.hero .hero-inner,
+
 [data-blog-root] header.hero .hero-card,
+
 [data-blog-root] header.hero .figure { position: static; transform:none; }
+
 [data-blog-root] header.hero, [data-blog-root] header.hero .hero-inner { min-height: 0; }
+
 [data-blog-root] main, [data-blog-root] .container:first-of-type { margin-top: 0; }
 
+
+
 /* 2) Контент статьи */
+
 [data-blog-root] .article .content { line-height: 1.65; }
+
 [data-blog-root] .article .content img { max-width: 100%; height: auto; border-radius: 12px; }
+
 [data-blog-root] .article .content h2 { margin: 1.2em 0 .5em; }
+
 [data-blog-root] .article .content h3 { margin: 1em 0 .5em; }
+
 [data-blog-root] #toc.card { border-radius: 16px; padding: 16px; }
+
 [data-blog-root] .section_links ul.list { margin: .5em 0 0; }
+
 [data-blog-root] .section_links ul.list li + li { margin-top: .25em; }
 
+
+
 /* 3) Сетка */
+
 @media (min-width: 960px) {
+
   [data-blog-root] .article .container.grid2 {
+
     display: grid; grid-template-columns: minmax(0,1fr) 320px; gap: 24px;
+
   }
+
 }
+
 @media (max-width: 959.98px) {
+
   [data-blog-root] .article .container.grid2 { display: block; }
+
   [data-blog-root] aside { margin-top: 24px; }
+
 }
+
+
 
 /* --- HERO: подпись и отступы --- */
+
 [data-blog-root] header.hero .figure-caption {
+
   position: static !important; text-align: center; font-size: 0.9rem; color: var(--muted, #666);
+
   margin-top: 8px; line-height: 1.4;
+
 }
+
 [data-blog-root] header.hero .hero-card { display:flex; flex-direction:column; align-items:center; margin-bottom:24px; }
+
 [data-blog-root] header.hero .hero-inner { padding-bottom: 24px; }
 
+
+
 /* --- HERO: адаптивная обложка (любой формат фото выглядит красиво) --- */
+
 [data-blog-root] header.hero .hero-card {
+
   width: 100%;
+
   max-width: 640px;
+
   margin-left: auto; margin-right: auto;
+
   border-radius: 16px;
+
   overflow: hidden;
+
   background: #f9f9f9;
+
   box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+
 }
+
 [data-blog-root] header.hero .figure {
+
   width: 100%;
+
   height: 400px;                  /* базовая высота обложки */
+
   overflow: hidden;
+
 }
+
 [data-blog-root] header.hero .figure img {
+
   width: 100%;
+
   height: 100%;
+
   object-fit: cover;              /* вписываем изображение без искажений */
+
   object-position: center;
+
   display: block;
+
 }
+
 @media (max-width: 768px) {
+
   [data-blog-root] header.hero .figure { height: 280px; }
+
 }
+
 [data-blog-root] header.hero .figure-caption {
+
   padding: 12px 16px;
+
   background: #fff;
+
   border-top: 1px solid #eee;
+
   width: 100%;
+
   box-sizing: border-box;
+
 }
+
+
 
 /* воздух между героем и секциями */
+
 [data-blog-root] .article .container.grid2 { margin-top: 32px; }
+
 @media (max-width: 768px) { [data-blog-root] .article .container.grid2 { margin-top: 24px; } }
 
+
+
 /* Внимание (жёлтая) */
+
 [data-blog-root] .section_attention {
+
   background:#fff8e6; border:1px solid #f5d68e; border-left:4px solid #f0b400;
+
   border-radius:8px; padding:14px 18px 14px 44px; margin:20px 0; font-size:.97rem; line-height:1.55; color:#333; position:relative;
+
 }
+
 [data-blog-root] .section_attention::before { content:"📌"; position:absolute; left:16px; top:12px; font-size:1.1rem; line-height:1; }
+
 [data-blog-root] .section_attention strong { color:#000; font-weight:600; }
 
+
+
 /* Подсказка (голубая) */
+
 [data-blog-root] .section_tip {
+
   background:#e8f6ff; border:1px solid #b5e2ff; border-left:4px solid #1fa4e3;
+
   border-radius:8px; padding:14px 18px 14px 44px; margin:20px 0; position:relative; font-size:.97rem; line-height:1.55;
+
 }
+
 [data-blog-root] .section_tip::before { content:"💡"; position:absolute; left:16px; top:12px; font-size:1.1rem; line-height:1; }
 
+
+
 /* Ссылки внутри блога */
+
 [data-blog-root] a { color:#d97c00; text-decoration:none; border-bottom:1px dotted rgba(217,124,0,0.4); transition:color .2s, border-color .2s; }
+
 [data-blog-root] a:hover { color:#a65e00; border-color: rgba(217,124,0,0.8); }
+
 [data-blog-root] .section_attention a { font-weight:600; }
 
+
+
 /* Кнопка в сайдбаре */
+
 [data-blog-root] .btn.btn-primary {
+
   display:inline-block; background:#d97c00; color:#fff !important; font-weight:600;
+
   padding:10px 18px; border-radius:8px; text-align:center; text-decoration:none; transition:background .2s, transform .1s; border:none;
+
 }
+
 [data-blog-root] .btn.btn-primary:hover { background:#a65e00; transform:translateY(-1px); }
+
 [data-blog-root] .btn.btn-primary:active { background:#8a4f00; transform:translateY(0); }
 
+
+
 /* --- Related (картинка сверху, заголовок снизу, 1 карточка в строке) --- */
+
 [data-blog-root] .related-grid {
+
   display: grid;
+
   grid-template-columns: 1fr;
+
   gap: 14px;
+
 }
+
 [data-blog-root] .related-card {
+
   display: flex;
+
   flex-direction: column;
+
   border: 1px solid #eee;
+
   border-radius: 10px;
+
   overflow: hidden;
+
   background: #fff;
+
   transition: box-shadow 0.2s ease, transform 0.15s ease;
+
 }
+
 [data-blog-root] .related-card:hover {
+
   box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+
   transform: translateY(-2px);
+
 }
+
 [data-blog-root] .related-card .thumb {
+
   width: 100%;
+
   aspect-ratio: 16 / 10;
+
   overflow: hidden;
+
   display: block;
+
   background: #f4f4f4;
+
 }
+
 [data-blog-root] .related-card .thumb img {
+
   width: 100%;
+
   height: 100%;
+
   object-fit: cover;
+
   display: block;
+
 }
+
 [data-blog-root] .related-card .rel-title {
+
   padding: 10px 12px 12px;
+
 }
+
 [data-blog-root] .related-card .rel-title a {
+
   font-size: 0.95rem;
+
   font-weight: 600;
+
   color: #222;
+
   line-height: 1.4;
+
   text-decoration: none;
+
   display: block;
+
 }
+
 [data-blog-root] .related-card .rel-title a:hover { color: #d97c00; }
 
+
+
 /* ===== Таблицы в статье (красиво + адаптивно) ===== */
+
 [data-blog-root] .table-wrap{
+
   margin:16px 0;
+
   padding:8px;
+
   border:1px solid #eee;
+
   border-radius:12px;
+
   background:#fff;
+
   overflow-x:auto;             /* горизонтальный скролл на узких экранах */
+
   -webkit-overflow-scrolling: touch;
+
   box-shadow: 0 2px 6px rgba(0,0,0,.03);
+
 }
+
+
 
 [data-blog-root] .data-table{
+
   width:100%;
+
   min-width:680px;             /* чтобы колонки не слипались на узких экранах */
+
   border-collapse:separate;
+
   border-spacing:0;
+
   font-size:0.98rem;
+
   line-height:1.55;
+
 }
+
+
 
 /* Шапка */
+
 [data-blog-root] .data-table thead th{
+
   background:#f7f7f7;
+
   color:#222;
+
   font-weight:700;
+
   text-align:left;
+
   padding:12px 14px;
+
   border-bottom:1px solid #e9e9e9;
+
   position:sticky;
+
   top:0;                       /* шапка липнет при скролле внутри обёртки */
+
   z-index:1;
+
 }
+
 [data-blog-root] .data-table thead th:first-child{ border-top-left-radius:10px; }
+
 [data-blog-root] .data-table thead th:last-child{  border-top-right-radius:10px; }
 
+
+
 /* Ячейки */
+
 [data-blog-root] .data-table td{
+
   padding:12px 14px;
+
   border-bottom:1px solid #f0f0f0;
+
   vertical-align:top;
+
   color:#333;
+
 }
+
+
 
 /* Зебра и ховер */
+
 [data-blog-root] .data-table tbody tr:nth-child(odd){ background:#fcfcfc; }
+
 [data-blog-root] .data-table tbody tr:hover{ background:#fff8e6; }
 
+
+
 /* Последняя строка без нижней линии */
+
 [data-blog-root] .data-table tbody tr:last-child td{ border-bottom:0; }
 
+
+
 /* Узкие экраны: уменьшим минимальную ширину и отступы */
+
 @media (max-width: 640px){
+
   [data-blog-root] .data-table{ min-width:560px; font-size:0.96rem; }
+
   [data-blog-root] .data-table th,
+
   [data-blog-root] .data-table td{ padding:10px 12px; }
+
 }
 
+
+
 /* Пояснение под таблицей */
+
 [data-blog-root] .table-wrap + .muted{ margin-top:6px; display:block; }
 
+
+
 </style>
+
 <div data-blog-root="">
+
 <!-- SEO (JSON-LD + фолбэк для title/description/OG) -->
+
 <script type="application/ld+json">
+
   {"@context":"https://schema.org","@type":"BlogPosting","headline":"Почему клиенты возвращаются к барберу, а не ищут нового","description":"Разбираем, почему клиенты возвращаются именно к мастеру, а не в салон: роль первого визита, доверие, стабильность результата и удержание без скидок.","image":"/IMUGA/klienty-vozvraschayutsya-k-masteru.jpg","mainEntityOfPage":"https://kursy-barbera.vercel.app/blog/klienty-vozvraschayutsya-k-masteru.php","url":"https://kursy-barbera.vercel.app/blog/klienty-vozvraschayutsya-k-masteru.php"}  </script>
 
+
+
 <!-- Хлебные крошки -->
+
 <nav aria-label="Хлебные крошки" class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList">
+
 <span itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+
 <a href=".." itemprop="item"><span itemprop="name">Главная</span></a>
+
 <meta content="1" itemprop="position"/>
 
+
+
 </span>
+
 <span> / </span>
+
 <span itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+
 <a href="../blog-category.html" itemprop="item"><span itemprop="name">Блог</span></a>
+
 <meta content="2" itemprop="position"/>
 
+
+
 </span>
+
 </nav>
+
 <article class="article" itemscope="" itemtype="https://schema.org/BlogPosting">
+
 <header class="hero">
+
 <div class="container">
+
 <div class="hero-inner">
+
 <div>
+
 <span class="tag">Статья блога</span>
+
 <h1 class="title" itemprop="headline">Почему клиенты возвращаются к барберу, а не ищут нового</h1>
+
 <p class="subtitle" itemprop="description">Возвращаемость клиентов — главный показатель зрелости барбера. Разбираем, что формирует лояльность, почему люди выбирают мастера и как удерживать без скидок.</p> </div>
+
 <div class="hero-card">
+
 <div aria-hidden="true" class="stitches"></div>
+
 <div aria-label="Почему клиенты возвращаются к барберу, а не ищут нового" class="figure" role="img">
+
 <img alt="" itemprop="image" loading="lazy" src="../IMUGA/klienty-vozvraschayutsya-k-masteru.jpg"/>
 
+
+
 </div>
+
 <div class="figure-caption">Клиенты возвращаются не за стрижкой, а за ощущением уверенности, стабильности и доверия к конкретному мастеру.</div>
+
 </div>
+
 </div>
+
 </div>
+
 </header>
+
 <meta content="https://kursy-barbera.vercel.app/blog/klienty-vozvraschayutsya-k-masteru.php" itemprop="mainEntityOfPage"/>
 
+
+
 <div class="container grid2">
+
 <!-- Контент -->
+
 <div class="content" id="article-body" itemprop="articleBody">
+
 <!-- Оглавление (авто) -->
+
 <nav aria-label="Содержание" class="card" id="toc" style="display:none;margin-bottom:16px;">
+
 <h3 style="margin:0 0 8px 0;">Содержание</h3>
+
 <ul class="list" id="toc-list"></ul>
+
 </nav>
+
 <!-- end blok -->
+
 <!-- start blok -->
+
 <!-- <url>klienty-vozvraschayutsya-k-masteru.php</url> -->
+
 <!-- excerpt: Почему возвращаемость клиентов важнее постоянного притока новых и как она формирует стабильность барбера. -->
+
 <h2>Почему возвращаемость клиентов важнее потока новых</h2>
+
 <p>Многие барберы на старте концентрируются на привлечении новых клиентов: акции, скидки, реклама, красивые фото работ. Это нормально, но со временем становится очевидно — стабильность в профессии строится не на постоянном поиске новых людей, а на тех, кто возвращается снова и снова.</p>
+
 <p>Возвращаемость — это показатель доверия. Клиент уже сделал выбор, получил опыт и решил повторить его. В этот момент барбер перестаёт быть случайным исполнителем и становится «своим» мастером.</p>
+
 <div class="section_attention">
+
 <strong>Важно:</strong> один постоянный клиент на дистанции ценнее нескольких разовых визитов. Он даёт предсказуемость и спокойствие в работе.
+
 </div>
+
 <p>Когда база постоянных клиентов растёт, меняется сам ритм работы. График заполняется заранее, снижается зависимость от рекламы и исчезает ощущение, что каждый визит — это экзамен.</p>
+
 <h2>Что клиент ищет, возвращаясь к мастеру</h2>
+
 <p>Распространённое заблуждение — думать, что клиент возвращается только из-за удачной стрижки. На практике причина почти всегда комплексная. Результат важен, но он лишь часть общего впечатления.</p>
+
 <ul class="list">
+
 <li><strong>Стабильность:</strong> предсказуемый результат без сюрпризов.</li>
+
 <li><strong>Безопасность:</strong> ощущение, что мастер понимает и ведёт процесс.</li>
+
 <li><strong>Комфорт:</strong> спокойная атмосфера без напряжения.</li>
+
 <li><strong>Доверие:</strong> уверенность в решениях барбера.</li>
+
 </ul>
+
 <p>Если эти элементы совпадают, клиенту не нужно «искать лучше». Он возвращается не потому, что нет альтернатив, а потому что уже нашёл подходящий формат.</p>
+
 <h2>Почему возврат — это осознанный выбор клиента</h2>
+
 <p>Повторная запись — это всегда сравнение. Клиент мысленно сопоставляет прошлый опыт с потенциальным новым и выбирает знакомый результат. Это говорит о том, что мастер оправдал ожидания не только визуально, но и эмоционально.</p>
+
 <p>Именно поэтому возвращаемость считается одним из главных индикаторов профессиональной зрелости барбера. Чем выше этот показатель, тем меньше хаоса и тем устойчивее профессия на длинной дистанции.</p>
+
 <div class="section_attention">
+
 <strong>Важно:</strong> клиенты возвращаются не из привычки, а из-за ощущения надёжности и уважения к их запросу.
+
 </div>
+
 <p>Дальше разберём, какие конкретные факторы формируют это доверие и почему первый визит играет ключевую роль в решении клиента вернуться.</p>
+
 <!-- end blok -->
+
 <!-- start blok -->
+
 <!-- <url>klienty-vozvraschayutsya-k-masteru.php</url> -->
+
 <!-- excerpt: Как первый визит формирует доверие клиента и закладывает решение вернуться к барберу. -->
+
 <h2>Первый визит: момент, когда клиент решает, вернётся ли он</h2>
+
 <p>Решение о повторной записи чаще всего формируется уже на первом визите. Причём не в конце стрижки, а на протяжении всего процесса — от приветствия до прощания. Клиент наблюдает, сравнивает и фиксирует ощущения, даже если не делает этого осознанно.</p>
+
 <p>На старте особенно важно показать, что процесс находится под контролем. Клиенту нужно понять: его слышат, его запрос понят, а результат не случаен.</p>
+
 <div class="section_attention">
+
 <strong>Важно:</strong> первый визит — это не просто знакомство, а тест на надёжность мастера.
+
 </div>
+
 <h2>Ожидания и реальность</h2>
+
 <p>У каждого клиента есть внутренний образ желаемого результата. Иногда он чёткий, иногда — размытый. Задача барбера на первом визите — сократить дистанцию между ожиданием и реальностью.</p>
+
 <p>Когда мастер задаёт вопросы, уточняет детали и объясняет решения, клиент чувствует участие и профессиональный подход. Даже если результат отличается от идеальной картинки в голове, он воспринимается как честный и обоснованный.</p>
+
 <h2>Мелочи, которые формируют доверие</h2>
+
 <p>Часто именно детали становятся решающими. Клиент запоминает не конкретные движения, а отношение к процессу.</p>
+
 <ul class="list">
+
 <li>спокойное и уверенное приветствие;</li>
+
 <li>короткая консультация без спешки;</li>
+
 <li>комментарии по ходу работы;</li>
+
 <li>аккуратное завершение и проверка результата.</li>
+
 </ul>
+
 <p>Эти элементы создают ощущение продуманности и заботы. Клиент понимает, что мастер работает системно, а не «на удачу».</p>
+
 <div class="section_tip">
+
 <strong>Совет:</strong> на первом визите лучше сделать чуть проще, но стабильно и понятно. Предсказуемость важнее экспериментов.
+
 </div>
+
 <p>Именно после такого опыта клиент чаще всего возвращается — не за новизной, а за уверенностью, что в следующий раз всё пройдёт так же спокойно.</p>
+
 <!-- end blok -->
+
 <!-- start blok -->
+
 <!-- <url>klienty-vozvraschayutsya-k-masteru.php</url> -->
+
 <!-- excerpt: Почему клиенты привязываются к конкретному барберу и делают выбор в пользу мастера, а не салона. -->
+
 <h2>Почему клиенты возвращаются к мастеру, а не в салон</h2>
+
 <p>Со временем для клиента перестаёт быть важным бренд барбершопа, интерьер или даже локация. На первый план выходит конкретный человек, которому он доверяет свою внешность. Именно поэтому клиенты чаще говорят «я хожу к своему барберу», а не «я хожу в этот салон».</p>
+
 <p>Мастер становится точкой ответственности. Клиент знает, кто принимает решения, кто помнит его предпочтения и кто отвечает за результат. Это создаёт ощущение личного контакта, которое невозможно масштабировать на вывеску или формат заведения.</p>
+
 <div class="section_attention">
+
 <strong>Важно:</strong> лояльность формируется не к месту, а к человеку, который берёт на себя ответственность за результат.
+
 </div>
+
 <h2>Персонализация как основа возврата</h2>
+
 <p>Когда барбер помнит, как клиент обычно стрижётся, что ему важно и чего он не любит, визит перестаёт быть стандартной услугой. Клиенту не нужно каждый раз объяснять всё заново — это сильно повышает ценность взаимодействия.</p>
+
 <p>Даже небольшие детали вроде привычной длины, формы бороды или комментария «как в прошлый раз, но чуть короче» создают ощущение внимания и заботы.</p>
+
 <h2>Осознанный выбор мастера</h2>
+
 <p>Возвращаемость — это не случайность и не привычка. Это результат осознанного решения. Клиент выбирает того, кто даёт ему стабильность и уверенность, а не просто услугу.</p>
+
 <p>Именно поэтому <a href="vybor-konkretnogo-mastera.html">выбор мастера клиентом</a> редко бывает спонтанным. Он складывается из опыта, общения, предсказуемости и ощущения, что мастер «понимает без лишних слов».</p>
+
 <div class="section_tip">
+
 <strong>Совет:</strong> если клиент возвращается к тебе второй раз, считай, что ты уже прошёл главный фильтр. Дальше работает только последовательность и внимание к деталям.
+
 </div>
+
 <p>На этом этапе барбер перестаёт конкурировать с рынком в целом и начинает работать со своей собственной базой клиентов.</p>
+
 <!-- end blok -->
+
 <!-- start blok -->
+
 <!-- <url>klienty-vozvraschayutsya-k-masteru.php</url> -->
+
 <!-- excerpt: Почему удержание клиентов без скидок работает лучше акций и как формируется настоящая лояльность. -->
+
 <h2>Удержание клиентов без скидок и акций</h2>
+
 <p>На определённом этапе многие барберы начинают сомневаться: нужно ли постоянно стимулировать клиентов скидками, бонусами и специальными предложениями. Кажется, что без этого клиент уйдёт к конкуренту. Но практика показывает обратное.</p>
+
 <p>Скидка удерживает клиента один раз. Лояльность удерживает его надолго. Когда человек возвращается к мастеру, он платит не за цену, а за уверенность, спокойствие и предсказуемый результат.</p>
+
 <div class="section_attention">
+
 <strong>Важно:</strong> скидки привязывают к цене, а не к мастеру. Настоящая лояльность строится на доверии.
+
 </div>
+
 <h2>Что действительно удерживает клиента</h2>
+
 <p>Клиенты остаются там, где им понятно, чего ожидать. Это ощущение формируется из нескольких факторов, которые не зависят от акций.</p>
+
 <ul class="list">
+
 <li><strong>Стабильный результат:</strong> без сюрпризов от визита к визиту.</li>
+
 <li><strong>Уважительное общение:</strong> без давления и навязывания.</li>
+
 <li><strong>Чёткие рамки:</strong> клиент понимает формат работы.</li>
+
 <li><strong>Ответственность мастера:</strong> решения принимаются осознанно.</li>
+
 </ul>
+
 <p>Когда эти элементы присутствуют, клиенту не требуется дополнительная мотивация. Он возвращается потому, что не хочет рисковать комфортом.</p>
+
 <h2>Почему скидки часто вредят</h2>
+
 <p>Постоянные акции снижают ценность работы в глазах клиента. Возникает ощущение, что цена условна, а значит, и ценность результата тоже.</p>
+
 <p>Гораздо устойчивее работает подход, при котором мастер формирует базу через <a href="loyalnost-bez-skidok.html">удержание постоянных клиентов</a>, а не через краткосрочные стимулы.</p>
+
 <div class="section_tip">
+
 <strong>Совет:</strong> если клиент остаётся без скидок — он остаётся по-настоящему. Такой клиент формирует стабильность, а не зависимость от акций.
+
 </div>
+
 <p>Со временем барбер замечает, что отказ от постоянных скидок снижает хаос в графике и делает доход более предсказуемым.</p>
+
 <!-- end blok -->
+<!-- CTA: проверьте цены (mid-article) -->
+<div class="blog-cta" style="margin:28px 0; padding:18px 22px; background:linear-gradient(135deg, #fff8ee, #fff4e0); border:1px solid #f0d9b5; border-left:4px solid #c98e5b; border-radius:10px; box-shadow:0 2px 8px rgba(0,0,0,0.04);">
+  <p style="margin:0 0 10px; font-weight:600; font-size:1.05rem; color:#333;">💈 Проверьте цены на курсы барбера в вашем городе</p>
+  <p style="margin:0 0 12px; color:#555; font-size:.95rem;">Мы собрали курсы в 50+ городах — сравните программы, стоимость и отзывы выпускников.</p>
+  <span class="js-nav" data-nav="https://go.2038.pro/3b6bc242f51d5261?erid=LdtCKaoMZ&m=2&dl=https%3A%2F%2Fecolespb.ru%2Fbarber-school&sub1=https%3A%2F%2Fecolespb.ru%2Fbarber-school&sub2=kursy-barbera.vercel.app&sub3=blog-cta-mid" style="display:inline-block; background:#c98e5b; color:#fff; font-weight:600; padding:10px 20px; border-radius:8px; cursor:pointer; transition:background .2s; user-select:none;">Посмотреть цены →</span>
+</div>
+<!-- /CTA -->
+
+
 <!-- start blok -->
+
 <!-- <url>klienty-vozvraschayutsya-k-masteru.php</url> -->
+
 <!-- excerpt: Как обучение формирует навыки удержания клиентов и почему этому учатся ещё на старте профессии. -->
+
 <h2>Как обучение влияет на способность удерживать клиентов</h2>
+
 <p>Умение удерживать клиентов редко появляется само по себе. Чаще всего оно формируется ещё на этапе обучения — через подход к работе, разбор реальных ситуаций и понимание, что профессия барбера не ограничивается техникой стрижки.</p>
+
 <p>Новички, которые с самого начала учатся выстраивать диалог, управлять ожиданиями и брать ответственность за процесс, быстрее выходят на стабильную практику. Их клиенты реже разочаровываются и чаще возвращаются.</p>
+
 <div class="section_attention">
+
 <strong>Важно:</strong> навыки удержания — это не врождённый талант, а результат правильного обучения и практики.
+
 </div>
+
 <h2>Что именно влияет на возврат клиентов</h2>
+
 <p>В процессе обучения будущие барберы сталкиваются с типичными клиентскими сценариями и учатся работать с ними осознанно, а не интуитивно.</p>
+
 <ul class="list">
+
 <li>постановка вопросов перед началом работы;</li>
+
 <li>фиксация договорённостей;</li>
+
 <li>объяснение решений без оправданий;</li>
+
 <li>спокойное завершение визита и проверка результата.</li>
+
 </ul>
+
 <p>Такой подход снижает количество недопонимания и формирует у клиента ощущение надёжности. Он понимает, что мастер контролирует процесс и действует последовательно.</p>
+
 <h2>Пример одного города как иллюстрация подхода</h2>
+
 <p>Характерно, что этот подход всё чаще закладывается уже на старте профессии. Например, это характерно и для <a href="../volgograd.html">обучения барбера в Волгограде</a>, где внимание уделяется не только технике, но и работе с ожиданиями клиента, коммуникации и сервисной части профессии.</p>
+
 <p>В результате барбер выходит к первым клиентам не в режиме эксперимента, а с базовым пониманием, как выстраивать отношения на дистанции, а не только «сделать хорошо один раз».</p>
+
 <!-- end blok -->
+
 <!-- start blok -->
+
 <!-- <url>klienty-vozvraschayutsya-k-masteru.php</url> -->
+
 <!-- excerpt: Почему клиенты не возвращаются к барберу и какие ошибки чаще всего разрушают лояльность. -->
+
 <h2>Почему клиенты не возвращаются</h2>
+
 <p>Иногда барбер искренне не понимает, почему клиент не записывается повторно. Стрижка была аккуратной, визуально всё выглядело хорошо, конфликтов не возникло. Но возвращаемость всё равно остаётся низкой.</p>
+
 <p>Причина чаще всего кроется не в результате, а в ощущениях. Клиент может быть нейтрально доволен, но не чувствовать причины возвращаться именно к этому мастеру.</p>
+
 <div class="section_attention">
+
 <strong>Важно:</strong> отсутствие жалоб не равно лояльность. Клиент может уйти молча и без претензий.
+
 </div>
+
 <h2>Типичные причины потери клиентов</h2>
+
 <p>Если собрать обратную связь и опыт мастеров, причины повторяются из раза в раз:</p>
+
 <ul class="list">
+
 <li><strong>Нестабильный результат:</strong> каждый визит отличается от предыдущего.</li>
+
 <li><strong>Отсутствие контакта:</strong> клиент не чувствует вовлечённости мастера.</li>
+
 <li><strong>Спешка:</strong> ощущение «быстрее и дальше» вместо внимания.</li>
+
 <li><strong>Давление:</strong> навязывание услуг или решений.</li>
+
 <li><strong>Неясные рамки:</strong> клиент не понимает, чего ожидать.</li>
+
 </ul>
+
 <p>Все эти факторы подрывают доверие, даже если формально работа выполнена хорошо. Клиенту проще попробовать другого мастера, чем разбираться, почему опыт оказался «не тем».</p>
+
 <h2>Как избежать этих ошибок</h2>
+
 <p>Ключевой момент — системность. Когда барбер осознанно выстраивает процесс, клиент чувствует предсказуемость и контроль.</p>
+
 <p>Именно поэтому многие начинают рассматривать профессию шире, чем просто ремесло. <a href="../">Курсы барбера</a> всё чаще делают акцент не только на технике, но и на сервисе, коммуникации и удержании клиентов как части профессии.</p>
+
 <div class="section_tip">
+
 <strong>Совет:</strong> если клиент не вернулся — это повод пересмотреть процесс, а не сомневаться в себе.
+
 </div>
+
 <p>Понимание причин ухода помогает не зацикливаться на отдельных визитах и выстраивать устойчивую практику на дистанции.</p>
+
 <!-- end blok -->
+
 <!-- start blok -->
+
 <!-- <url>klienty-vozvraschayutsya-k-masteru.php</url> -->
+
 <!-- excerpt: Почему возвращаемость клиентов — главный показатель зрелости барбера и устойчивости профессии. -->
+
 <h2>Возвращаемость как показатель зрелости барбера</h2>
+
 <p>Со временем барбер начинает понимать: количество клиентов в день — не главный показатель успеха. Гораздо важнее то, кто и зачем возвращается. Постоянные клиенты формируют основу профессии и дают ощущение устойчивости.</p>
+
 <p>Когда клиенты возвращаются осознанно, без напоминаний и стимулов, работа перестаёт быть гонкой за новыми записями. Появляется предсказуемость, спокойствие и уверенность в завтрашнем дне.</p>
+
 <div class="section_attention">
+
 <strong>Важно:</strong> высокая возвращаемость говорит о том, что мастер выстроил процесс, а не просто выполняет услугу.
+
 </div>
+
 <p>На этом этапе барбер:</p>
+
 <ul class="list">
+
 <li>меньше выгорает;</li>
+
 <li>реже сталкивается с конфликтами;</li>
+
 <li>работает с понятной аудиторией;</li>
+
 <li>может развиваться без давления и суеты.</li>
+
 </ul>
+
 <p>Возвращаемость — это результат системной работы: общения, стабильности, ответственности и уважения к клиенту. Именно она отличает ремесленника от профессионала, выстраивающего карьеру на годы.</p>
+
 <p>Когда этот уровень достигнут, профессия начинает работать на мастера, а не требовать постоянного доказательства своей ценности.</p>
+
 <!-- end blok -->
+
 <!-- start blok -->
+
 <!-- <url>klienty-vozvraschayutsya-k-masteru.php</url> -->
+
 <!-- Внутренние ссылки 
+
         <section class="section_links" style="margin-top:18px">
+
           <h3>Полезные ссылки</h3>
+
           <ul class="list">
+
             <li><a href="/moskva.php">Курсы барбера в Москве</a></li>
+
             <li><a href="/sankt-peterburg.php">Курсы барбера в Санкт-Петербурге</a></li>
+
             <li><a href="/#cities">Курсы в других городах</a></li>
+
           </ul>
+
         </section>-->
+
+
+<!-- CTA: проверьте цены (end-article) -->
+<div class="blog-cta" style="margin:32px 0 16px; padding:22px 24px; background:linear-gradient(135deg, #fff8ee, #fff4e0); border:1px solid #f0d9b5; border-left:4px solid #c98e5b; border-radius:10px; box-shadow:0 2px 8px rgba(0,0,0,0.04);">
+  <p style="margin:0 0 8px; font-weight:700; font-size:1.1rem; color:#333;">✂️ Готовы начать карьеру барбера?</p>
+  <p style="margin:0 0 14px; color:#555; font-size:.95rem;">Проверьте цены на курсы барбера в вашем городе — школы в 50+ городах России, практика на моделях, диплом.</p>
+  <span class="js-nav" data-nav="https://go.2038.pro/3b6bc242f51d5261?erid=LdtCKaoMZ&m=2&dl=https%3A%2F%2Fecolespb.ru%2Fbarber-school&sub1=https%3A%2F%2Fecolespb.ru%2Fbarber-school&sub2=kursy-barbera.vercel.app&sub3=blog-cta-end" style="display:inline-block; background:#c98e5b; color:#fff; font-weight:600; padding:12px 24px; border-radius:8px; cursor:pointer; font-size:1.05rem; transition:background .2s; user-select:none;">Проверить цены в моём городе →</span>
 </div>
+<!-- /CTA -->
+</div>
+
 <!-- Сайдбар -->
+
 <aside>
+
 <!-- Подбор курсов -->
-<div class="card">
+
+<div class="card" style="margin-bottom:24px;">
+
 <h3>Подбор курсов</h3>
+
 <p class="muted">Посмотрите очные программы в вашем городе.</p>
-<a class="btn btn-primary" href="..//#cities">Выберите ваш город</a>
+
+<span class="btn btn-primary js-nav" data-nav="https://go.2038.pro/3b6bc242f51d5261?erid=LdtCKaoMZ&m=2&dl=https%3A%2F%2Fecolespb.ru%2Fbarber-school&sub1=https%3A%2F%2Fecolespb.ru%2Fbarber-school&sub2=kursy-barbera.vercel.app&sub3=sidebar-cta" style="cursor:pointer; user-select:none;">Посмотреть цены</span>
+
 </div>
+
 <!-- Читайте также -->
+
 <div class="card">
+
 <h3>Читайте также</h3>
+
 <div class="related-grid">
+
 <div class="related-card">
+
 <a class="thumb" href="adaptaciya-v-barbershope.html">
+
 <img alt="Адаптация в барбершопе: как новичку влиться в команду и не сломаться" loading="lazy" src="../IMUGA/adaptaciya-v-barbershope.jpg"/>
 
+
+
 </a>
+
 <div class="rel-title">
+
 <a href="adaptaciya-v-barbershope.html">Адаптация в барбершопе: как новичку влиться в команду и не сломаться</a>
+
 </div>
+
 </div>
+
 <div class="related-card">
+
 <a class="thumb" href="atmosfera-i-dohod.html">
+
 <img alt="Атмосфера барбершопа и доход: как пространство влияет на деньги" loading="lazy" src="../IMUGA/atmosfera-i-dohod.jpg"/>
 
+
+
 </a>
+
 <div class="rel-title">
+
 <a href="atmosfera-i-dohod.html">Атмосфера барбершопа и доход: как пространство влияет на деньги</a>
+
 </div>
+
 </div>
+
 <div class="related-card">
+
 <a class="thumb" href="barber-v-bolshom-i-malom-gorode.html">
+
 <img alt="Барбер в большом и малом городе: в чём разница" loading="lazy" src="../IMUGA/barber-v-bolshom-i-malom-gorode.jpg"/>
 
+
+
 </a>
+
 <div class="rel-title">
+
 <a href="barber-v-bolshom-i-malom-gorode.html">Барбер в большом и малом городе: в чём разница</a>
+
 </div>
+
 </div>
+
 <div class="related-card">
+
 <a class="thumb" href="barbering-ne-prosto-strizhki.html">
+
 <img alt="Барберинг — это не просто стрижки" loading="lazy" src="../IMUGA/barbering-ne-prosto-strizhki.jpg"/>
 
+
+
 </a>
+
 <div class="rel-title">
+
 <a href="barbering-ne-prosto-strizhki.html">Барберинг — это не просто стрижки</a>
+
 </div>
+
 </div>
+
 <div class="related-card">
+
 <a class="thumb" href="barber-ne-vozvraschayetsya.html">
+
 <img alt="Барбер не возвращается: почему уход из профессии становится окончательным" loading="lazy" src="../IMUGA/barber-ne-vozvraschayetsya.jpg"/>
 
+
+
 </a>
+
 <div class="rel-title">
+
 <a href="barber-ne-vozvraschayetsya.html">Барбер не возвращается: почему уход из профессии становится окончательным</a>
+
 </div>
+
 </div>
+
 </div>
+
 </div>
+
 </aside>
+
 </div>
+
 </article>
+
 <!-- Авто-оглавление по h2/h3 -->
+
 <script>
+
   (function(){
+
     const root = document.querySelector('[data-blog-root]');
+
     if (!root) return;
 
+
+
     // Снимаем возможный sticky/fixed у HERO от глобальных скриптов
+
     const hero = root.querySelector('header.hero');
+
     if (hero) {
+
       ['sticky','is-sticky','fixed','hero--sticky','pin','pinned'].forEach(c => hero.classList.remove(c));
+
       const pos = hero.style.position || getComputedStyle(hero).position;
+
       if (pos === 'fixed' || pos === 'sticky') {
+
         hero.style.position = 'static';
+
         hero.style.top = 'auto'; hero.style.bottom = 'auto'; hero.style.inset = 'auto';
+
       }
+
     }
+
+
 
     // Генерация оглавления
+
     const body = root.querySelector('#article-body');
+
     const toc  = root.querySelector('#toc');
+
     const list = root.querySelector('#toc-list');
+
     if (!body || !toc || !list) return;
 
+
+
     const headings = body.querySelectorAll('h2, h3');
+
     let hasH2 = false;
+
     headings.forEach((el, i) => {
+
       const text = el.textContent.trim();
+
       const slug = (text.toLowerCase()
+
         .replace(/[^\p{L}\p{N}\s-]/gu,'')
+
         .replace(/\s+/g,'-')
+
         .replace(/-+/g,'-')).substring(0,64) || ('h-' + i);
+
       if (!el.id) el.id = slug;
+
       const li = document.createElement('li');
+
       const a = document.createElement('a');
+
       a.href = '#' + el.id; a.textContent = text;
+
       li.appendChild(a);
+
       if (el.tagName === 'H3') li.style.marginLeft = '12px';
+
       list.appendChild(li);
+
       if (el.tagName === 'H2') hasH2 = true;
+
     });
+
     if (hasH2) toc.style.display = '';
+
   })();
+
   </script>
+
 </div>
+
 <footer>
+
 <div class="container" style="text-align:center; padding:36px 0;">
+
 <p class="small" style="margin:0 0 8px;">
+
 Лучшие курсы барбера, обучение мужским стрижкам и бритью в городах России. Практика на моделях, диплом, стажировка.    </p>
+
 <a class="small" href="../privacy.html" style="color:var(--muted); text-decoration:none;">
+
       Политика конфиденциальности
+
     </a>
+
 </div>
+
 </footer>
+
 <!-- Cookie Notice -->
+
 <div id="cookieNotice" style="
+
   position:fixed;
+
   bottom:16px; left:50%;
+
   transform:translateX(-50%);
+
   background:rgba(255,255,255,0.95);
+
   color:var(--ink);
+
   border:1px solid var(--line);
+
   border-radius:12px;
+
   box-shadow:var(--ring);
+
   padding:10px 16px;
+
   font-size:.85rem;
+
   display:flex;
+
   align-items:center;
+
   gap:8px;
+
   z-index:200;
+
   max-width:90%;
+
 ">
+
 <span>
+
     Мы используем cookie для улучшения работы сайта.
+
     Подробнее — <a href="../privacy.html" style="color:var(--brand); text-decoration:none;">в политике конфиденциальности</a>.
+
   </span>
+
 <button id="cookieBtn" style="
+
     background:var(--brand);
+
     color:#fff;
+
     border:none;
+
     border-radius:8px;
+
     padding:6px 10px;
+
     font-size:.8rem;
+
     cursor:pointer;
+
   ">OK</button>
+
 </div>
+
 <script>
+
   // скрыть/показать cookie notice
+
   (function(){
+
     const box = document.getElementById('cookieNotice');
+
     const btn = document.getElementById('cookieBtn');
+
     if(localStorage.getItem('cookieAccepted')) box.remove();
+
     else btn.addEventListener('click', ()=>{
+
       localStorage.setItem('cookieAccepted','1');
+
       box.style.opacity='0';
+
       setTimeout(()=>box.remove(),300);
+
     });
+
   })();
+
+
 
   // плавный скролл
+
   document.querySelectorAll('a[href^="#"]').forEach(a=>{
+
     a.addEventListener('click', e=>{
+
       const id=a.getAttribute('href').slice(1);
+
       const el=document.getElementById(id);
+
       if(el){ e.preventDefault(); el.scrollIntoView({behavior:'smooth', block:'start'}); }
+
     });
+
   });
 
+
+
   // гамбургер
+
   (function(){
+
     const nav = document.getElementById('nav');
+
     const btn = document.getElementById('menuToggle');
+
     const menu = document.getElementById('primary-menu');
+
     if(!nav || !btn || !menu) return;
 
+
+
     function toggle(){
+
       nav.classList.toggle('open');
+
       btn.setAttribute('aria-expanded', nav.classList.contains('open'));
+
     }
+
     btn.addEventListener('click', toggle);
+
     menu.addEventListener('click', e=>{
+
       if(e.target.closest('a')){ nav.classList.remove('open'); btn.setAttribute('aria-expanded','false'); }
+
     });
+
     document.addEventListener('click', e=>{
+
       if(nav.classList.contains('open') && !nav.contains(e.target)){
+
         nav.classList.remove('open'); btn.setAttribute('aria-expanded','false');
+
       }
+
     });
+
     document.addEventListener('keydown', e=>{
+
       if(e.key==='Escape'){ nav.classList.remove('open'); btn.setAttribute('aria-expanded','false'); }
+
     });
+
   })();
+
 </script>
+
 <script>
+
 document.addEventListener('click', function (e) {
+
   const el = e.target.closest('[data-nav]');
+
   if (!el) return;
 
+
+
   const url = el.dataset.nav;
+
   if (!url) return;
 
+
+
   window.open(url, '_blank', 'noopener');
+
 });
+
 </script>
+
 </body>
+
 </html>
+
 <!-- end blok -->
+
