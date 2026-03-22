@@ -41,9 +41,9 @@
     }
   }
 
-  function buildWrappedHref(originalHref){
+  function buildWrappedHref(originalHref, sub3){
     // Пример:
-    // https://go.2038.pro/3b6bc242f51d5261?erid=LdtCKaoMZ&m=2&dl=ORIG&sub1=ORIG&sub2=kursy-barbera.vercel.app
+    // https://go.2038.pro/3b6bc242f51d5261?erid=LdtCKaoMZ&m=2&dl=ORIG&sub1=ORIG&sub2=kursy-barbera.vercel.app&sub3=blog-cta-mid
     const params = [
       'erid=' + enc(ERID),
       'm='    + enc(M_PARAM),
@@ -51,6 +51,7 @@
       'sub1=' + enc(originalHref),
       'sub2=' + enc(SUB2_STATIC)
     ];
+    if (sub3) params.push('sub3=' + enc(sub3));
     return WRAP_BASE + '?' + params.join('&');
   }
 
@@ -60,7 +61,7 @@
     const href = a.getAttribute('href');
     if (!href || !needsWrap(href)) return;
 
-    const wrapped = buildWrappedHref(new URL(href, location.href).href);
+    const wrapped = buildWrappedHref(new URL(href, location.href).href, a.getAttribute('data-sub3') || '');
     a.setAttribute('href', wrapped);
     a.setAttribute(MARK_ATTR, '1');
 
